@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_15_221230) do
+ActiveRecord::Schema.define(version: 2021_10_18_170013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "courses", force: :cascade do |t|
     t.string "title"
@@ -27,11 +33,12 @@ ActiveRecord::Schema.define(version: 2021_10_15_221230) do
 
   create_table "reservations", force: :cascade do |t|
     t.date "date"
-    t.string "city"
     t.bigint "user_id", null: false
     t.bigint "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "city_id", null: false
+    t.index ["city_id"], name: "index_reservations_on_city_id"
     t.index ["course_id"], name: "index_reservations_on_course_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
@@ -44,6 +51,7 @@ ActiveRecord::Schema.define(version: 2021_10_15_221230) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "reservations", "cities"
   add_foreign_key "reservations", "courses"
   add_foreign_key "reservations", "users"
 end
