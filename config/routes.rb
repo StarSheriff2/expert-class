@@ -9,7 +9,6 @@ Rails.application.routes.draw do
       post :sign_in, to: 'sessions#create'
       delete :sign_out, to: "sessions#logout"
       get :signed_in, to: "sessions#logged_in"
-      
     end
   end
   
