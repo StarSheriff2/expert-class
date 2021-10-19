@@ -3,7 +3,7 @@ class API::V1::ReservationsController < ApplicationController
 
   def index
     @user_reservation = Reservation.all
-    
+
     if @user_reservation
       render json: @user_reservation
     else
