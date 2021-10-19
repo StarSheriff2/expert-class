@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       delete :sign_out, to: "sessions#logout"
       get :signed_in, to: "sessions#logged_in"
       
+      get '/api/v1/reservations', to: 'reservations#index'
     end
   end
   
