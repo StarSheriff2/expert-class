@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :users, :cities, :reservations, :courses
       # get 'classes-list', to: 'classes#index'
       resources :sessions, only: [:create]
-      resources :users
+      # resources :users
 
       post :sign_in, to: 'sessions#create'
       delete :sign_out, to: "sessions#logout"
