@@ -21,34 +21,6 @@ RSpec.describe 'Users API', type: :request do
     end
   end
 
-  # Test suite for GET /users/:id
-  describe 'GET /users/:id' do
-    before { get "/users/#{todo_id}" }
-
-    context 'when the record exists' do
-      it 'returns the user' do
-        expect(json).not_to be_empty
-        expect(json['id']).to eq(user_id)
-      end
-
-      it 'returns status code 200' do
-        expect(response).to have_http_status(200)
-      end
-    end
-
-    context 'when the record does not exist' do
-      let(:user_id) { 100 }
-
-      it 'returns status code 404' do
-        expect(response).to have_http_status(404)
-      end
-
-      it 'returns a not found message' do
-        expect(response.body).to match(/Couldn't find User/)
-      end
-    end
-  end
-
   # Test suite for POST /users
   describe 'POST /users' do
     # valid payload
@@ -80,26 +52,9 @@ RSpec.describe 'Users API', type: :request do
     end
   end
 
-  # Test suite for PUT /users/:id
-  describe 'PUT /users/:id' do
-    let(:valid_attributes) { { name: 'Julius' } }
-
-    context 'when the record exists' do
-      before { put "/users/#{user_id}", params: valid_attributes }
-
-      it 'updates the record' do
-        expect(response.body).to be_empty
-      end
-
-      it 'returns status code 204' do
-        expect(response).to have_http_status(204)
-      end
-    end
-  end
-
   # Test suite for DELETE /users/:id
   describe 'DELETE /users/:id' do
-    before { delete "/users/#{todo_id}" }
+    before { delete "/users/#{user_id}" }
 
     it 'returns status code 204' do
       expect(response).to have_http_status(204)
