@@ -14,5 +14,16 @@ class API::V1::UsersController < ApplicationController
     @user.destroy
     head :no_content
   end
+
+  private
+
+  def user_params
+    # whitelist params
+    params.permit(:name, :username)
+  end
+
+  def set_user
+    @user = User.find(params[:id])
+  end
   
 end
