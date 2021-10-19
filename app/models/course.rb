@@ -4,5 +4,5 @@ class Course < ApplicationRecord
   validates :instructor, presence: true, length: { maximum: 48 }
   validates :duration, presence: true, length: { maximum: 12 }
 
-  has_many :reservations
+  has_many :reservations, dependent: :destroy
 end
