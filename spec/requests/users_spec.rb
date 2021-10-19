@@ -47,7 +47,7 @@ RSpec.describe 'Users API', type: :request do
 
       it 'returns a validation failure message' do
         expect(response.body)
-          .to include("Username is too short (minimum is 6 characters")
+          .to include('Username is too short (minimum is 6 characters')
       end
     end
   end

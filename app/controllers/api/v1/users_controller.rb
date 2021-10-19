@@ -1,5 +1,4 @@
 class API::V1::UsersController < ApplicationController
-
   def index
     @users = User.all
 
@@ -15,9 +14,7 @@ class API::V1::UsersController < ApplicationController
   # DELETE /users/:id
   def destroy
     @user = User.find(params[:id])
-    if @user.present?
-       @user.destroy
-    end
+    @user.destroy if @user.present?
     head :no_content
   end
 
@@ -31,5 +28,4 @@ class API::V1::UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
-  
 end
