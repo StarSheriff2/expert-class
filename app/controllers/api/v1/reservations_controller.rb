@@ -1,7 +1,19 @@
 class API::V1::ReservationsController < ApplicationController
+  include CurrentUserConcern
+  before_action :set_reservation, only: %i[index show]
+
   def index
-    Reservation.create!({ date: '12-09-2021', user_id: 1, course_id: 1, city_id: 1 })
-    @user_reservation = Reservation.where(user_id: 1)
-    render json: @user_reservation
+    render json: @user_reservations
+  end
+
+  def show
+    render json: @reservation
+  end
+
+  private
+
+  def set_reservation
+    @user_reservations = Reservation.where(user_id: @current_user)
+    @reservation = Reservation.find_by(id: params[:id])
   end
 end
