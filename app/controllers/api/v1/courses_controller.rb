@@ -1,6 +1,6 @@
 class API::V1::CoursesController < ApplicationController
   before_action :set_courses, only: [:index]
-  before_action :set_course, only: [:show]
+  before_action :set_course, only: %i[show destroy]
   before_action :create_course, only: [:create]
 
   def index
@@ -13,9 +13,18 @@ class API::V1::CoursesController < ApplicationController
 
   def create
     if @course.save
-      render json: { message: 'User successfully created' }, status: 200
+      render json: { message: 'Course successfully created' }, status: 201
     else
-      render json: { message: 'Unable to create user' }, status: 400
+      render json: { message: 'Unable to create course' }, status: 400
+    end
+  end
+
+  def destroy
+    if @course
+      @course.destroy
+      render json: { message: 'Course successfully deleted' }, status: 204
+    else
+      render json: { message: 'Unable to delete course' }, status: 400
     end
   end
 end
