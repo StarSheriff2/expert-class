@@ -1,5 +1,8 @@
 FactoryBot.define do
   factory :reservation do
-    name { Faker::Name.name }
+    date { '20-10-2021' }
+    user
+    course
+    city
   end
 end
