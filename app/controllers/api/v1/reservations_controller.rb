@@ -1,5 +1,5 @@
 class API::V1::ReservationsController < ApplicationController
-  before_action :set_reservation, only: %i[index show]
+  before_action :set_reservation, only: %i[index show destroy]
 
   def index
     render json: @user_reservations
@@ -16,6 +16,15 @@ class API::V1::ReservationsController < ApplicationController
       render json: { message: 'User created successfully' }, status: 200
     else
       render json: { message: 'User create failed' }, status: 400
+    end
+  end
+
+  def destroy
+    if @reservation
+      @reservation.destroy
+      render json: { message: 'Reservation deleted successfully' }, status: 204
+    else
+      render json: { message: 'Delete reservation failed' }, status: 400
     end
   end
 
