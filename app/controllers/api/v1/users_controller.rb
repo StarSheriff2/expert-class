@@ -22,7 +22,7 @@ class API::V1::UsersController < ApplicationController
 
   def user_params
     # whitelist params
-    params.permit(:name, :username)
+    params.require(:user).permit(:name, :username)
   end
 
   def set_user
