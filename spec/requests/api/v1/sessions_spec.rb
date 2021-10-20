@@ -16,7 +16,6 @@ RSpec.describe 'API::V1::Sessions', type: :request do
       end
 
       it 'creates a session variable with user id' do
-        p "session: #{session}"
         expect(session[:user_id]).to eq(users.first.id)
         expect(session[:user_id]).not_to eq(users.second.id)
       end
