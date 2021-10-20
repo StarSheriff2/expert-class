@@ -6,9 +6,9 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   describe 'GET /index' do
     before { get '/api/v1/reservations' }
 
-    it 'returns a list of all courses' do
+    it 'returns a list of all reservations' do
       expect(json).not_to be_empty
-      expect(json.size).to be >= 4
+      expect(json.size).to be <= 1
     end
 
     it 'returns http success' do
@@ -20,7 +20,7 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   describe 'GET /show/:id' do
     before { get "/api/v1/reservations/#{reservations[0].id}" }
 
-    it 'returns details for one course' do
+    it 'returns details for one reservations' do
       expect(json).not_to be_empty
     end
 
