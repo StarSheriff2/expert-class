@@ -8,7 +8,7 @@ class API::V1::ReservationsController < ApplicationController
   def show
     render json: @reservation
   end
-  
+
   def create
     @reservation = Reservation.new(reservation_params)
 
