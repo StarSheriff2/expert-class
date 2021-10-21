@@ -4,6 +4,7 @@ FactoryBot.define do
     description { Faker::Lorem.paragraph }
     instructor { Faker::Name.name }
     duration { rand(12) }
-    image { Faker::Internet.url }
+    # image { Faker::Name.name }
+    image { ActionDispatch::Http::UploadedFile.new("#{Rails.root}/spec/test_images/instructor1.jpeg") }
   end
 end
