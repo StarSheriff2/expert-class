@@ -85,6 +85,7 @@ RSpec.describe 'API::V1::Sessions', type: :request do
       it 'returns correct user data' do
         expect(json['user']['name']).to eq(users.second.name)
         expect(json['user']['id']).to eq(users.second.id)
+        expect(json['user']['username']).to eq(users.second.username)
         expect(json['user']['id']).not_to eq(users.first.id)
       end
 
