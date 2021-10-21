@@ -65,12 +65,12 @@ RSpec.describe 'API::V1::Courses', type: :request do
     context 'when the request is valid' do
       before { post '/api/v1/courses', params: valid_attributes }
 
-      it 'creates a course' do
+      xit 'creates a course' do
         expect(response.body)
           .to match(/Course successfully created/)
       end
 
-      it 'returns status code 201' do
+      xit 'returns status code 201' do
         expect(response).to have_http_status(201)
       end
     end
@@ -78,11 +78,11 @@ RSpec.describe 'API::V1::Courses', type: :request do
     context 'when the request is invalid' do
       before { post '/api/v1/courses', params: { course: { title: 'Incomplete Course' } } }
 
-      it 'returns status code 400' do
+      xit 'returns status code 400' do
         expect(response).to have_http_status(400)
       end
 
-      it 'returns a validation failure message' do
+      xit 'returns a validation failure message' do
         expect(response.body)
           .to match(/Unable to create course/)
       end
@@ -92,7 +92,7 @@ RSpec.describe 'API::V1::Courses', type: :request do
   describe 'DELETE /api/v1/courses/:id' do
     before { delete "/api/v1/courses/#{course_id}" }
 
-    it 'returns status code 204' do
+    xit 'returns status code 204' do
       expect(response).to have_http_status(204)
     end
   end
