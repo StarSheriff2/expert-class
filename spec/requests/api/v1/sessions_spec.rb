@@ -73,12 +73,11 @@ RSpec.describe 'API::V1::Sessions', type: :request do
       end
 
       it 'returns a json response' do
-        expect(session[:user_id]).to eq(users.second.id)
         expect(json).not_to be_empty
         expect(json.size).to be 2
       end
 
-      it 'creates a session variable with user id' do
+      it 'reads session variable with correct user id' do
         expect(session[:user_id]).to eq(users.second.id)
         expect(session[:user_id]).not_to eq(users.last.id)
       end
