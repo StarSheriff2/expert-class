@@ -12,12 +12,29 @@ class API::V1::CoursesController < ApplicationController
   end
 
   def create
+
     if @course.save
       render json: { message: 'Course successfully created' }, status: 201
     else
       render json: { message: 'Unable to create course' }, status: 400
     end
   end
+
+  # def create
+  #   @user = User.new(user_params)
+  #   @user.attach_avatar
+
+  #   if @user.save
+  #     log_in @user
+  #     redirect_to @user,
+  #                 notice: "Welcome, #{@user.fullname}.
+  #                         You are now part of the biggest community of recipe enthusiasts in the world!"
+  #   else
+  #     render :new, status: :unprocessable_entity
+  #   end
+  # rescue StandardError
+  #   redirect_to new_user_path, notice: 'This username already exists. Please Choose another one.'
+  # end
 
   def destroy
     if @course
