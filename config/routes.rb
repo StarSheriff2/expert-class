@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: 'static#home'
+  root to: "application#cookie"
 end
