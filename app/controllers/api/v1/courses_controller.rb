@@ -37,8 +37,6 @@ end
 
 def set_course
   @course = Course.find(params[:id])
-  @course['image-url'] = course.image_url
-  @course
 end
 
 def create_course
