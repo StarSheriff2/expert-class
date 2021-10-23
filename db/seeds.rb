@@ -18,10 +18,10 @@ cities = City.create!([
 ])
 
 courses = Course.create!([
-  {title: 'Urban Photography', description: 'Learn to take photos of urban landscapes.', duration: 4, instructor: 'Maria', image: ''},
-  {title: 'Modern Gardening', description: 'Learn to plant plants.', duration: 8, instructor: 'Mohammed', image: ''},
-  {title: 'Play the Piano', description: 'Learn to play the piano.', duration: 12, instructor: 'Yin', image: ''},
-  {title: 'Master Chef', description: 'Learn to cook delicious dishes.', duration: 12, instructor: 'Paola', image: ''}
+  {title: 'Urban Photography', description: 'Learn to take photos of urban landscapes.', duration: 4, instructor: 'Maria'},
+  {title: 'Modern Gardening', description: 'Learn to plant plants.', duration: 8, instructor: 'Mohammed'},
+  {title: 'Play the Piano', description: 'Learn to play the piano.', duration: 12, instructor: 'Yin'},
+  {title: 'Master Chef', description: 'Learn to cook delicious dishes.', duration: 12, instructor: 'Paola'}
 ])
 
 reservations = Reservation.create!([

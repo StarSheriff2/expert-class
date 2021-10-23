@@ -28,6 +28,7 @@ Rails.application.configure do
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
+  config.active_storage.service = :local
 
   config.active_storage.service = :cloudinary
 
@@ -65,3 +66,5 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 end
+
+Rails.application.routes.default_url_options = { host: 'http://localhost:3001' }
