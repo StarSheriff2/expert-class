@@ -13,7 +13,7 @@ class Course < ApplicationRecord
 
   has_one_attached :image, dependent: :destroy
 
-  def image_url
-    url_for(image)
+  def attach_image
+    self.course_image_url = image.url if image.attached?
   end
 end

@@ -41,6 +41,7 @@ end
 
 def create_course
   @course = Course.new(course_params)
+  @course.attach_image
 end
 
 def course_params
