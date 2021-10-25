@@ -11,11 +11,18 @@ class API::V1::ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.date = @reservation.date.to_datetime
 
     if @reservation.save
-      render json: { message: 'User created successfully' }, status: 200
+      render json: {
+        message: 'Reservation created successfully',
+        status: 200
+      }
     else
-      render json: { message: 'User create failed' }, status: 400
+      render json: {
+        message: 'Create reservation failed',
+        status: 400
+      }
     end
   end
 
