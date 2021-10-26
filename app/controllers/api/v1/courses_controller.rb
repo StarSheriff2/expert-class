@@ -8,7 +8,7 @@ class API::V1::CoursesController < ApplicationController
   end
 
   def show
-    render json: @course
+    json_response(@course)
   end
 
   def create
