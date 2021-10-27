@@ -14,12 +14,6 @@ This Ruby on Rails, API-only, back-end app is consumed by the React/Redux front-
 
 - Ruby on Rails
 
-## Live View
-
-You can access a preview of the API [here](https://expert-class-backend.herokuapp.com).
-
-You can preview the front-end app [here](https://expert-class-frontend.netlify.app).
-
 ## Kanban Board
 
 This project's tasks are described on [this kanban board](https://github.com/StarSheriff2/expert-class/projects/1).
@@ -45,7 +39,7 @@ To get a local copy up and running, follow these steps.
   
 2. Go to the project's root directory:
 ``` bash
-cd hello-rails-react
+cd expert-class
 ```
 3. Install dependencies:
 ``` bash
@@ -55,6 +49,7 @@ bundle install
 ``` bash
 rails db:create
 rails db:migrate
+rails db:seed
 ```
 
 ### Running locally
