@@ -8,7 +8,6 @@ class API::V1::UsersController < ApplicationController
   # POST /users
   def create
     @user = User.new(user_params)
-    p "user: #{@user}"
 
     if @user.save
       session[:user_id] = @user.id
@@ -18,7 +17,10 @@ class API::V1::UsersController < ApplicationController
         user: @user
       }
     else
-      render json: { status: 401 }
+      render json: {
+        status: 401,
+        error: 'This username already exists. Please Choose another one.'
+      }
     end
   rescue StandardError
     'This username already exists. Please Choose another one.'
