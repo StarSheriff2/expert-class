@@ -1,7 +1,19 @@
 class API::V1::ReservationsController < ApplicationController
+  include CurrentUserConcern
   before_action :set_reservation, only: %i[index show destroy]
 
   def index
+    @user_reservations = @user_reservations.map do |reservation|
+      {
+        user: User.find(reservation.user_id).name,
+        course: Course.find(reservation.course_id).title,
+        city: City.find(reservation.city_id).name,
+        date: reservation.date,
+        id: reservation.id,
+        created_at: reservation.created_at,
+        updated_at: reservation.updated_at
+      }
+    end
     render json: @user_reservations
   end
 
@@ -11,11 +23,18 @@ class API::V1::ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.date = @reservation.date.to_datetime
 
     if @reservation.save
-      render json: { message: 'User created successfully' }, status: 200
+      render json: {
+        message: 'Reservation created successfully',
+        status: 200
+      }
     else
-      render json: { message: 'User create failed' }, status: 400
+      render json: {
+        message: 'Create reservation failed',
+        status: 400
+      }
     end
   end
 
@@ -31,7 +50,7 @@ class API::V1::ReservationsController < ApplicationController
   private
 
   def set_reservation
-    @user_reservations = Reservation.where(user_id: rand(2)) # add @current_user
+    @user_reservations = Reservation.where(user_id: @current_user.id)
     @reservation = Reservation.find_by(id: params[:id])
   end
 
