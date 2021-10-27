@@ -13,9 +13,15 @@ class API::V1::CoursesController < ApplicationController
 
   def create
     if @course.save
-      render json: { message: 'Course successfully created' }, status: 201
+      render json: {
+        message: 'Course successfully created',
+        status: 201
+      }
     else
-      render json: { message: 'Unable to create course' }, status: 400
+      render json: {
+        message: 'Unable to create course',
+        status: 400
+      }
     end
   end
 
