@@ -36,7 +36,7 @@ To get a local copy up and running, follow these steps.
 ### Setup
 
 1. Download or [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) the contents from this repository.
-  
+
 2. Go to the project's root directory:
 ``` bash
 cd expert-class
@@ -45,13 +45,25 @@ cd expert-class
 ``` bash
 bundle install
 ```
-4. Setup database:
-``` bash
-rails db:create
-rails db:migrate
-rails db:seed
-```
 
+#### Cloudinary Setup
+> You will need a Cloudinary account to be able to deploy this app locally. If you already have one, copy your YML file into the config folder; otherwise, create a new account by going to Cloudinary and signing up for a free account: [https://cloudinary.com/](https://cloudinary.com/).
+
+Once you have your new Cloudinary account set up, follow these steps:
+1. Login with your new account
+2. Go to your Cloudinary dashboard
+3. Look for the YML file and click on it to download it
+4. Copy this file into your config folder
+
+#### Database Setup
+
+1. Edit the `"database.yml"` file in your `"config"` folder:
+    - Change the `username` and `password` under ***`default: &default`*** to your PostgreSQL local credentials or just delete lines 23 and 24 altogether
+1. Now, in your terminal, type <code>bin/rails db:create</code> to create your local databases.
+2. If successful, type <code>bin/rails db:migrate</code> to migrate the database.
+3. Run `rails db:seed`
+
+You are all set now!
 ### Running locally
 
 1. Start server:
