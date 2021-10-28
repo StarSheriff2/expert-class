@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   end
 
   root to: "application#cookie"
+  # root to: "/"
 end

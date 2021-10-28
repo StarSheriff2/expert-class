@@ -112,4 +112,4 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 end
 
-# Rails.application.routes.default_url_options = { host: "http://my-app.heroku.app.com" } #Set this to Heroku site once deployed
+Rails.application.routes.default_url_options = { host: 'https://expert-class-backend.herokuapp.com' }

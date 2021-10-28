@@ -11,7 +11,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'http://link_to_production'
+    origins 'https://expert-class-frontend.netlify.app'
 
     resource '*',
       headers: :any,

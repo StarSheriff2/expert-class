@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  # skip_before_action :verify_authenticity_token
   before_action :set_csrf_cookie
 
   include ActionController::Cookies
@@ -18,7 +19,10 @@ class ApplicationController < ActionController::API
   def set_csrf_cookie
     cookies['CSRF-TOKEN'] = {
       value: form_authenticity_token,
-      domain: :all
+      domain: 'https://expert-class-backend.herokuapp.com'
+      #========= Production Setup for Heroku ==============#
+      # same_site: 'None',
+      # secure: true
     }
   end
 end
