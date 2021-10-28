@@ -36,5 +36,12 @@ module ExpertClassBackend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+    #========= Production Setup for Heroku ==============#
+    # key: '_export_class',
+    # domain: 'https://expert-class-backend.herokuapp.com',
+    # secure: true,
+    # same_site: 'None'
   end
 end
