@@ -1,6 +1,6 @@
 class API::V1::ReservationsController < ApplicationController
   include CurrentUserConcern
-  before_action :set_reservation, only: %i[index show destroy]
+  # before_action :set_reservation, only: %i[index show destroy]
 
   def index
     @user_reservations = @user_reservations.map do |reservation|
@@ -50,11 +50,20 @@ class API::V1::ReservationsController < ApplicationController
   private
 
   def set_reservation
-    @user_reservations = Reservation.where(user_id: @current_user.id)
-    @reservation = Reservation.find_by(id: params[:id])
+    # Development
+    # @user_reservations = Reservation.where(user_id: @current_user.id)
+    # @reservation = Reservation.find_by(id: params[:id])
+
+    ## Production
+    @user_id = params[:user][:user_id]
+    @user_reservations = Reservation.where(user_id: @user_id)
   end
 
   def reservation_params
     params.require(:reservation).permit(:date, :user_id, :course_id, :city_id)
+  end
+
+  def reservations_params
+    params.require(:user).permit(:user_id)
   end
 end
