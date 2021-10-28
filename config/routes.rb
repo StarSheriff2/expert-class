@@ -16,5 +16,5 @@ Rails.application.routes.draw do
   end
 
   # root to: "application#cookie"
-  root to: "/"
+  root to: "application#check"
 end
