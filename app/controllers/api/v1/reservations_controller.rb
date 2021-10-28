@@ -63,7 +63,7 @@ class API::V1::ReservationsController < ApplicationController
     params.require(:reservation).permit(:date, :user_id, :course_id, :city_id)
   end
 
-  def reservations_params
-    params.require(:user).permit(:user_id)
-  end
+  # def reservations_params
+  #   params.require(:user).permit(:user_id)
+  # end
 end
