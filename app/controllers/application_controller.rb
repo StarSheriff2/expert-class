@@ -10,10 +10,6 @@ class ApplicationController < ActionController::API
   include Response
   include ExceptionHandler
 
-  def check
-    'OK'
-  end
-
   # def cookie
   #   'ok'
   # end
