@@ -1,6 +1,6 @@
 class API::V1::ReservationsController < ApplicationController
   include CurrentUserConcern
-  # before_action :set_reservation, only: %i[index show destroy]
+  before_action :set_reservation, only: %i[index show destroy]
 
   def index
     @user_reservations = @user_reservations.map do |reservation|
