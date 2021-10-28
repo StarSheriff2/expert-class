@@ -19,6 +19,7 @@ class ApplicationController < ActionController::API
     cookies['CSRF-TOKEN'] = {
       value: form_authenticity_token,
       domain: 'https://expert-class-backend.herokuapp.com',
+      #========= Production Setup for Heroku ==============#
       same_site: 'None',
       secure: true
     }
