@@ -10,7 +10,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   #     credentials: true
   # end
   allow do
-    origins 'https://expert-class-frontend.netlify.app/'
+    origins 'https://expert-class-frontend.netlify.app'
 
     resource '*',
       headers: :any,
