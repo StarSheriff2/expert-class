@@ -22,6 +22,12 @@ This project's tasks are described on [this kanban board](https://github.com/Sta
 
 Number of team members: 4
 
+## Live View
+
+You can access a preview of the back-end API [here](https://expert-class-backend.herokuapp.com).
+
+You can preview the front-end app [here](https://expert-class-frontend.netlify.app).
+
 ## Getting Started
 
 To get a local copy up and running, follow these steps.
