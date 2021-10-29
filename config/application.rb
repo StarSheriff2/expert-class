@@ -41,7 +41,7 @@ module ExpertClassBackend
     #========= Production Setup for Heroku ==============#
     # key: '_expert_class',
     domain: 'expert-class-frontend-v2.netlify.app'
-    # secure: true,
-    # same_site: 'None'
+    secure: true,
+    same_site: 'None'
   end
 end
