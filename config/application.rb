@@ -39,7 +39,7 @@ module ExpertClassBackend
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore,
     #========= Production Setup for Heroku ==============#
-    key: '_expert_class',
+    # key: '_expert_class',
     path: '/',
     domain: 'expert-class-backend.herokuapp.com',
     same_site: :None,
