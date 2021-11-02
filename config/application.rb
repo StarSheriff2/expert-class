@@ -37,13 +37,13 @@ module ExpertClassBackend
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore,
+    config.middleware.use ActionDispatch::Session::CookieStore
     #========= Production Setup for Heroku ==============#
     # key: '_expert_class',
-    path: '/',
+    # path: '/',
     # domain: 'expert-class-backend.herokuapp.com',
-    domain: 'expert-class-frontend-v2.netlify.app',
-    same_site: :None,
-    secure: true
+    # domain: 'expert-class-frontend-v2.netlify.app',
+    # same_site: :None,
+    # secure: true
   end
 end
