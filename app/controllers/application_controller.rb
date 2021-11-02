@@ -19,7 +19,7 @@ class ApplicationController < ActionController::API
   def set_csrf_cookie
     cookies['CSRF-TOKEN'] = {
       value: form_authenticity_token,
-      domain: 'expert-class-backend.herokuapp.com',
+      domain: 'expert-class-backend.herokuapp.com'
       # domain: 'expert-class-frontend-v2.netlify.app'
       #========= Production Setup for Heroku ==============#
       # same_site: :None,
