@@ -44,7 +44,7 @@ module ExpertClassBackend
     expire_after: 1.days,
     domain: 'expert-class-backend.herokuapp.com',
     # domain: 'expert-class-frontend-v2.netlify.app',
-    same_site: :None,
+    same_site: 'Lax',
     secure: false
   end
 end
