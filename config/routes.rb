@@ -16,5 +16,5 @@ Rails.application.routes.draw do
   end
 
   # root to: "application#cookie"
-  root to: "/"
+  root to: "ap1/v1/sessions#logged_in"
 end
