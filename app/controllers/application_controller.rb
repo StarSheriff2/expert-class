@@ -24,7 +24,7 @@ class ApplicationController < ActionController::API
       # domain: 'expert-class-frontend-v2.netlify.app',
       #========= Production Setup for Heroku ==============#
       same_site: :None,
-      secure: false
+      secure: true
     }
   end
 end
