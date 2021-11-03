@@ -40,7 +40,7 @@ module ExpertClassBackend
     config.middleware.use ActionDispatch::Session::CookieStore,
     #========= Production Setup for Heroku ==============#
     key: '_expert_class',
-    # path: '/',
+    path: "ap1/v1/sessions#sign_in",
     expire_after: 1.days,
     domain: 'expert-class-backend.herokuapp.com',
     # domain: %w[expert-class-backend.herokuapp.com expert-class-frontend-v2.netlify.app],
