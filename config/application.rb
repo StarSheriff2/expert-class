@@ -45,6 +45,6 @@ module ExpertClassBackend
     domain: 'expert-class-backend.herokuapp.com',
     # domain: 'expert-class-frontend-v2.netlify.app',
     same_site: :None,
-    secure: true
+    secure: false
   end
 end
