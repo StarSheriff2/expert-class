@@ -42,9 +42,9 @@ module ExpertClassBackend
     key: '_expert_class',
     path: "/",
     expire_after: 1.days,
-    domain: 'expert-class-backend.herokuapp.com',
+    # domain: 'expert-class-backend.herokuapp.com',
     # domain: %w[expert-class-backend.herokuapp.com expert-class-frontend-v2.netlify.app],
-    # domain: 'expert-class-frontend-v2.netlify.app',
+    domain: 'expert-class-frontend-v2.netlify.app',
     same_site: :None,
     secure: true
   end
