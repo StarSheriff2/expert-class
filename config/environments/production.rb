@@ -31,12 +31,12 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
   config.action_dispatch.cookies_same_site_protection = :None
   config.action_controller.forgery_protection_origin_check = false
-  config.middleware.use ActionDispatch::Session::CookieStore,
-    key: '_expert_class',
-    expire_after: 1.days,
-    domain: 'expert-class-backend.herokuapp.com',
-    same_site: :None,
-    secure: true
+  # config.middleware.use ActionDispatch::Session::CookieStore,
+    # key: '_expert_class',
+    # expire_after: 1.days,
+    # domain: 'expert-class-backend.herokuapp.com',
+    # same_site: :None,
+    # secure: true
 
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
