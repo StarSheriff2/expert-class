@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
   before_action :set_current_user
 
   def set_current_user
-    @current_user = User.find(session[:user_id]) if session[:user_id]
+    @current_user = User.find(session[:_expert_class]) if session[:_expert_class]
   end
 
   # def cookie

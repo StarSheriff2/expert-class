@@ -32,6 +32,7 @@ Rails.application.configure do
   config.action_dispatch.cookies_same_site_protection = :None
   config.action_controller.forgery_protection_origin_check = false
   config.middleware.use ActionDispatch::Session::CookieStore,
+    key: '_expert_class',
     expire_after: 1.days,
     domain: 'expert-class-backend.herokuapp.com',
     same_site: :None,
