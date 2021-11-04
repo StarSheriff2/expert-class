@@ -1,5 +1,5 @@
 class API::V1::ReservationsController < ApplicationController
-  include CurrentUserConcern
+  # include CurrentUserConcern
   before_action :set_reservation, only: %i[index show destroy]
 
   def index
