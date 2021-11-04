@@ -5,7 +5,7 @@ class API::V1::SessionsController < ApplicationController
     user = User.find_by(username: params['user']['username'])
 
     if user
-      session[:_expert_class] = user.id
+      session[:user_id] = user.id
       render json: {
         status: :created,
         logged_in: true,
@@ -30,7 +30,7 @@ class API::V1::SessionsController < ApplicationController
   end
 
   def logout
-    session.delete(:_expert_class)
+    session.delete(:user_id)
     @current_user = nil
     render json: {
       status: 200,
