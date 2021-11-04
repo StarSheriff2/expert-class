@@ -1,5 +1,3 @@
-# Rails.application.config.action_controller.forgery_protection_origin_check = false
-
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins 'http://localhost:3000', 'localhost:3000'
@@ -11,7 +9,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'expert-class-frontend-v2.netlify.app', 'https://expert-class-frontend-v2.netlify.app'
+    origins 'https://expert-class-frontend-v2.netlify.app'
 
     resource '*',
       headers: :any,
