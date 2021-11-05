@@ -14,6 +14,8 @@ class Course < ApplicationRecord
   has_one_attached :image, dependent: :destroy
 
   def attach_image
-    self.course_image_url = url_for(image.url) if image.attached?
+    uri = URI.parse(image.url)
+    uri.scheme = 'https'
+    self.course_image_url = uri.to_s if image.attached?
   end
 end
