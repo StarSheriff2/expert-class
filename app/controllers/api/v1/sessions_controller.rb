@@ -1,5 +1,10 @@
 class API::V1::SessionsController < ApplicationController
   # include CurrentUserConcern
+  before_action :set_csrf_cookie, only: %i[csrf_token]
+
+  def csrf_token
+    render json: { status: :created }, status: 200
+  end
 
   def create
     user = User.find_by(username: params['user']['username'])
@@ -35,6 +40,20 @@ class API::V1::SessionsController < ApplicationController
     render json: {
       status: 200,
       logged_out: true
+    }
+  end
+
+  private
+
+  def set_csrf_cookie
+    cookies['CSRF-TOKEN'] = {
+      value: form_authenticity_token,
+      domain: 'expert-class-backend.herokuapp.com',
+      # domain: %w[expert-class-backend.herokuapp.com expert-class-frontend-v2.netlify.app],
+      # domain: 'expert-class-frontend-v2.netlify.app',
+      #========= Production Setup for Heroku ==============#
+      same_site: :None,
+      secure: true
     }
   end
 end
