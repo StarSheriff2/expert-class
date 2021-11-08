@@ -1,4 +1,6 @@
 class API::V1::UsersController < ApplicationController
+  skip_before_action :logged_in_user, only: :create
+
   # POST /users
   def create
     @user = User.new(user_params)
