@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   end
   namespace :api, :defaults => {:format => :json} do
     namespace :v1 do
-      resources :users, :reservations, :courses
+      resources :users, only: [:create, :destroy]
+      resources :reservations, only: [:index, :show, :create, :destroy]
+      resources :courses, only: [:index, :show, :create, :destroy]
       resources :cities, only: [:index]
 
       post :sign_in, to: 'sessions#create'
