@@ -49,7 +49,7 @@ class API::V1::ReservationsController < ApplicationController
   private
 
   def set_reservation
-    @user_reservations = Reservation.where(user_id: @current_user.id)
+    @user_reservations = Reservation.where(user_id: current_user.id)
     @reservation = Reservation.find_by(id: params[:id])
   end
 
