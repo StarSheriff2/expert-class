@@ -1,4 +1,6 @@
 class API::V1::SessionsController < ApplicationController
+  skip_before_action :logged_in_user, only: %i[create logged_in]
+
   def create
     user = User.find_by(username: params['user']['username'])
 
