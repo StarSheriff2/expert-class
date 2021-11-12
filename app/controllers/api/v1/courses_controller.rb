@@ -15,7 +15,8 @@ class API::V1::CoursesController < ApplicationController
     if @course.save
       render json: {
         message: 'Course successfully created',
-        status: :created
+        status: :created,
+        course: @course
       }
     else
       render json: {
@@ -29,6 +30,7 @@ class API::V1::CoursesController < ApplicationController
     if @course
       @course.destroy
       render json: {
+        course: @course,
         message: 'Course successfully deleted',
         status: 200
       }
