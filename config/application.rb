@@ -39,8 +39,7 @@ module ExpertClassBackend
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore,
     key: '_expert_class',
-    domain: nil,
-    httponly: true
+    domain: nil
     # secure: true,
     # same_site: :none
   end
