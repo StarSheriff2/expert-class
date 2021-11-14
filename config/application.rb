@@ -37,6 +37,6 @@ module ExpertClassBackend
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: '_expert_class', domain: nil
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_expert_class'
   end
 end
