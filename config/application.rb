@@ -39,7 +39,7 @@ module ExpertClassBackend
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore,
     key: '_expert_class',
-    domain: 'expert-class-frontend-v2.netlify.app',
+    domain: nil,
     httponly: true,
     secure: true,
     same_site: :none
