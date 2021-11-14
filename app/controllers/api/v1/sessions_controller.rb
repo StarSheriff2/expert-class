@@ -1,5 +1,5 @@
 class API::V1::SessionsController < ApplicationController
-  include CurrentUserConcern
+  skip_before_action :logged_in_user, only: %i[create logged_in]
 
   def create
     user = User.find_by(username: params['user']['username'])
@@ -17,10 +17,10 @@ class API::V1::SessionsController < ApplicationController
   end
 
   def logged_in
-    if @current_user
+    if logged_in?
       render json: {
         logged_in: true,
-        user: @current_user
+        user: current_user
       }
     else
       render json: {
@@ -31,7 +31,7 @@ class API::V1::SessionsController < ApplicationController
 
   def logout
     session.delete(:user_id)
-    @current_user = nil
+    # @current_user = nil
     render json: {
       status: 200,
       logged_out: true

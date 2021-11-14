@@ -1,5 +1,4 @@
 class API::V1::ReservationsController < ApplicationController
-  include CurrentUserConcern
   before_action :set_reservation, only: %i[index show destroy]
 
   def index
@@ -14,7 +13,7 @@ class API::V1::ReservationsController < ApplicationController
         updated_at: reservation.updated_at
       }
     end
-    render json: @user_reservations
+    json_response(@user_reservations)
   end
 
   def show
@@ -27,6 +26,15 @@ class API::V1::ReservationsController < ApplicationController
 
     if @reservation.save
       render json: {
+        reservation: {
+          user: User.find(@reservation.user_id).name,
+          course: Course.find(@reservation.course_id).title,
+          city: City.find(@reservation.city_id).name,
+          date: @reservation.date,
+          id: @reservation.id,
+          created_at: @reservation.created_at,
+          updated_at: @reservation.updated_at
+        },
         message: 'Reservation created successfully',
         status: 200
       }
@@ -50,7 +58,7 @@ class API::V1::ReservationsController < ApplicationController
   private
 
   def set_reservation
-    @user_reservations = Reservation.where(user_id: @current_user.id)
+    @user_reservations = Reservation.where(user_id: current_user.id)
     @reservation = Reservation.find_by(id: params[:id])
   end
 

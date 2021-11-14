@@ -1,28 +1,26 @@
 class ApplicationController < ActionController::API
-  # skip_before_action :verify_authenticity_token
-  before_action :set_csrf_cookie
-
   include ActionController::Cookies
   include ActionController::RequestForgeryProtection
-
-  protect_from_forgery with: :exception
-
   include Response
   include ExceptionHandler
 
-  def cookie
-    'ok'
-  end
+  protect_from_forgery with: :exception
+  skip_before_action :verify_authenticity_token
+  before_action :logged_in_user
 
   private
 
-  def set_csrf_cookie
-    cookies['CSRF-TOKEN'] = {
-      value: form_authenticity_token,
-      domain: 'https://expert-class-backend.herokuapp.com'
-      #========= Production Setup for Heroku ==============#
-      # same_site: 'None',
-      # secure: true
-    }
+  def current_user
+    @current_user ||= session[:user_id] && User.find_by(id: session[:user_id])
+  end
+
+  def logged_in?
+    !current_user.nil?
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    render json: { error: 'You are not logged in. Please log in first.' }, status: 400
   end
 end

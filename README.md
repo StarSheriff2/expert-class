@@ -26,7 +26,15 @@ Number of team members: 4
 
 You can access a preview of the back-end API [here](https://expert-class-backend.herokuapp.com).
 
-You can preview the front-end app [here](https://expert-class-frontend.netlify.app).
+You can preview the front-end app [here](https://expert-class-frontend-v2.netlify.app).
+
+### Screenshots of the App
+
+<div align="center">
+<img width="80%" alt="app screenshot mobile" src="./.github/images/classes_class_page_screenshot.png">
+<img width="80%" alt="app screenshot mobile" src="./.github/images/remove_class_page_screenshot.png">
+<img width="80%" alt="app screenshot mobile" src="./.github/images/reserve_class_page_screenshot.png">
+</div>
 
 ## Getting Started
 
