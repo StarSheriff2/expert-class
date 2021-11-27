@@ -31,7 +31,6 @@ class API::V1::SessionsController < ApplicationController
 
   def logout
     session.delete(:user_id)
-    # @current_user = nil
     render json: {
       status: 200,
       logged_out: true
