@@ -2,17 +2,21 @@ require 'rails_helper'
 
 RSpec.describe 'API::V1::Courses', type: :request do
   let!(:courses) { create_list(:course, 5) }
-  let(:course_id) { courses.first.id }
+  # let(:course_id) { courses.first.id }
+  let!(:users) { create_list(:user, 5) }
+  let(:existing_username) { { user: { username: users.first.username } } }
+
+  before { post '/api/v1/sign_in', params: existing_username }
 
   describe 'GET /api/v1/courses' do
     before { get '/api/v1/courses' }
 
-    xit 'returns a list of all courses' do
+    it 'returns a list of all courses' do
       expect(json).not_to be_empty
       expect(json.size).to eq(5)
     end
 
-    xit 'returns http success' do
+    it 'returns http success' do
       expect(response).to have_http_status(:success)
       expect(response).to have_http_status(200)
     end
