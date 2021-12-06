@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'API::V1::Courses', type: :request do
   let!(:courses) { create_list(:course, 5) }
   let(:course_id) { courses.first.id }
+  let(:deleted_course) { courses.first }
   let!(:users) { create_list(:user, 5) }
   let(:existing_username) { { user: { username: users.first.username } } }
 
@@ -141,14 +142,36 @@ RSpec.describe 'API::V1::Courses', type: :request do
   end
 
   describe 'DELETE /api/v1/courses/:id' do
-    before { delete "/api/v1/courses/#{course_id}" }
+    context 'when course exists in db' do
+      before { delete "/api/v1/courses/#{course_id}" }
 
-    it 'returns a message' do
-      expect(json['message']).to eq('Course successfully deleted')
+      it 'returns deleted course in response body' do
+        id = {"id" => deleted_course.id}
+        description = {"description" => deleted_course.description}
+        expect(json['course']).to include(id)
+        expect(json['course']).to include(description)
+      end
+
+      it 'returns a message' do
+        expect(json['message']).to eq('Course successfully deleted')
+      end
+
+      it 'returns status code 200' do
+        expect(json['status']).to be(200)
+      end
     end
 
-    xit 'returns status code 204' do
-      expect(response).to have_http_status(204)
+    context 'when course doesn\'t exist in db' do
+      before { delete "/api/v1/courses/#{course_id}" }
+      before { delete "/api/v1/courses/#{course_id}" }
+
+      it 'returns a message' do
+        expect(json['message']).to eq("Couldn't find Course with 'id'=96")
+      end
+
+      it 'returns status code 404' do
+        expect(response).to have_http_status(404)
+      end
     end
   end
 end
