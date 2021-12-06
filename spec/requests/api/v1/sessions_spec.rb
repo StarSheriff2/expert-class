@@ -116,6 +116,10 @@ RSpec.describe 'API::V1::Sessions', type: :request do
   end
 
   describe 'DELETE /api/v1/sign_out' do
+    let!(:users) { create_list(:user, 5) }
+    let(:existing_username) { { user: { username: users.first.username } } }
+
+    before { post '/api/v1/sign_in', params: existing_username }
     before { delete '/api/v1/sign_out' }
 
     it 'returns a json response' do

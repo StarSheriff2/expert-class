@@ -8,7 +8,7 @@ RSpec.describe 'API::V1::Reservations', type: :request do
 
     it 'returns a list of all reservations' do
       expect(json).not_to be_empty
-      expect(json.size).to be <= 1
+      expect(json.size).to eq(5)
     end
 
     it 'returns http success' do
