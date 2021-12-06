@@ -101,12 +101,10 @@ RSpec.describe 'API::V1::Courses', type: :request do
       end
 
       it 'returns a json body to contain message \'created\'' do
-        jason_parsed = JSON.parse(response.body)
-        expect(jason_parsed['status']).to eq('created')
+        expect(json['status']).to eq('created')
       end
 
       it 'returns created course in json response' do
-        jason_parsed = JSON.parse(response.body)
         course = JSON.parse(
           {
             title: 'Web Development',
@@ -117,7 +115,7 @@ RSpec.describe 'API::V1::Courses', type: :request do
           }.to_json
         )
 
-        expect(jason_parsed['course']).to include(course)
+        expect(json['course']).to include(course)
       end
 
       it 'returns status code 200' do
@@ -129,23 +127,25 @@ RSpec.describe 'API::V1::Courses', type: :request do
       before { post '/api/v1/courses', params: invalid_attributes }
 
       it 'returns a message' do
-        jason_parsed = JSON.parse(response.body)
-        expect(jason_parsed['message']).to eq('Unable to create course')
+        expect(json['message']).to eq('Unable to create course')
       end
 
       it 'returns status code 200' do
         expect(response).to have_http_status(200)
       end
 
-      it 'returns a json body to contain status 400' do
-        jason_parsed = JSON.parse(response.body)
-        expect(jason_parsed['status']).to eq(400)
+      it 'returns a status 400 within json body' do
+        expect(json['status']).to eq(400)
       end
     end
   end
 
   describe 'DELETE /api/v1/courses/:id' do
     before { delete "/api/v1/courses/#{course_id}" }
+
+    it 'returns a message' do
+      expect(json['message']).to eq('Course successfully deleted')
+    end
 
     xit 'returns status code 204' do
       expect(response).to have_http_status(204)
