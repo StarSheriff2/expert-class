@@ -146,8 +146,8 @@ RSpec.describe 'API::V1::Courses', type: :request do
       before { delete "/api/v1/courses/#{course_id}" }
 
       it 'returns deleted course in response body' do
-        id = {"id" => deleted_course.id}
-        description = {"description" => deleted_course.description}
+        id = { 'id' => deleted_course.id }
+        description = { 'description' => deleted_course.description }
         expect(json['course']).to include(id)
         expect(json['course']).to include(description)
       end
