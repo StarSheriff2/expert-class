@@ -101,12 +101,12 @@ RSpec.describe 'API::V1::Courses', type: :request do
       end
 
       it 'returns a json body to contain message \'created\'' do
-        jsonParsed = JSON.parse(response.body)
-        expect(jsonParsed['status']).to eq('created')
+        jason_parsed = JSON.parse(response.body)
+        expect(jason_parsed['status']).to eq('created')
       end
 
       it 'returns created course in json response' do
-        jsonParsed = JSON.parse(response.body)
+        jason_parsed = JSON.parse(response.body)
         course = JSON.parse(
           {
             title: 'Web Development',
@@ -117,7 +117,7 @@ RSpec.describe 'API::V1::Courses', type: :request do
           }.to_json
         )
 
-        expect(jsonParsed['course']).to include(course)
+        expect(jason_parsed['course']).to include(course)
       end
 
       it 'returns status code 200' do
@@ -129,8 +129,8 @@ RSpec.describe 'API::V1::Courses', type: :request do
       before { post '/api/v1/courses', params: invalid_attributes }
 
       it 'returns a message' do
-        jsonParsed = JSON.parse(response.body)
-        expect(jsonParsed['message']).to eq('Unable to create course')
+        jason_parsed = JSON.parse(response.body)
+        expect(jason_parsed['message']).to eq('Unable to create course')
       end
 
       it 'returns status code 200' do
@@ -138,8 +138,8 @@ RSpec.describe 'API::V1::Courses', type: :request do
       end
 
       it 'returns a json body to contain status 400' do
-        jsonParsed = JSON.parse(response.body)
-        expect(jsonParsed['status']).to eq(400)
+        jason_parsed = JSON.parse(response.body)
+        expect(jason_parsed['status']).to eq(400)
       end
     end
   end
