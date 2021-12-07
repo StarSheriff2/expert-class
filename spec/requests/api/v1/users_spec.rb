@@ -10,29 +10,25 @@ RSpec.describe 'API::V1::Users', type: :request do
         name: Faker::Name.first_name,
         username: Faker::Lorem.characters(number: 10)
       }
-    }.to_json
-  )
+  }.to_json)
 
-  let!(:valid_new_user_params) {
+  let!(:valid_new_user_params) do
     { user:
       {
         name: user_params['user']['name'],
         username: user_params['user']['username']
-      }
-    }
-  }
+      } }
+  end
 
-  let!(:invalid_new_user_params) {
+  let!(:invalid_new_user_params) do
     { user:
       {
         name: users.first['name'],
         username: users.first['username']
-      }
-    }
-  }
+      } }
+  end
 
   describe 'POST /api/v1/users' do
-
     context 'valid params' do
       before { post '/api/v1/users', params: valid_new_user_params }
 
@@ -80,6 +76,5 @@ RSpec.describe 'API::V1::Users', type: :request do
         expect(json['status']).to eq(401)
       end
     end
-
   end
 end
