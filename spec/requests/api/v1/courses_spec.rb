@@ -11,7 +11,6 @@ RSpec.describe 'API::V1::Courses', type: :request do
     context 'when a user is signed in' do
       before { post '/api/v1/sign_in', params: existing_username }
       before { get '/api/v1/courses' }
-      # after { delete '/api/v1/sign_out' }
 
       it 'returns a list of all courses' do
         expect(json).not_to be_empty
