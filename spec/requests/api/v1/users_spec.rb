@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'API::V1::Users', type: :request do
-  let!(:user) { create(:user) }
+  let!(:users) { create_list(:user, 3) }
+  let(:user_id) { users.second.id }
+
   user_params = JSON.parse({
     user:
       {
@@ -23,13 +25,13 @@ RSpec.describe 'API::V1::Users', type: :request do
   let!(:invalid_new_user_params) {
     { user:
       {
-        name: user['name'],
-        username: user['username']
+        name: users.first['name'],
+        username: users.first['username']
       }
     }
   }
 
-  describe 'POST /api/v1//users' do
+  describe 'POST /api/v1/users' do
 
     context 'valid params' do
       before { post '/api/v1/users', params: valid_new_user_params }
