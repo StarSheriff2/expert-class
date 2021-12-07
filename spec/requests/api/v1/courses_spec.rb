@@ -2,28 +2,45 @@ require 'rails_helper'
 
 RSpec.describe 'API::V1::Courses', type: :request do
   let!(:courses) { create_list(:course, 5) }
-  let(:course_id) { courses.first.id }
-  let(:deleted_course) { courses.first }
+  let!(:course_id) { courses.first.id }
+  let!(:deleted_course) { courses.first }
   let!(:users) { create_list(:user, 5) }
-  let(:existing_username) { { user: { username: users.first.username } } }
-
-  before { post '/api/v1/sign_in', params: existing_username }
+  let!(:existing_username) { { user: { username: users.first.username } } }
 
   describe 'GET /api/v1/courses' do
-    before { get '/api/v1/courses' }
+    context 'when a user is signed in' do
+      before { post '/api/v1/sign_in', params: existing_username }
+      before { get '/api/v1/courses' }
+      # after { delete '/api/v1/sign_out' }
 
-    it 'returns a list of all courses' do
-      expect(json).not_to be_empty
-      expect(json.size).to eq(5)
+      it 'returns a list of all courses' do
+        expect(json).not_to be_empty
+        expect(json.size).to eq(5)
+      end
+
+      it 'returns http success' do
+        expect(response).to have_http_status(:success)
+        expect(response).to have_http_status(200)
+      end
     end
 
-    it 'returns http success' do
-      expect(response).to have_http_status(:success)
-      expect(response).to have_http_status(200)
+    context 'when there is no user signed in' do
+      before { get '/api/v1/courses' }
+
+      it 'returns http bad request of 400' do
+        expect(response).to have_http_status(400)
+      end
+
+      it 'returns error message' do
+        expect(json['error']).to eq('You are not logged in. Please log in first.')
+      end
     end
   end
 
+  # before { post '/api/v1/sign_in', params: existing_username }
+
   describe 'GET /api/v1/courses/:id' do
+    before { post '/api/v1/sign_in', params: existing_username }
     before { get "/api/v1/courses/#{course_id}" }
 
     context 'when the record exists' do
@@ -88,6 +105,8 @@ RSpec.describe 'API::V1::Courses', type: :request do
       allow_any_instance_of(Course).to receive(:course_image_url).and_return(image_url)
     end
 
+    before { post '/api/v1/sign_in', params: existing_username }
+
     context 'when the request is valid' do
       before { post '/api/v1/courses', params: valid_attributes }
 
@@ -142,6 +161,8 @@ RSpec.describe 'API::V1::Courses', type: :request do
   end
 
   describe 'DELETE /api/v1/courses/:id' do
+    before { post '/api/v1/sign_in', params: existing_username }
+
     context 'when course exists in db' do
       before { delete "/api/v1/courses/#{course_id}" }
 
@@ -166,7 +187,7 @@ RSpec.describe 'API::V1::Courses', type: :request do
       before { delete "/api/v1/courses/#{course_id}" }
 
       it 'returns a message' do
-        expect(json['message']).to eq("Couldn't find Course with 'id'=96")
+        expect(json['message']).to eq("Couldn't find Course with 'id'=#{course_id}")
       end
 
       it 'returns status code 404' do

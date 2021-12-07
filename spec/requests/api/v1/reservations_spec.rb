@@ -11,7 +11,6 @@ RSpec.describe 'API::V1::Reservations', type: :request do
     before { get '/api/v1/reservations' }
 
     it 'returns a message' do
-      p "reservations #{reservations}"
       expect(json['message']).to be('Reservation created successfully')
     end
 
