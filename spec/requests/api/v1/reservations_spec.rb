@@ -4,6 +4,8 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   let!(:users) { create_list(:user, 5) }
   let!(:existing_username) { { user: { username: users.first.username } } }
   let!(:reservations) { create_list(:reservation, 5, user: users.first) }
+  let!(:courses) { create_list(:course, 10) }
+  let!(:cities) { create_list(:city, 5) }
 
   # user = FactoryGirl.create(:user)
   # @completed_set = FactoryGirl.create(:completed_set, user: user)
@@ -46,16 +48,84 @@ RSpec.describe 'API::V1::Reservations', type: :request do
     end
   end
 
-  describe 'GET /show/:id' do
-    before { get "/api/v1/reservations/#{reservations[0].id}" }
+  describe 'POST /api/v1/reservations' do
+    # params.require(:reservation).permit(:date, :user_id, :course_id, :city_id)
+    before { post '/api/v1/sign_in', params: existing_username }
 
-    xit 'returns details for one reservations' do
-      expect(json).not_to be_empty
+    let(:valid_attributes) do
+      {
+        reservation: {
+          date: Date.tomorrow,
+          user_id: users.first.id,
+          course_id: courses.second.id,
+          city_id: cities.third.id
+        }
+      }
     end
 
-    xit 'returns http success' do
-      expect(response).to have_http_status(:success)
-      expect(response).to have_http_status(200)
+    let(:invalid_attributes) do
+      {
+        reservation: {
+          date: Date.tomorrow,
+          user_id: users.first.id,
+          course_id: courses.second.id,
+          city_id: 6
+        }
+      }
+    end
+
+    context 'when the request is valid' do
+      before { post '/api/v1/reservations', params: valid_attributes }
+
+      it 'creates a reservation' do
+        expect(response.body)
+          .to match(/Reservation created successfully/)
+      end
+
+      it 'returns a json response of size 3' do
+        expect(json).not_to be_empty
+        expect(json.size).to eq(3)
+      end
+
+      it 'returns status 200 in payload' do
+        expect(json['status']).to eq(200)
+      end
+
+      it 'returns created course in json response' do
+        reservation = JSON.parse(
+          {
+            user: users.first.name,
+            course: courses.second.title,
+            city: cities.third.name,
+            date: Date.tomorrow
+          }.to_json
+        )
+
+        expect(json['reservation']).to include(reservation)
+      end
+
+      it 'returns http success, ok and 200' do
+        expect(response).to have_http_status(:ok)
+        expect(response).to have_http_status(:success)
+        expect(response).to have_http_status(200)
+        expect(response).not_to have_http_status('created')
+      end
+    end
+
+    context 'when the request is invalid' do
+      before { post '/api/v1/reservations', params: invalid_attributes }
+
+      it 'returns a message' do
+        expect(json['message']).to eq('Create reservation failed')
+      end
+
+      xit 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+
+      xit 'returns a status 400 within json body' do
+        expect(json['status']).to eq(400)
+      end
     end
   end
 end

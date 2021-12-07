@@ -36,8 +36,6 @@ RSpec.describe 'API::V1::Courses', type: :request do
     end
   end
 
-  # before { post '/api/v1/sign_in', params: existing_username }
-
   describe 'GET /api/v1/courses/:id' do
     before { post '/api/v1/sign_in', params: existing_username }
     before { get "/api/v1/courses/#{course_id}" }
