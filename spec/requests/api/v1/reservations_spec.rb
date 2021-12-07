@@ -119,11 +119,13 @@ RSpec.describe 'API::V1::Reservations', type: :request do
         expect(json['message']).to eq('Create reservation failed')
       end
 
-      xit 'returns status code 200' do
+      it 'returns status code 200' do
+        expect(response).to have_http_status(:ok)
+        expect(response).to have_http_status(:success)
         expect(response).to have_http_status(200)
       end
 
-      xit 'returns a status 400 within json body' do
+      it 'returns a status 400 within json body' do
         expect(json['status']).to eq(400)
       end
     end
