@@ -32,7 +32,6 @@ class API::V1::UsersController < ApplicationController
   private
 
   def user_params
-    # whitelist params
     params.require(:user).permit(:name, :username)
   end
 end
