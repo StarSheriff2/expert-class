@@ -4,6 +4,7 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   let!(:users) { create_list(:user, 5) }
   let!(:existing_username) { { user: { username: users.first.username } } }
   let!(:reservations) { create_list(:reservation, 5, user: users.first) }
+  let!(:deleted_reservation) { reservations.last }
   let!(:courses) { create_list(:course, 10) }
   let!(:cities) { create_list(:city, 5) }
 
@@ -126,6 +127,42 @@ RSpec.describe 'API::V1::Reservations', type: :request do
 
       it 'returns a status 400 within json body' do
         expect(json['status']).to eq(400)
+      end
+    end
+  end
+
+  describe 'DELETE /api/v1/reservations/:id' do
+    before { post '/api/v1/sign_in', params: existing_username }
+
+    context 'when reservation exists in db' do
+      before { delete "/api/v1/reservations/#{deleted_reservation.id}" }
+
+      it 'returns deleted reservation in response body' do
+        id = { 'id' => deleted_reservation.id }
+        course_id = { 'course_id' => deleted_reservation.course_id }
+        expect(json['reservation']).to include(id)
+        expect(json['reservation']).to include(course_id)
+      end
+
+      it 'returns a message' do
+        expect(json['message']).to eq('Reservation deleted successfully')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    context 'when course doesn\'t exist in db' do
+      before { delete "/api/v1/reservations/#{deleted_reservation.id}" }
+      before { delete "/api/v1/reservations/#{deleted_reservation.id}" }
+
+      it 'returns a message' do
+        expect(json['message']).to eq("Couldn't find Reservation with 'id'=#{deleted_reservation.id}")
+      end
+
+      it 'returns status code 404' do
+        expect(response).to have_http_status(404)
       end
     end
   end

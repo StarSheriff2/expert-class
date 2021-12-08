@@ -47,9 +47,9 @@ class API::V1::ReservationsController < ApplicationController
     if @reservation
       @reservation.destroy
       json_response({
-        reservation: @reservation,
-        message: 'Reservation deleted successfully'
-      })
+                      reservation: @reservation,
+                      message: 'Reservation deleted successfully'
+                    })
     else
       json_response({ message: 'Delete reservation failed' })
     end
@@ -59,7 +59,6 @@ class API::V1::ReservationsController < ApplicationController
 
   def set_reservations
     @user_reservations = Reservation.where(user_id: current_user.id)
-    # @reservation = Reservation.find(params[:id])
   end
 
   def set_reservation
