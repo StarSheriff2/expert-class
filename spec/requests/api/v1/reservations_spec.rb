@@ -8,9 +8,6 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   let!(:courses) { create_list(:course, 10) }
   let!(:cities) { create_list(:city, 5) }
 
-  # user = FactoryGirl.create(:user)
-  # @completed_set = FactoryGirl.create(:completed_set, user: user)
-
   describe 'GET /index' do
     context 'when user is signed in' do
       before { post '/api/v1/sign_in', params: existing_username }
@@ -49,7 +46,6 @@ RSpec.describe 'API::V1::Reservations', type: :request do
   end
 
   describe 'POST /api/v1/reservations' do
-    # params.require(:reservation).permit(:date, :user_id, :course_id, :city_id)
     before { post '/api/v1/sign_in', params: existing_username }
 
     let(:valid_attributes) do
