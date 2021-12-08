@@ -38,20 +38,4 @@ RSpec.configure do |config|
   # the key, this may want to be changed to avoid putting yaml in json files.
   # Defaults to json. Accepts ':json' and ':yaml'.
   config.swagger_format = :yaml
-
-  # config.after do |example|
-  #   # if respond_to?(:response) && response&.body.present?
-  #   #   example.metadata[:response][:content] = {
-  #   #     'application/json' => {
-  #   #       example: JSON.parse(response.body, symbolize_names: true)
-  #   #     }
-  #   #   }
-  #   # end
-
-  #   unless response.body.empty?
-  #     example.metadata[:response][:examples] = {
-  #       'application/json' => JSON.parse(response.body, symbolize_names: true),
-  #     }
-  #   end
-  # end
 end

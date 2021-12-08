@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Kigali
-                created_at: '2021-12-08T21:29:51.772Z'
-                updated_at: '2021-12-08T21:29:51.772Z'
+                name: Belmopan
+                created_at: '2021-12-08T23:37:12.920Z'
+                updated_at: '2021-12-08T23:37:12.920Z'
               - id: 2
-                name: Kampala
-                created_at: '2021-12-08T21:29:51.774Z'
-                updated_at: '2021-12-08T21:29:51.774Z'
+                name: Brazzaville
+                created_at: '2021-12-08T23:37:12.921Z'
+                updated_at: '2021-12-08T23:37:12.921Z'
               - id: 3
-                name: Budapest
-                created_at: '2021-12-08T21:29:51.774Z'
-                updated_at: '2021-12-08T21:29:51.774Z'
+                name: Managua
+                created_at: '2021-12-08T23:37:12.921Z'
+                updated_at: '2021-12-08T23:37:12.921Z'
               - id: 4
-                name: Dakar
-                created_at: '2021-12-08T21:29:51.775Z'
-                updated_at: '2021-12-08T21:29:51.775Z'
+                name: Astana
+                created_at: '2021-12-08T23:37:12.922Z'
+                updated_at: '2021-12-08T23:37:12.922Z'
               - id: 5
-                name: Valletta
-                created_at: '2021-12-08T21:29:51.775Z'
-                updated_at: '2021-12-08T21:29:51.775Z'
+                name: Ljubljana
+                created_at: '2021-12-08T23:37:12.923Z'
+                updated_at: '2021-12-08T23:37:12.923Z'
               schema:
                 type: array
                 items:
@@ -53,6 +53,47 @@ paths:
                   - name
                   - created_at
                   - updated_at
+  "/api/v1/users":
+    post:
+      summary: creates a new user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user does not exist:
+                  value:
+                    status: created
+                    logged_in: true
+                    user:
+                      id: 5
+                      username: qf7rw9mnof
+                      name: Leonie
+                      created_at: '2021-12-08T23:37:12.941Z'
+                      updated_at: '2021-12-08T23:37:12.941Z'
+                when user exists:
+                  value:
+                    status: 401
+                    error: This username already exists. Please Choose another one.
+              schema:
+                type: object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                username:
+                  type: string
+              required:
+              - name
+              - username
 servers:
 - url: https://{defaultHost}
   variables:
