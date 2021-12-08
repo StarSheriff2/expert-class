@@ -33,6 +33,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Use rspec
 gem 'rspec-rails'
+gem 'rswag'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
