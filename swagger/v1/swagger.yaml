@@ -1,0 +1,30 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/cities":
+    get:
+      summary: returns a list of all cities
+      tags:
+      - Cities
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - id: 1
+                name: Bissau
+              - id: 2
+                name: Copenhagen
+              schema:
+                type: array
+                items:
+                  type: object
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
