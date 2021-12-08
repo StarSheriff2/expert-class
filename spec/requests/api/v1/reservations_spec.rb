@@ -16,7 +16,6 @@ RSpec.describe 'API::V1::Reservations', type: :request do
       before { get '/api/v1/reservations' }
 
       it 'returns a list of all reservations' do
-        # p "reservations: #{reservations}"
         expect(json).not_to be_empty
         expect(json.size).to eq(5)
       end
