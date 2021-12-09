@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Thimphu
-                created_at: '2021-12-09T01:04:16.504Z'
-                updated_at: '2021-12-09T01:04:16.504Z'
+                name: Tripoli
+                created_at: '2021-12-09T01:33:07.000Z'
+                updated_at: '2021-12-09T01:33:07.000Z'
               - id: 2
-                name: Djibouti
-                created_at: '2021-12-09T01:04:16.505Z'
-                updated_at: '2021-12-09T01:04:16.505Z'
+                name: Kingstown
+                created_at: '2021-12-09T01:33:07.001Z'
+                updated_at: '2021-12-09T01:33:07.001Z'
               - id: 3
-                name: Canberra
-                created_at: '2021-12-09T01:04:16.506Z'
-                updated_at: '2021-12-09T01:04:16.506Z'
+                name: Juba
+                created_at: '2021-12-09T01:33:07.001Z'
+                updated_at: '2021-12-09T01:33:07.001Z'
               - id: 4
-                name: Pyongyang
-                created_at: '2021-12-09T01:04:16.506Z'
-                updated_at: '2021-12-09T01:04:16.506Z'
+                name: Skopje
+                created_at: '2021-12-09T01:33:07.002Z'
+                updated_at: '2021-12-09T01:33:07.002Z'
               - id: 5
-                name: Minsk
-                created_at: '2021-12-09T01:04:16.507Z'
-                updated_at: '2021-12-09T01:04:16.507Z'
+                name: Taipei
+                created_at: '2021-12-09T01:33:07.002Z'
+                updated_at: '2021-12-09T01:33:07.002Z'
               schema:
                 type: array
                 items:
@@ -71,10 +71,10 @@ paths:
                     logged_in: true
                     user:
                       id: 2
-                      username: 9mmt9krqtq
-                      name: William
-                      created_at: '2021-12-09T01:04:16.517Z'
-                      updated_at: '2021-12-09T01:04:16.517Z'
+                      username: alcdvz3h9m
+                      name: Leigh
+                      created_at: '2021-12-09T01:33:07.013Z'
+                      updated_at: '2021-12-09T01:33:07.013Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -90,6 +90,59 @@ paths:
                   type: string
               required:
               - username
+  "/api/v1/signed_in":
+    get:
+      summary: return login status of user
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user is logged in:
+                  value:
+                    logged_in: true
+                    user:
+                      id: 12
+                      username: sskb6nhela
+                      name: Cherrie
+                      created_at: '2021-12-09T01:33:07.047Z'
+                      updated_at: '2021-12-09T01:33:07.047Z'
+                when user is not logged in:
+                  value:
+                    logged_in: false
+              schema:
+                type: object
+                properties:
+                  logged_in:
+                    type: boolean
+                required:
+                - logged_in
+  "/api/v1/sign_out":
+    delete:
+      summary: return logged-out status of user as true
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                status: 200
+                logged_out: true
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  logged_out:
+                    type: boolean
+                required:
+                - status
+                - logged_out
   "/api/v1/users":
     post:
       summary: creates a new user
@@ -102,17 +155,17 @@ paths:
           content:
             application/json:
               examples:
-                when user does not exist:
+                when user exists:
                   value:
                     status: created
                     logged_in: true
                     user:
-                      id: 15
-                      username: rg0na6184u
-                      name: Annamae
-                      created_at: '2021-12-09T01:04:16.560Z'
-                      updated_at: '2021-12-09T01:04:16.560Z'
-                when user exists:
+                      id: 30
+                      username: ffid0etboi
+                      name: Kip
+                      created_at: '2021-12-09T01:33:07.102Z'
+                      updated_at: '2021-12-09T01:33:07.102Z'
+                when user does not exist:
                   value:
                     status: 401
                     error: This username already exists. Please Choose another one.

@@ -56,13 +56,13 @@ describe 'Users API' do
       }
 
       response '200', 'success' do
-        context 'when user does not exist' do
+        context 'when user exists' do
           schema type: :object
           let(:user) { valid_new_user_params }
           run_test!
         end
 
-        context 'when user exists' do
+        context 'when user does not exist' do
           schema type: :object
           let(:user) { invalid_new_user_params }
           run_test!
