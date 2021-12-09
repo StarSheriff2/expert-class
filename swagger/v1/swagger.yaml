@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Tashkent
-                created_at: '2021-12-09T21:22:07.595Z'
-                updated_at: '2021-12-09T21:22:07.595Z'
+                name: Windhoek
+                created_at: '2021-12-09T21:50:34.255Z'
+                updated_at: '2021-12-09T21:50:34.255Z'
               - id: 2
-                name: Tripoli
-                created_at: '2021-12-09T21:22:07.597Z'
-                updated_at: '2021-12-09T21:22:07.597Z'
+                name: Phnom Penh
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
               - id: 3
-                name: Bamako
-                created_at: '2021-12-09T21:22:07.597Z'
-                updated_at: '2021-12-09T21:22:07.597Z'
+                name: Pyongyang
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
               - id: 4
-                name: Port Louis
-                created_at: '2021-12-09T21:22:07.598Z'
-                updated_at: '2021-12-09T21:22:07.598Z'
+                name: Berlin
+                created_at: '2021-12-09T21:50:34.257Z'
+                updated_at: '2021-12-09T21:50:34.257Z'
               - id: 5
-                name: San Salvador
-                created_at: '2021-12-09T21:22:07.598Z'
-                updated_at: '2021-12-09T21:22:07.598Z'
+                name: Vatican City
+                created_at: '2021-12-09T21:50:34.258Z'
+                updated_at: '2021-12-09T21:50:34.258Z'
               schema:
                 type: array
                 items:
@@ -65,50 +65,48 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Reading
-                description: Aut omnis omnis. Atque voluptatem dolorum. Cumque illum
-                  impedit.
-                instructor: Sparkle Quitzon
+                title: Sketching
+                description: Omnis voluptatum nesciunt. Perspiciatis quia soluta.
+                  Nam et consequuntur.
+                instructor: Louie Hermiston
                 duration: 5
-                created_at: '2021-12-09T21:22:07.650Z'
-                updated_at: '2021-12-09T21:22:07.655Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/13w2ev6u5l.jpeg
+                created_at: '2021-12-09T21:50:34.312Z'
+                updated_at: '2021-12-09T21:50:34.319Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p8z6deh4fo.jpeg
               - id: 2
-                title: Shopping
-                description: Velit dolor minus. Consectetur vel doloribus. Vero sit
-                  et.
-                instructor: Lanny Parker
-                duration: 11
-                created_at: '2021-12-09T21:22:07.660Z'
-                updated_at: '2021-12-09T21:22:07.663Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/s3x2y5d41z.jpeg
+                title: Gunsmithing
+                description: Quia modi error. Porro nostrum dignissimos. Voluptate
+                  numquam vero.
+                instructor: Francesco Ryan
+                duration: 8
+                created_at: '2021-12-09T21:50:34.325Z'
+                updated_at: '2021-12-09T21:50:34.327Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/l3ugzdzf7e.jpeg
               - id: 3
-                title: Creative writing
-                description: Inventore odio sapiente. Esse qui vero. Veniam atque
-                  et.
-                instructor: Jc Jast
-                duration: 6
-                created_at: '2021-12-09T21:22:07.667Z'
-                updated_at: '2021-12-09T21:22:07.670Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/fdpady0web.jpeg
+                title: Shopping
+                description: Quia deserunt non. Dolorem a architecto. Est vero nisi.
+                instructor: Darwin Willms
+                duration: 5
+                created_at: '2021-12-09T21:50:34.332Z'
+                updated_at: '2021-12-09T21:50:34.334Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/nsy6ripxij.jpeg
               - id: 4
-                title: scrapbook
-                description: Laudantium quis nihil. Dolores debitis veritatis. Rerum
-                  itaque omnis.
-                instructor: Ariane Runte MD
-                duration: 6
-                created_at: '2021-12-09T21:22:07.674Z'
-                updated_at: '2021-12-09T21:22:07.676Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/1mhdx9g9rk.jpeg
+                title: Flying
+                description: Ea velit rem. Assumenda aut qui. Deleniti libero eaque.
+                instructor: Stevie Stokes
+                duration: 9
+                created_at: '2021-12-09T21:50:34.338Z'
+                updated_at: '2021-12-09T21:50:34.341Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5kdtpdj76q.jpeg
               - id: 5
-                title: Sand art
-                description: Officia facilis et. Et quam reprehenderit. Eveniet pariatur
-                  autem.
-                instructor: Clifton Grimes
-                duration: 3
-                created_at: '2021-12-09T21:22:07.681Z'
-                updated_at: '2021-12-09T21:22:07.689Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/z2cwlahc4w.jpeg
+                title: Skimboarding
+                description: Omnis officia molestiae. Ea tempora possimus. In esse
+                  tempore.
+                instructor: Rashad Rogahn
+                duration: 0
+                created_at: '2021-12-09T21:50:34.345Z'
+                updated_at: '2021-12-09T21:50:34.347Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/6psblidqop.jpeg
               schema:
                 type: array
                 items:
@@ -159,9 +157,9 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T21:22:07.868Z'
-                  updated_at: '2021-12-09T21:22:07.870Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/biypv4og1i.jpeg
+                  created_at: '2021-12-09T21:50:34.519Z'
+                  updated_at: '2021-12-09T21:50:34.521Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/lys82crxg0.jpeg
               schema:
                 type: object
                 properties:
@@ -216,13 +214,13 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Flying disc
-                description: Id et et. Placeat ullam dolorem. Rerum sunt veritatis.
-                instructor: Carey Dickens
-                duration: 2
-                created_at: '2021-12-09T21:22:07.763Z'
-                updated_at: '2021-12-09T21:22:07.766Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/o7z52mdtvm.jpeg
+                title: Woodworking
+                description: Quia enim quo. Odit ut et. Explicabo beatae libero.
+                instructor: Blake Satterfield
+                duration: 11
+                created_at: '2021-12-09T21:50:34.418Z'
+                updated_at: '2021-12-09T21:50:34.420Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tw1n3cxkxn.jpeg
               schema:
                 type: object
                 properties:
@@ -268,15 +266,15 @@ paths:
             application/json:
               example:
                 course:
-                  id: 17
-                  title: Reading
-                  description: Amet exercitationem voluptatum. Qui aut non. Id reprehenderit
-                    quia.
-                  instructor: Mora Jenkins II
-                  duration: 7
-                  created_at: '2021-12-09T21:22:07.880Z'
-                  updated_at: '2021-12-09T21:22:07.883Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/phxeveoutq.jpeg
+                  id: 21
+                  title: Skydiving
+                  description: Autem rem laboriosam. Dolorum dolor architecto. Aut
+                    similique dolore.
+                  instructor: Fr. Heriberto Graham
+                  duration: 8
+                  created_at: '2021-12-09T21:50:34.556Z'
+                  updated_at: '2021-12-09T21:50:34.558Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/zuha4ry2b0.jpeg
                 message: Course successfully deleted
                 status: 200
               schema:
@@ -316,41 +314,41 @@ paths:
           content:
             application/json:
               example:
-              - user: Georgina
-                course: Scouting
-                city: Budapest
-                date: '2022-10-01'
+              - user: Jacinto
+                course: Couponing
+                city: Moroni
+                date: '2022-02-10'
                 id: 1
-                created_at: '2021-12-09T21:22:07.998Z'
-                updated_at: '2021-12-09T21:22:07.998Z'
-              - user: Georgina
-                course: Roller skating
-                city: Bujumbura
-                date: '2022-05-05'
+                created_at: '2021-12-09T21:50:34.650Z'
+                updated_at: '2021-12-09T21:50:34.650Z'
+              - user: Jacinto
+                course: Candle making
+                city: Tegucigalpa
+                date: '2022-04-16'
                 id: 2
-                created_at: '2021-12-09T21:22:08.008Z'
-                updated_at: '2021-12-09T21:22:08.008Z'
-              - user: Georgina
-                course: Pottery
-                city: Tbilisi
-                date: '2022-10-04'
+                created_at: '2021-12-09T21:50:34.661Z'
+                updated_at: '2021-12-09T21:50:34.661Z'
+              - user: Jacinto
+                course: Amateur radio
+                city: Addis Ababa
+                date: '2022-11-12'
                 id: 3
-                created_at: '2021-12-09T21:22:08.016Z'
-                updated_at: '2021-12-09T21:22:08.016Z'
-              - user: Georgina
-                course: Genealogy
-                city: Bujumbura
-                date: '2022-11-30'
+                created_at: '2021-12-09T21:50:34.670Z'
+                updated_at: '2021-12-09T21:50:34.670Z'
+              - user: Jacinto
+                course: Graffiti
+                city: Ottawa
+                date: '2022-10-17'
                 id: 4
-                created_at: '2021-12-09T21:22:08.024Z'
-                updated_at: '2021-12-09T21:22:08.024Z'
-              - user: Georgina
-                course: Gambling
-                city: Kuwait City
-                date: '2022-08-28'
+                created_at: '2021-12-09T21:50:34.678Z'
+                updated_at: '2021-12-09T21:50:34.678Z'
+              - user: Jacinto
+                course: Shopping
+                city: Lima
+                date: '2022-06-22'
                 id: 5
-                created_at: '2021-12-09T21:22:08.032Z'
-                updated_at: '2021-12-09T21:22:08.032Z'
+                created_at: '2021-12-09T21:50:34.692Z'
+                updated_at: '2021-12-09T21:50:34.692Z'
               schema:
                 type: array
                 items:
@@ -391,13 +389,13 @@ paths:
             application/json:
               example:
                 reservation:
-                  user: Lillian
-                  course: Slacklining
-                  city: Tripoli
+                  user: Hugh
+                  course: Taxidermy
+                  city: New Delhi
                   date: '2021-12-10'
                   id: 11
-                  created_at: '2021-12-09T21:22:08.247Z'
-                  updated_at: '2021-12-09T21:22:08.247Z'
+                  created_at: '2021-12-09T21:50:34.922Z'
+                  updated_at: '2021-12-09T21:50:34.922Z'
                 message: Reservation created successfully
                 status: 200
               schema:
@@ -475,11 +473,11 @@ paths:
               example:
                 reservation:
                   id: 16
-                  date: '2022-03-07'
+                  date: '2022-03-29'
                   user_id: 17
                   course_id: 61
-                  created_at: '2021-12-09T21:22:08.301Z'
-                  updated_at: '2021-12-09T21:22:08.301Z'
+                  created_at: '2021-12-09T21:50:34.980Z'
+                  updated_at: '2021-12-09T21:50:34.980Z'
                   city_id: 30
                 message: Reservation deleted successfully
               schema:
@@ -546,10 +544,10 @@ paths:
                     logged_in: true
                     user:
                       id: 27
-                      username: kily1o7jbe
-                      name: Cleveland
-                      created_at: '2021-12-09T21:22:08.527Z'
-                      updated_at: '2021-12-09T21:22:08.527Z'
+                      username: kii7yi2iwv
+                      name: Shelia
+                      created_at: '2021-12-09T21:50:35.209Z'
+                      updated_at: '2021-12-09T21:50:35.209Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -582,10 +580,10 @@ paths:
                     logged_in: true
                     user:
                       id: 37
-                      username: fso89j2ush
-                      name: Soraya
-                      created_at: '2021-12-09T21:22:08.553Z'
-                      updated_at: '2021-12-09T21:22:08.553Z'
+                      username: jo42v7bfkq
+                      name: Ute
+                      created_at: '2021-12-09T21:50:35.236Z'
+                      updated_at: '2021-12-09T21:50:35.236Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -637,10 +635,10 @@ paths:
                     logged_in: true
                     user:
                       id: 55
-                      username: sphrq0xyl7
-                      name: Waldo
-                      created_at: '2021-12-09T21:22:08.613Z'
-                      updated_at: '2021-12-09T21:22:08.613Z'
+                      username: 1ztx7hbxrk
+                      name: Jasmine
+                      created_at: '2021-12-09T21:50:35.300Z'
+                      updated_at: '2021-12-09T21:50:35.300Z'
                 when user does not exist:
                   value:
                     status: 401

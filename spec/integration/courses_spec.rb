@@ -3,11 +3,11 @@ require 'swagger_helper'
 TAGS_COURSE = 'Courses'.freeze
 
 describe 'Courses API' do
-  let!(:courses) { create_list(:course, 5) }
-  let!(:course_id) { courses.first.id }
-  let!(:deleted_course) { courses.first }
   let!(:user) { create(:user) }
   let!(:existing_username) { { user: { username: user.username } } }
+  let!(:courses) { create_list(:course, 5) }
+  let!(:course_id) { courses.first.id }
+  let!(:deleted_course) { courses.last }
   let(:file) { Rack::Test::UploadedFile.new('spec/test_images/instructor1.jpeg', 'image/jpeg') }
   let(:valid_attributes) do
     {
@@ -144,7 +144,7 @@ describe 'Courses API' do
                required: %w[course message status]
 
         before { allow_any_instance_of(Course).to receive(:destroy) }
-        let!(:id) { course_id }
+        let!(:id) { deleted_course.id }
         run_test!
       end
 
