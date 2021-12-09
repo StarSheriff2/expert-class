@@ -175,6 +175,10 @@ RSpec.describe 'API::V1::Courses', type: :request do
       end
 
       it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+
+      it 'returns status code 200' do
         expect(json['status']).to be(200)
       end
     end

@@ -1,0 +1,666 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/cities":
+    get:
+      summary: returns a list of all cities
+      tags:
+      - Cities
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - id: 1
+                name: Windhoek
+                created_at: '2021-12-09T21:50:34.255Z'
+                updated_at: '2021-12-09T21:50:34.255Z'
+              - id: 2
+                name: Phnom Penh
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
+              - id: 3
+                name: Pyongyang
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
+              - id: 4
+                name: Berlin
+                created_at: '2021-12-09T21:50:34.257Z'
+                updated_at: '2021-12-09T21:50:34.257Z'
+              - id: 5
+                name: Vatican City
+                created_at: '2021-12-09T21:50:34.258Z'
+                updated_at: '2021-12-09T21:50:34.258Z'
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                  required:
+                  - id
+                  - name
+                  - created_at
+                  - updated_at
+  "/api/v1/courses":
+    get:
+      summary: returns list with all courses
+      tags:
+      - Courses
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - id: 1
+                title: Sketching
+                description: Omnis voluptatum nesciunt. Perspiciatis quia soluta.
+                  Nam et consequuntur.
+                instructor: Louie Hermiston
+                duration: 5
+                created_at: '2021-12-09T21:50:34.312Z'
+                updated_at: '2021-12-09T21:50:34.319Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p8z6deh4fo.jpeg
+              - id: 2
+                title: Gunsmithing
+                description: Quia modi error. Porro nostrum dignissimos. Voluptate
+                  numquam vero.
+                instructor: Francesco Ryan
+                duration: 8
+                created_at: '2021-12-09T21:50:34.325Z'
+                updated_at: '2021-12-09T21:50:34.327Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/l3ugzdzf7e.jpeg
+              - id: 3
+                title: Shopping
+                description: Quia deserunt non. Dolorem a architecto. Est vero nisi.
+                instructor: Darwin Willms
+                duration: 5
+                created_at: '2021-12-09T21:50:34.332Z'
+                updated_at: '2021-12-09T21:50:34.334Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/nsy6ripxij.jpeg
+              - id: 4
+                title: Flying
+                description: Ea velit rem. Assumenda aut qui. Deleniti libero eaque.
+                instructor: Stevie Stokes
+                duration: 9
+                created_at: '2021-12-09T21:50:34.338Z'
+                updated_at: '2021-12-09T21:50:34.341Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5kdtpdj76q.jpeg
+              - id: 5
+                title: Skimboarding
+                description: Omnis officia molestiae. Ea tempora possimus. In esse
+                  tempore.
+                instructor: Rashad Rogahn
+                duration: 0
+                created_at: '2021-12-09T21:50:34.345Z'
+                updated_at: '2021-12-09T21:50:34.347Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/6psblidqop.jpeg
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    title:
+                      type: string
+                    description:
+                      type: string
+                    instructor:
+                      type: string
+                    duration:
+                      type: integer
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                    course_image_url:
+                      type: string
+                  required:
+                  - id
+                  - title
+                  - description
+                  - instructor
+                  - duration
+                  - created_at
+                  - updated_at
+                  - course_image_url
+                required: true
+    post:
+      summary: creates a new course
+      tags:
+      - Courses
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Course successfully created
+                status: created
+                course:
+                  id: 16
+                  title: Web Development
+                  description: Learn to build websites.
+                  instructor: Mike Milano
+                  duration: 12
+                  created_at: '2021-12-09T21:50:34.519Z'
+                  updated_at: '2021-12-09T21:50:34.521Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/lys82crxg0.jpeg
+              schema:
+                type: object
+                properties:
+                  course:
+                    type: object
+                  message:
+                    type: string
+                  status:
+                    type: string
+                required:
+                - course
+                - message
+                - status
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                instructor:
+                  type: string
+                duration:
+                  type: integer
+                image:
+                  type: binary
+              required:
+              - title
+              - description
+              - instructor
+              - duration
+              - image
+        required: true
+  "/api/v1/courses/{id}":
+    get:
+      summary: returns details for one course
+      tags:
+      - Courses
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                id: 6
+                title: Woodworking
+                description: Quia enim quo. Odit ut et. Explicabo beatae libero.
+                instructor: Blake Satterfield
+                duration: 11
+                created_at: '2021-12-09T21:50:34.418Z'
+                updated_at: '2021-12-09T21:50:34.420Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tw1n3cxkxn.jpeg
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  title:
+                    type: string
+                  description:
+                    type: string
+                  instructor:
+                    type: string
+                  duration:
+                    type: integer
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                  course_image_url:
+                    type: string
+                required:
+                - id
+                - title
+                - description
+                - instructor
+                - duration
+                - created_at
+                - updated_at
+                - course_image_url
+    delete:
+      summary: deletes a course
+      tags:
+      - Courses
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                course:
+                  id: 21
+                  title: Skydiving
+                  description: Autem rem laboriosam. Dolorum dolor architecto. Aut
+                    similique dolore.
+                  instructor: Fr. Heriberto Graham
+                  duration: 8
+                  created_at: '2021-12-09T21:50:34.556Z'
+                  updated_at: '2021-12-09T21:50:34.558Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/zuha4ry2b0.jpeg
+                message: Course successfully deleted
+                status: 200
+              schema:
+                type: object
+                properties:
+                  course:
+                    type: object
+                  message:
+                    type: string
+                  status:
+                    type: integer
+                required:
+                - course
+                - message
+                - status
+        '404':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Couldn't find Course with 'id'=1022
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                required:
+                - message
+  "/api/v1/reservations":
+    get:
+      summary: returns list with all reservations
+      tags:
+      - Reservations
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - user: Jacinto
+                course: Couponing
+                city: Moroni
+                date: '2022-02-10'
+                id: 1
+                created_at: '2021-12-09T21:50:34.650Z'
+                updated_at: '2021-12-09T21:50:34.650Z'
+              - user: Jacinto
+                course: Candle making
+                city: Tegucigalpa
+                date: '2022-04-16'
+                id: 2
+                created_at: '2021-12-09T21:50:34.661Z'
+                updated_at: '2021-12-09T21:50:34.661Z'
+              - user: Jacinto
+                course: Amateur radio
+                city: Addis Ababa
+                date: '2022-11-12'
+                id: 3
+                created_at: '2021-12-09T21:50:34.670Z'
+                updated_at: '2021-12-09T21:50:34.670Z'
+              - user: Jacinto
+                course: Graffiti
+                city: Ottawa
+                date: '2022-10-17'
+                id: 4
+                created_at: '2021-12-09T21:50:34.678Z'
+                updated_at: '2021-12-09T21:50:34.678Z'
+              - user: Jacinto
+                course: Shopping
+                city: Lima
+                date: '2022-06-22'
+                id: 5
+                created_at: '2021-12-09T21:50:34.692Z'
+                updated_at: '2021-12-09T21:50:34.692Z'
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    user:
+                      type: string
+                    course:
+                      type: string
+                    city:
+                      type: string
+                    date:
+                      type: string
+                    id:
+                      type: integer
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                  required:
+                  - user
+                  - course
+                  - city
+                  - date
+                  - id
+                  - created_at
+                  - updated_at
+                required: true
+    post:
+      summary: creates a new course
+      tags:
+      - Reservations
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                reservation:
+                  user: Hugh
+                  course: Taxidermy
+                  city: New Delhi
+                  date: '2021-12-10'
+                  id: 11
+                  created_at: '2021-12-09T21:50:34.922Z'
+                  updated_at: '2021-12-09T21:50:34.922Z'
+                message: Reservation created successfully
+                status: 200
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    type: object
+                    properties:
+                      user:
+                        type: string
+                      course:
+                        type: string
+                      city:
+                        type: string
+                      date:
+                        type: string
+                      id:
+                        type: integer
+                      created_at:
+                        type: string
+                      updated_at:
+                        type: string
+                    required:
+                    - user
+                    - course
+                    - city
+                    - date
+                    - id
+                    - created_at
+                    - updated_at
+                  message:
+                    type: string
+                  status:
+                    type: integer
+                required:
+                - reservation
+                - message
+                - status
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                user_id:
+                  type: integer
+                course_id:
+                  type: integer
+                city_id:
+                  type: integer
+              required:
+              - date
+              - user_id
+              - course_id
+              - city_id
+        required: true
+  "/api/v1/reservations/{id}":
+    delete:
+      summary: deletes a reservation
+      tags:
+      - Reservations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                reservation:
+                  id: 16
+                  date: '2022-03-29'
+                  user_id: 17
+                  course_id: 61
+                  created_at: '2021-12-09T21:50:34.980Z'
+                  updated_at: '2021-12-09T21:50:34.980Z'
+                  city_id: 30
+                message: Reservation deleted successfully
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    type: object
+                    properties:
+                      user_id:
+                        type: integer
+                      course_id:
+                        type: integer
+                      city_id:
+                        type: integer
+                      date:
+                        type: string
+                      id:
+                        type: integer
+                      created_at:
+                        type: string
+                      updated_at:
+                        type: string
+                    required:
+                    - user_id
+                    - course_id
+                    - city_id
+                    - date
+                    - id
+                    - created_at
+                    - updated_at
+                  message:
+                    type: string
+                required:
+                - reservation
+                - message
+        '404':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Couldn't find Reservation with 'id'=1021
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                required:
+                - message
+  "/api/v1/sign_in":
+    post:
+      summary: creates a new session
+      tags:
+      - Sessions
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user exists:
+                  value:
+                    status: created
+                    logged_in: true
+                    user:
+                      id: 27
+                      username: kii7yi2iwv
+                      name: Shelia
+                      created_at: '2021-12-09T21:50:35.209Z'
+                      updated_at: '2021-12-09T21:50:35.209Z'
+                when user does not exist:
+                  value:
+                    status: 401
+              schema:
+                type: object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+              required:
+              - username
+        required: true
+  "/api/v1/signed_in":
+    get:
+      summary: return login status of user
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user is logged in:
+                  value:
+                    logged_in: true
+                    user:
+                      id: 37
+                      username: jo42v7bfkq
+                      name: Ute
+                      created_at: '2021-12-09T21:50:35.236Z'
+                      updated_at: '2021-12-09T21:50:35.236Z'
+                when user is not logged in:
+                  value:
+                    logged_in: false
+              schema:
+                type: object
+                properties:
+                  logged_in:
+                    type: boolean
+                required:
+                - logged_in
+  "/api/v1/sign_out":
+    delete:
+      summary: return logged-out status of user as true
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                status: 200
+                logged_out: true
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  logged_out:
+                    type: boolean
+                required:
+                - status
+                - logged_out
+  "/api/v1/users":
+    post:
+      summary: creates a new user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user exists:
+                  value:
+                    status: created
+                    logged_in: true
+                    user:
+                      id: 55
+                      username: 1ztx7hbxrk
+                      name: Jasmine
+                      created_at: '2021-12-09T21:50:35.300Z'
+                      updated_at: '2021-12-09T21:50:35.300Z'
+                when user does not exist:
+                  value:
+                    status: 401
+                    error: This username already exists. Please Choose another one.
+              schema:
+                type: object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                username:
+                  type: string
+              required:
+              - name
+              - username
+        required: true
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
