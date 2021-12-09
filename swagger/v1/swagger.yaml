@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Berlin
-                created_at: '2021-12-09T04:21:59.858Z'
-                updated_at: '2021-12-09T04:21:59.858Z'
+                name: Maseru
+                created_at: '2021-12-09T04:33:12.843Z'
+                updated_at: '2021-12-09T04:33:12.843Z'
               - id: 2
-                name: Singapore
-                created_at: '2021-12-09T04:21:59.860Z'
-                updated_at: '2021-12-09T04:21:59.860Z'
+                name: Brazzaville
+                created_at: '2021-12-09T04:33:12.844Z'
+                updated_at: '2021-12-09T04:33:12.844Z'
               - id: 3
-                name: Guatemala City
-                created_at: '2021-12-09T04:21:59.860Z'
-                updated_at: '2021-12-09T04:21:59.860Z'
+                name: Melekeok
+                created_at: '2021-12-09T04:33:12.845Z'
+                updated_at: '2021-12-09T04:33:12.845Z'
               - id: 4
-                name: Gaborone
-                created_at: '2021-12-09T04:21:59.861Z'
-                updated_at: '2021-12-09T04:21:59.861Z'
+                name: Andorra la Vella
+                created_at: '2021-12-09T04:33:12.845Z'
+                updated_at: '2021-12-09T04:33:12.845Z'
               - id: 5
-                name: Ottawa
-                created_at: '2021-12-09T04:21:59.861Z'
-                updated_at: '2021-12-09T04:21:59.861Z'
+                name: Colombo
+                created_at: '2021-12-09T04:33:12.846Z'
+                updated_at: '2021-12-09T04:33:12.846Z'
               schema:
                 type: array
                 items:
@@ -65,50 +65,80 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Painting
-                description: Itaque quia culpa. Itaque eum aut. Libero cumque enim.
-                instructor: The Hon. Tona Cole
-                duration: 11
-                created_at: '2021-12-09T04:21:59.912Z'
-                updated_at: '2021-12-09T04:21:59.917Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ypc9hp2706.jpeg
-              - id: 2
-                title: Kayaking
-                description: Inventore ut voluptas. Enim at cum. Voluptas labore consectetur.
-                instructor: Cassandra Mann
-                duration: 10
-                created_at: '2021-12-09T04:21:59.924Z'
-                updated_at: '2021-12-09T04:21:59.928Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/mo9rp8y5ff.jpeg
-              - id: 3
-                title: Dance
-                description: Reiciendis asperiores officia. Qui consequuntur qui.
-                  Dolorum sed aut.
-                instructor: Dr. Hosea Murazik
+                title: Foraging
+                description: Corporis exercitationem dolor. Ut in assumenda. Quis
+                  necessitatibus quo.
+                instructor: Iola Walker
                 duration: 3
-                created_at: '2021-12-09T04:21:59.934Z'
-                updated_at: '2021-12-09T04:21:59.936Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/v1icswantk.jpeg
+                created_at: '2021-12-09T04:33:12.895Z'
+                updated_at: '2021-12-09T04:33:12.901Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/t5acnq303c.jpeg
+              - id: 2
+                title: Skimboarding
+                description: Quibusdam quos magnam. Non omnis ab. Dignissimos quam
+                  amet.
+                instructor: Dominique Wiza I
+                duration: 3
+                created_at: '2021-12-09T04:33:12.907Z'
+                updated_at: '2021-12-09T04:33:12.910Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/h9069bgnim.jpeg
+              - id: 3
+                title: Rafting
+                description: Tenetur ut et. Dolorum aut sed. Aut provident sed.
+                instructor: Rep. Esther Kertzmann
+                duration: 5
+                created_at: '2021-12-09T04:33:12.915Z'
+                updated_at: '2021-12-09T04:33:12.918Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/dsr2anzl1p.jpeg
               - id: 4
-                title: Cabaret
-                description: Animi dolores magnam. Aut aliquam suscipit. Aut tempora
-                  et.
-                instructor: Gov. Zachery Russel
-                duration: 10
-                created_at: '2021-12-09T04:21:59.941Z'
-                updated_at: '2021-12-09T04:21:59.944Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/7hjjtxnk9a.jpeg
+                title: Acting
+                description: Repellendus beatae ut. Ex enim error. Laboriosam accusamus
+                  dolore.
+                instructor: Adolfo West
+                duration: 11
+                created_at: '2021-12-09T04:33:12.922Z'
+                updated_at: '2021-12-09T04:33:12.924Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/y3hfjuzs39.jpeg
               - id: 5
-                title: Sports
-                description: Suscipit ea voluptatem. Non alias excepturi. Odio corrupti
-                  rem.
-                instructor: Gov. Robbi Fahey
-                duration: 6
-                created_at: '2021-12-09T04:21:59.953Z'
-                updated_at: '2021-12-09T04:21:59.956Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/n43zuh54jw.jpeg
+                title: Flying disc
+                description: Commodi adipisci delectus. Quis ea similique. Voluptatum
+                  earum inventore.
+                instructor: Hayley Reilly
+                duration: 10
+                created_at: '2021-12-09T04:33:12.932Z'
+                updated_at: '2021-12-09T04:33:12.935Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/cg0l9r7d07.jpeg
               schema:
                 type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    title:
+                      type: string
+                    description:
+                      type: string
+                    instructor:
+                      type: string
+                    duration:
+                      type: integer
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                    course_image_url:
+                      type: string
+                  required:
+                  - id
+                  - title
+                  - description
+                  - instructor
+                  - duration
+                  - created_at
+                  - updated_at
+                  - course_image_url
+                required: true
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -127,10 +157,10 @@ paths:
                     logged_in: true
                     user:
                       id: 3
-                      username: 17dm3hyrg9
-                      name: Alissa
-                      created_at: '2021-12-09T04:21:59.999Z'
-                      updated_at: '2021-12-09T04:21:59.999Z'
+                      username: 83dc6oh3wu
+                      name: Silas
+                      created_at: '2021-12-09T04:33:12.976Z'
+                      updated_at: '2021-12-09T04:33:12.976Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -162,10 +192,10 @@ paths:
                     logged_in: true
                     user:
                       id: 13
-                      username: pqbl79q0kx
-                      name: Forest
-                      created_at: '2021-12-09T04:22:00.055Z'
-                      updated_at: '2021-12-09T04:22:00.055Z'
+                      username: q089bj7onj
+                      name: Rickey
+                      created_at: '2021-12-09T04:33:13.030Z'
+                      updated_at: '2021-12-09T04:33:13.030Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -217,10 +247,10 @@ paths:
                     logged_in: true
                     user:
                       id: 31
-                      username: urg0xid98g
-                      name: Cleveland
-                      created_at: '2021-12-09T04:22:00.112Z'
-                      updated_at: '2021-12-09T04:22:00.112Z'
+                      username: 2txku6y1gi
+                      name: Harland
+                      created_at: '2021-12-09T04:33:13.092Z'
+                      updated_at: '2021-12-09T04:33:13.092Z'
                 when user does not exist:
                   value:
                     status: 401
