@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: San Jose
-                created_at: '2021-12-09T20:30:38.784Z'
-                updated_at: '2021-12-09T20:30:38.784Z'
+                name: Tashkent
+                created_at: '2021-12-09T21:22:07.595Z'
+                updated_at: '2021-12-09T21:22:07.595Z'
               - id: 2
-                name: Moscow
-                created_at: '2021-12-09T20:30:38.785Z'
-                updated_at: '2021-12-09T20:30:38.785Z'
+                name: Tripoli
+                created_at: '2021-12-09T21:22:07.597Z'
+                updated_at: '2021-12-09T21:22:07.597Z'
               - id: 3
-                name: Chisinau
-                created_at: '2021-12-09T20:30:38.786Z'
-                updated_at: '2021-12-09T20:30:38.786Z'
+                name: Bamako
+                created_at: '2021-12-09T21:22:07.597Z'
+                updated_at: '2021-12-09T21:22:07.597Z'
               - id: 4
-                name: Tallinn
-                created_at: '2021-12-09T20:30:38.787Z'
-                updated_at: '2021-12-09T20:30:38.787Z'
+                name: Port Louis
+                created_at: '2021-12-09T21:22:07.598Z'
+                updated_at: '2021-12-09T21:22:07.598Z'
               - id: 5
-                name: Singapore
-                created_at: '2021-12-09T20:30:38.787Z'
-                updated_at: '2021-12-09T20:30:38.787Z'
+                name: San Salvador
+                created_at: '2021-12-09T21:22:07.598Z'
+                updated_at: '2021-12-09T21:22:07.598Z'
               schema:
                 type: array
                 items:
@@ -65,46 +65,50 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Knitting
-                description: Iure et qui. Fuga est ab. Tenetur error possimus.
-                instructor: Brett Yundt I
+                title: Reading
+                description: Aut omnis omnis. Atque voluptatem dolorum. Cumque illum
+                  impedit.
+                instructor: Sparkle Quitzon
                 duration: 5
-                created_at: '2021-12-09T20:30:38.835Z'
-                updated_at: '2021-12-09T20:30:38.840Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qawlq89w0p.jpeg
+                created_at: '2021-12-09T21:22:07.650Z'
+                updated_at: '2021-12-09T21:22:07.655Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/13w2ev6u5l.jpeg
               - id: 2
-                title: Creative writing
-                description: Est aliquid aut. Voluptate non ad. Mollitia dolores est.
-                instructor: Dario Hyatt
-                duration: 5
-                created_at: '2021-12-09T20:30:38.846Z'
-                updated_at: '2021-12-09T20:30:38.848Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p1vsdsn79t.jpeg
-              - id: 3
-                title: Writing
-                description: Nemo reiciendis dolores. Et in iste. Reiciendis ad qui.
-                instructor: Kory Harber
+                title: Shopping
+                description: Velit dolor minus. Consectetur vel doloribus. Vero sit
+                  et.
+                instructor: Lanny Parker
                 duration: 11
-                created_at: '2021-12-09T20:30:38.853Z'
-                updated_at: '2021-12-09T20:30:38.855Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qxgnb7qyfp.jpeg
+                created_at: '2021-12-09T21:22:07.660Z'
+                updated_at: '2021-12-09T21:22:07.663Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/s3x2y5d41z.jpeg
+              - id: 3
+                title: Creative writing
+                description: Inventore odio sapiente. Esse qui vero. Veniam atque
+                  et.
+                instructor: Jc Jast
+                duration: 6
+                created_at: '2021-12-09T21:22:07.667Z'
+                updated_at: '2021-12-09T21:22:07.670Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/fdpady0web.jpeg
               - id: 4
-                title: Quilting
-                description: Sit rerum est. Dolorum qui sequi. Laudantium eum et.
-                instructor: Darwin Schimmel
-                duration: 10
-                created_at: '2021-12-09T20:30:38.860Z'
-                updated_at: '2021-12-09T20:30:38.862Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/avfr6q49f2.jpeg
+                title: scrapbook
+                description: Laudantium quis nihil. Dolores debitis veritatis. Rerum
+                  itaque omnis.
+                instructor: Ariane Runte MD
+                duration: 6
+                created_at: '2021-12-09T21:22:07.674Z'
+                updated_at: '2021-12-09T21:22:07.676Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/1mhdx9g9rk.jpeg
               - id: 5
-                title: Skiing
-                description: Molestiae accusantium dolores. Molestiae laborum est.
-                  Expedita a quam.
-                instructor: Princess Corwin
-                duration: 9
-                created_at: '2021-12-09T20:30:38.866Z'
-                updated_at: '2021-12-09T20:30:38.868Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/sum735soyd.jpeg
+                title: Sand art
+                description: Officia facilis et. Et quam reprehenderit. Eveniet pariatur
+                  autem.
+                instructor: Clifton Grimes
+                duration: 3
+                created_at: '2021-12-09T21:22:07.681Z'
+                updated_at: '2021-12-09T21:22:07.689Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/z2cwlahc4w.jpeg
               schema:
                 type: array
                 items:
@@ -155,9 +159,9 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T20:30:39.031Z'
-                  updated_at: '2021-12-09T20:30:39.034Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/0gkpyx2vvn.jpeg
+                  created_at: '2021-12-09T21:22:07.868Z'
+                  updated_at: '2021-12-09T21:22:07.870Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/biypv4og1i.jpeg
               schema:
                 type: object
                 properties:
@@ -212,13 +216,13 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Running
-                description: Eos minus quia. Omnis tenetur eius. Facilis ipsa excepturi.
-                instructor: Noma Conn DVM
-                duration: 5
-                created_at: '2021-12-09T20:30:38.937Z'
-                updated_at: '2021-12-09T20:30:38.940Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/9x7hiiw6yc.jpeg
+                title: Flying disc
+                description: Id et et. Placeat ullam dolorem. Rerum sunt veritatis.
+                instructor: Carey Dickens
+                duration: 2
+                created_at: '2021-12-09T21:22:07.763Z'
+                updated_at: '2021-12-09T21:22:07.766Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/o7z52mdtvm.jpeg
               schema:
                 type: object
                 properties:
@@ -265,14 +269,14 @@ paths:
               example:
                 course:
                   id: 17
-                  title: Drawing
-                  description: Adipisci aliquid animi. Unde eum nihil. Repudiandae
-                    sed nobis.
-                  instructor: Yael Legros
-                  duration: 4
-                  created_at: '2021-12-09T20:30:39.040Z'
-                  updated_at: '2021-12-09T20:30:39.042Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/cv46bownil.jpeg
+                  title: Reading
+                  description: Amet exercitationem voluptatum. Qui aut non. Id reprehenderit
+                    quia.
+                  instructor: Mora Jenkins II
+                  duration: 7
+                  created_at: '2021-12-09T21:22:07.880Z'
+                  updated_at: '2021-12-09T21:22:07.883Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/phxeveoutq.jpeg
                 message: Course successfully deleted
                 status: 200
               schema:
@@ -312,41 +316,41 @@ paths:
           content:
             application/json:
               example:
-              - user: Marianna
-                course: Skimboarding
-                city: Riga
-                date: '2022-11-24'
+              - user: Georgina
+                course: Scouting
+                city: Budapest
+                date: '2022-10-01'
                 id: 1
-                created_at: '2021-12-09T20:30:39.158Z'
-                updated_at: '2021-12-09T20:30:39.158Z'
-              - user: Marianna
-                course: LARPing
-                city: Libreville
-                date: '2021-12-27'
+                created_at: '2021-12-09T21:22:07.998Z'
+                updated_at: '2021-12-09T21:22:07.998Z'
+              - user: Georgina
+                course: Roller skating
+                city: Bujumbura
+                date: '2022-05-05'
                 id: 2
-                created_at: '2021-12-09T20:30:39.168Z'
-                updated_at: '2021-12-09T20:30:39.168Z'
-              - user: Marianna
-                course: Jigsaw puzzles
-                city: Kuala Lumpur
-                date: '2022-06-25'
+                created_at: '2021-12-09T21:22:08.008Z'
+                updated_at: '2021-12-09T21:22:08.008Z'
+              - user: Georgina
+                course: Pottery
+                city: Tbilisi
+                date: '2022-10-04'
                 id: 3
-                created_at: '2021-12-09T20:30:39.177Z'
-                updated_at: '2021-12-09T20:30:39.177Z'
-              - user: Marianna
-                course: Wood carving
-                city: Tallinn
-                date: '2022-09-05'
+                created_at: '2021-12-09T21:22:08.016Z'
+                updated_at: '2021-12-09T21:22:08.016Z'
+              - user: Georgina
+                course: Genealogy
+                city: Bujumbura
+                date: '2022-11-30'
                 id: 4
-                created_at: '2021-12-09T20:30:39.185Z'
-                updated_at: '2021-12-09T20:30:39.185Z'
-              - user: Marianna
-                course: Rock climbing
-                city: Freetown
-                date: '2022-09-17'
+                created_at: '2021-12-09T21:22:08.024Z'
+                updated_at: '2021-12-09T21:22:08.024Z'
+              - user: Georgina
+                course: Gambling
+                city: Kuwait City
+                date: '2022-08-28'
                 id: 5
-                created_at: '2021-12-09T20:30:39.195Z'
-                updated_at: '2021-12-09T20:30:39.195Z'
+                created_at: '2021-12-09T21:22:08.032Z'
+                updated_at: '2021-12-09T21:22:08.032Z'
               schema:
                 type: array
                 items:
@@ -387,13 +391,13 @@ paths:
             application/json:
               example:
                 reservation:
-                  user: Daniele
-                  course: Kabaddi
-                  city: Bridgetown
+                  user: Lillian
+                  course: Slacklining
+                  city: Tripoli
                   date: '2021-12-10'
                   id: 11
-                  created_at: '2021-12-09T20:30:39.403Z'
-                  updated_at: '2021-12-09T20:30:39.403Z'
+                  created_at: '2021-12-09T21:22:08.247Z'
+                  updated_at: '2021-12-09T21:22:08.247Z'
                 message: Reservation created successfully
                 status: 200
               schema:
@@ -452,6 +456,78 @@ paths:
               - course_id
               - city_id
         required: true
+  "/api/v1/reservations/{id}":
+    delete:
+      summary: deletes a reservation
+      tags:
+      - Reservations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                reservation:
+                  id: 16
+                  date: '2022-03-07'
+                  user_id: 17
+                  course_id: 61
+                  created_at: '2021-12-09T21:22:08.301Z'
+                  updated_at: '2021-12-09T21:22:08.301Z'
+                  city_id: 30
+                message: Reservation deleted successfully
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    type: object
+                    properties:
+                      user_id:
+                        type: integer
+                      course_id:
+                        type: integer
+                      city_id:
+                        type: integer
+                      date:
+                        type: string
+                      id:
+                        type: integer
+                      created_at:
+                        type: string
+                      updated_at:
+                        type: string
+                    required:
+                    - user_id
+                    - course_id
+                    - city_id
+                    - date
+                    - id
+                    - created_at
+                    - updated_at
+                  message:
+                    type: string
+                required:
+                - reservation
+                - message
+        '404':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Couldn't find Reservation with 'id'=1021
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                required:
+                - message
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -469,11 +545,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 17
-                      username: ofwof7of9t
-                      name: Isaac
-                      created_at: '2021-12-09T20:30:39.407Z'
-                      updated_at: '2021-12-09T20:30:39.407Z'
+                      id: 27
+                      username: kily1o7jbe
+                      name: Cleveland
+                      created_at: '2021-12-09T21:22:08.527Z'
+                      updated_at: '2021-12-09T21:22:08.527Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -505,11 +581,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 27
-                      username: iaadh5vpp8
-                      name: Alvin
-                      created_at: '2021-12-09T20:30:39.432Z'
-                      updated_at: '2021-12-09T20:30:39.432Z'
+                      id: 37
+                      username: fso89j2ush
+                      name: Soraya
+                      created_at: '2021-12-09T21:22:08.553Z'
+                      updated_at: '2021-12-09T21:22:08.553Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -560,11 +636,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 45
-                      username: i4adu59246
-                      name: Kathyrn
-                      created_at: '2021-12-09T20:30:39.490Z'
-                      updated_at: '2021-12-09T20:30:39.490Z'
+                      id: 55
+                      username: sphrq0xyl7
+                      name: Waldo
+                      created_at: '2021-12-09T21:22:08.613Z'
+                      updated_at: '2021-12-09T21:22:08.613Z'
                 when user does not exist:
                   value:
                     status: 401

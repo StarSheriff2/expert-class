@@ -45,9 +45,10 @@ class API::V1::ReservationsController < ApplicationController
 
   def destroy
     if @reservation
+      reservation = @reservation
       @reservation.destroy
       json_response({
-                      reservation: @reservation,
+                      reservation: reservation,
                       message: 'Reservation deleted successfully'
                     })
     else
