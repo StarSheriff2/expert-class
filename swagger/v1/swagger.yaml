@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Tripoli
-                created_at: '2021-12-09T01:33:07.000Z'
-                updated_at: '2021-12-09T01:33:07.000Z'
+                name: Sofia
+                created_at: '2021-12-09T03:37:00.374Z'
+                updated_at: '2021-12-09T03:37:00.374Z'
               - id: 2
-                name: Kingstown
-                created_at: '2021-12-09T01:33:07.001Z'
-                updated_at: '2021-12-09T01:33:07.001Z'
+                name: Mogadishu
+                created_at: '2021-12-09T03:37:00.375Z'
+                updated_at: '2021-12-09T03:37:00.375Z'
               - id: 3
-                name: Juba
-                created_at: '2021-12-09T01:33:07.001Z'
-                updated_at: '2021-12-09T01:33:07.001Z'
-              - id: 4
-                name: Skopje
-                created_at: '2021-12-09T01:33:07.002Z'
-                updated_at: '2021-12-09T01:33:07.002Z'
-              - id: 5
                 name: Taipei
-                created_at: '2021-12-09T01:33:07.002Z'
-                updated_at: '2021-12-09T01:33:07.002Z'
+                created_at: '2021-12-09T03:37:00.376Z'
+                updated_at: '2021-12-09T03:37:00.376Z'
+              - id: 4
+                name: Praia Bangui
+                created_at: '2021-12-09T03:37:00.377Z'
+                updated_at: '2021-12-09T03:37:00.377Z'
+              - id: 5
+                name: Apia
+                created_at: '2021-12-09T03:37:00.377Z'
+                updated_at: '2021-12-09T03:37:00.377Z'
               schema:
                 type: array
                 items:
@@ -53,6 +53,61 @@ paths:
                   - name
                   - created_at
                   - updated_at
+  "/api/v1/courses":
+    get:
+      summary: returns list with all courses
+      tags:
+      - Courses
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - id: 1
+                title: Hunting
+                description: Quos eius tenetur. Qui et laboriosam. Animi quam necessitatibus.
+                instructor: Shanita Hartmann
+                duration: 4
+                created_at: '2021-12-09T03:37:00.427Z'
+                updated_at: '2021-12-09T03:37:00.432Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+              - id: 2
+                title: Motor sports
+                description: Sit veniam pariatur. Aut eveniet sint. Repudiandae aut
+                  labore.
+                instructor: Rafael DuBuque
+                duration: 11
+                created_at: '2021-12-09T03:37:00.443Z'
+                updated_at: '2021-12-09T03:37:00.446Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+              - id: 3
+                title: Book restoration
+                description: Vel ut et. Aut repudiandae impedit. Ipsum iusto quia.
+                instructor: Sammy Wilkinson
+                duration: 10
+                created_at: '2021-12-09T03:37:00.451Z'
+                updated_at: '2021-12-09T03:37:00.454Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+              - id: 4
+                title: Gaming
+                description: Autem quaerat architecto. Repellat cupiditate qui. Doloremque
+                  aut fugiat.
+                instructor: Pablo McCullough
+                duration: 7
+                created_at: '2021-12-09T03:37:00.459Z'
+                updated_at: '2021-12-09T03:37:00.461Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+              - id: 5
+                title: Drawing
+                description: Modi est harum. Pariatur magnam aut. Aliquam et pariatur.
+                instructor: Wally Conn Jr.
+                duration: 3
+                created_at: '2021-12-09T03:37:00.466Z'
+                updated_at: '2021-12-09T03:37:00.468Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+              schema:
+                type: array
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -70,11 +125,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 2
-                      username: alcdvz3h9m
-                      name: Leigh
-                      created_at: '2021-12-09T01:33:07.013Z'
-                      updated_at: '2021-12-09T01:33:07.013Z'
+                      id: 3
+                      username: dk2p6lqjzb
+                      name: Craig
+                      created_at: '2021-12-09T03:37:00.503Z'
+                      updated_at: '2021-12-09T03:37:00.503Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -105,11 +160,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 12
-                      username: sskb6nhela
-                      name: Cherrie
-                      created_at: '2021-12-09T01:33:07.047Z'
-                      updated_at: '2021-12-09T01:33:07.047Z'
+                      id: 13
+                      username: jcq23vpdqw
+                      name: Rafaela
+                      created_at: '2021-12-09T03:37:00.562Z'
+                      updated_at: '2021-12-09T03:37:00.562Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -160,11 +215,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 30
-                      username: ffid0etboi
-                      name: Kip
-                      created_at: '2021-12-09T01:33:07.102Z'
-                      updated_at: '2021-12-09T01:33:07.102Z'
+                      id: 31
+                      username: bvvad9f4tj
+                      name: Esta
+                      created_at: '2021-12-09T03:37:00.618Z'
+                      updated_at: '2021-12-09T03:37:00.618Z'
                 when user does not exist:
                   value:
                     status: 401
