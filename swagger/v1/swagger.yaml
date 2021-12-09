@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Lusaka
-                created_at: '2021-12-09T04:48:57.065Z'
-                updated_at: '2021-12-09T04:48:57.065Z'
+                name: Berlin
+                created_at: '2021-12-09T04:50:21.272Z'
+                updated_at: '2021-12-09T04:50:21.272Z'
               - id: 2
-                name: Bratislava
-                created_at: '2021-12-09T04:48:57.067Z'
-                updated_at: '2021-12-09T04:48:57.067Z'
+                name: Beirut
+                created_at: '2021-12-09T04:50:21.274Z'
+                updated_at: '2021-12-09T04:50:21.274Z'
               - id: 3
-                name: Dili
-                created_at: '2021-12-09T04:48:57.067Z'
-                updated_at: '2021-12-09T04:48:57.067Z'
+                name: Kingstown
+                created_at: '2021-12-09T04:50:21.275Z'
+                updated_at: '2021-12-09T04:50:21.275Z'
               - id: 4
-                name: Bamako
-                created_at: '2021-12-09T04:48:57.068Z'
-                updated_at: '2021-12-09T04:48:57.068Z'
+                name: Monaco
+                created_at: '2021-12-09T04:50:21.275Z'
+                updated_at: '2021-12-09T04:50:21.275Z'
               - id: 5
-                name: Helsinki
-                created_at: '2021-12-09T04:48:57.068Z'
-                updated_at: '2021-12-09T04:48:57.068Z'
+                name: Hanoi
+                created_at: '2021-12-09T04:50:21.276Z'
+                updated_at: '2021-12-09T04:50:21.276Z'
               schema:
                 type: array
                 items:
@@ -65,49 +65,48 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Singing
-                description: Quos adipisci quidem. Eveniet hic perspiciatis. Ducimus
-                  omnis tenetur.
-                instructor: Msgr. Frederick Jast
-                duration: 10
-                created_at: '2021-12-09T04:48:57.118Z'
-                updated_at: '2021-12-09T04:48:57.123Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/khc3be3z6u.jpeg
+                title: Video gaming
+                description: Laboriosam explicabo esse. Nesciunt quia magni. Et sit
+                  et.
+                instructor: Tania Hyatt V
+                duration: 8
+                created_at: '2021-12-09T04:50:21.346Z'
+                updated_at: '2021-12-09T04:50:21.354Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/kgrhtpnmiv.jpeg
               - id: 2
-                title: Worldbuilding
-                description: Eum itaque asperiores. Voluptas odio nobis. Voluptas
-                  repudiandae optio.
-                instructor: Lilia Goyette
-                duration: 8
-                created_at: '2021-12-09T04:48:57.129Z'
-                updated_at: '2021-12-09T04:48:57.132Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ryx799wkei.jpeg
+                title: Surfing
+                description: Dolorem in amet. Illo eos et. Voluptatem tempora doloribus.
+                instructor: Johnnie Pfannerstill
+                duration: 4
+                created_at: '2021-12-09T04:50:21.373Z'
+                updated_at: '2021-12-09T04:50:21.376Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/y31rkdqmxv.jpeg
               - id: 3
-                title: Board games
-                description: Hic voluptatem iure. Aut nesciunt non. Vel illo saepe.
-                instructor: Flora Rippin
-                duration: 5
-                created_at: '2021-12-09T04:48:57.137Z'
-                updated_at: '2021-12-09T04:48:57.139Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/88uainb815.jpeg
+                title: Nordic skating
+                description: Architecto non labore. Dignissimos omnis itaque. Excepturi
+                  dolores ut.
+                instructor: Donna Marquardt
+                duration: 10
+                created_at: '2021-12-09T04:50:21.386Z'
+                updated_at: '2021-12-09T04:50:21.389Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/yiewcea2cv.jpeg
               - id: 4
-                title: Water sports
-                description: Occaecati doloribus blanditiis. Quibusdam totam et. Dolores
-                  perferendis id.
-                instructor: Daryl Collier
-                duration: 8
-                created_at: '2021-12-09T04:48:57.144Z'
-                updated_at: '2021-12-09T04:48:57.146Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p1zs2mblz1.jpeg
+                title: Bodybuilding
+                description: Aut occaecati et. Est aperiam mollitia. Ut nulla excepturi.
+                instructor: Sen. Angelo Stehr
+                duration: 3
+                created_at: '2021-12-09T04:50:21.395Z'
+                updated_at: '2021-12-09T04:50:21.398Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/oiunqzzbdn.jpeg
               - id: 5
-                title: Board games
-                description: Aliquid doloribus sequi. Sit quo qui. Deleniti magni
-                  repellat.
-                instructor: Woodrow Mohr
-                duration: 8
-                created_at: '2021-12-09T04:48:57.151Z'
-                updated_at: '2021-12-09T04:48:57.153Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/z5p9nayfjb.jpeg
+                title: tabletop games
+                description: Rem perspiciatis dolor. Laboriosam nulla cumque. Dolor
+                  doloremque voluptatem.
+                instructor: Maximina Jerde
+                duration: 1
+                created_at: '2021-12-09T04:50:21.404Z'
+                updated_at: '2021-12-09T04:50:21.407Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/og1nadl09c.jpeg
               schema:
                 type: array
                 items:
@@ -157,13 +156,14 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Ghost hunting
-                description: Facere quas amet. Non ut et. Nihil voluptatem consequatur.
-                instructor: Jan Effertz
-                duration: 3
-                created_at: '2021-12-09T04:48:57.197Z'
-                updated_at: '2021-12-09T04:48:57.206Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/1gqtiikl7w.jpeg
+                title: Watching movies
+                description: Omnis repudiandae delectus. Omnis architecto laudantium.
+                  Cum alias quas.
+                instructor: Eun Funk
+                duration: 7
+                created_at: '2021-12-09T04:50:21.457Z'
+                updated_at: '2021-12-09T04:50:21.468Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/nzj882tcc9.jpeg
               schema:
                 type: object
                 properties:
@@ -210,10 +210,10 @@ paths:
                     logged_in: true
                     user:
                       id: 4
-                      username: xc1648qbmh
-                      name: Helaine
-                      created_at: '2021-12-09T04:48:57.276Z'
-                      updated_at: '2021-12-09T04:48:57.276Z'
+                      username: ik4a0bkaew
+                      name: Colby
+                      created_at: '2021-12-09T04:50:21.546Z'
+                      updated_at: '2021-12-09T04:50:21.546Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -245,10 +245,10 @@ paths:
                     logged_in: true
                     user:
                       id: 14
-                      username: 55v7zue6ww
-                      name: Joe
-                      created_at: '2021-12-09T04:48:57.300Z'
-                      updated_at: '2021-12-09T04:48:57.300Z'
+                      username: k8ubplecox
+                      name: Kitty
+                      created_at: '2021-12-09T04:50:21.574Z'
+                      updated_at: '2021-12-09T04:50:21.574Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -300,10 +300,10 @@ paths:
                     logged_in: true
                     user:
                       id: 32
-                      username: mi8ndpatub
-                      name: Clinton
-                      created_at: '2021-12-09T04:48:57.354Z'
-                      updated_at: '2021-12-09T04:48:57.354Z'
+                      username: p2ijqdzzxi
+                      name: Ryan
+                      created_at: '2021-12-09T04:50:21.636Z'
+                      updated_at: '2021-12-09T04:50:21.636Z'
                 when user does not exist:
                   value:
                     status: 401

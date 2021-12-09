@@ -65,17 +65,17 @@ describe 'Courses API' do
 
       response '200', 'success' do
         schema type: :object,
-        properties: {
-          id: { type: :integer },
-          title: { type: :string },
-          description: { type: :string },
-          instructor: { type: :string },
-          duration: { type: :integer },
-          created_at: { type: :string },
-          updated_at: { type: :string },
-          course_image_url: { type: :string }
-        },
-        required: %w[id title description instructor duration created_at updated_at course_image_url]
+               properties: {
+                 id: { type: :integer },
+                 title: { type: :string },
+                 description: { type: :string },
+                 instructor: { type: :string },
+                 duration: { type: :integer },
+                 created_at: { type: :string },
+                 updated_at: { type: :string },
+                 course_image_url: { type: :string }
+               },
+               required: %w[id title description instructor duration created_at updated_at course_image_url]
 
         let(:id) { course_id }
         run_test!
@@ -83,5 +83,3 @@ describe 'Courses API' do
     end
   end
 end
-
-
