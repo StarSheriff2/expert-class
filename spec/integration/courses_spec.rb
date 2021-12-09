@@ -4,9 +4,8 @@ TAGS_COURSE = 'Courses'.freeze
 
 describe 'Courses API' do
   let!(:courses) { create_list(:course, 5) }
-
-  # let!(:course_id) { courses.first.id }
-  # let!(:deleted_course) { courses.first }
+  let!(:course_id) { courses.first.id }
+  let!(:deleted_course) { courses.first }
   let!(:user) { create(:user) }
   let!(:existing_username) { { user: { username: user.username } } }
 
@@ -57,4 +56,32 @@ describe 'Courses API' do
       end
     end
   end
+
+  path '/api/v1/courses/{id}' do
+    get 'returns details for one course' do
+      tags TAGS_COURSE
+      produces 'application/json'
+      parameter name: :id, in: :path, type: :string
+
+      response '200', 'success' do
+        schema type: :object,
+        properties: {
+          id: { type: :integer },
+          title: { type: :string },
+          description: { type: :string },
+          instructor: { type: :string },
+          duration: { type: :integer },
+          created_at: { type: :string },
+          updated_at: { type: :string },
+          course_image_url: { type: :string }
+        },
+        required: %w[id title description instructor duration created_at updated_at course_image_url]
+
+        let(:id) { course_id }
+        run_test!
+      end
+    end
+  end
 end
+
+

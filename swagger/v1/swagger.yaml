@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Maseru
-                created_at: '2021-12-09T04:33:12.843Z'
-                updated_at: '2021-12-09T04:33:12.843Z'
+                name: Lusaka
+                created_at: '2021-12-09T04:48:57.065Z'
+                updated_at: '2021-12-09T04:48:57.065Z'
               - id: 2
-                name: Brazzaville
-                created_at: '2021-12-09T04:33:12.844Z'
-                updated_at: '2021-12-09T04:33:12.844Z'
+                name: Bratislava
+                created_at: '2021-12-09T04:48:57.067Z'
+                updated_at: '2021-12-09T04:48:57.067Z'
               - id: 3
-                name: Melekeok
-                created_at: '2021-12-09T04:33:12.845Z'
-                updated_at: '2021-12-09T04:33:12.845Z'
+                name: Dili
+                created_at: '2021-12-09T04:48:57.067Z'
+                updated_at: '2021-12-09T04:48:57.067Z'
               - id: 4
-                name: Andorra la Vella
-                created_at: '2021-12-09T04:33:12.845Z'
-                updated_at: '2021-12-09T04:33:12.845Z'
+                name: Bamako
+                created_at: '2021-12-09T04:48:57.068Z'
+                updated_at: '2021-12-09T04:48:57.068Z'
               - id: 5
-                name: Colombo
-                created_at: '2021-12-09T04:33:12.846Z'
-                updated_at: '2021-12-09T04:33:12.846Z'
+                name: Helsinki
+                created_at: '2021-12-09T04:48:57.068Z'
+                updated_at: '2021-12-09T04:48:57.068Z'
               schema:
                 type: array
                 items:
@@ -65,49 +65,49 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Foraging
-                description: Corporis exercitationem dolor. Ut in assumenda. Quis
-                  necessitatibus quo.
-                instructor: Iola Walker
-                duration: 3
-                created_at: '2021-12-09T04:33:12.895Z'
-                updated_at: '2021-12-09T04:33:12.901Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/t5acnq303c.jpeg
-              - id: 2
-                title: Skimboarding
-                description: Quibusdam quos magnam. Non omnis ab. Dignissimos quam
-                  amet.
-                instructor: Dominique Wiza I
-                duration: 3
-                created_at: '2021-12-09T04:33:12.907Z'
-                updated_at: '2021-12-09T04:33:12.910Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/h9069bgnim.jpeg
-              - id: 3
-                title: Rafting
-                description: Tenetur ut et. Dolorum aut sed. Aut provident sed.
-                instructor: Rep. Esther Kertzmann
-                duration: 5
-                created_at: '2021-12-09T04:33:12.915Z'
-                updated_at: '2021-12-09T04:33:12.918Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/dsr2anzl1p.jpeg
-              - id: 4
-                title: Acting
-                description: Repellendus beatae ut. Ex enim error. Laboriosam accusamus
-                  dolore.
-                instructor: Adolfo West
-                duration: 11
-                created_at: '2021-12-09T04:33:12.922Z'
-                updated_at: '2021-12-09T04:33:12.924Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/y3hfjuzs39.jpeg
-              - id: 5
-                title: Flying disc
-                description: Commodi adipisci delectus. Quis ea similique. Voluptatum
-                  earum inventore.
-                instructor: Hayley Reilly
+                title: Singing
+                description: Quos adipisci quidem. Eveniet hic perspiciatis. Ducimus
+                  omnis tenetur.
+                instructor: Msgr. Frederick Jast
                 duration: 10
-                created_at: '2021-12-09T04:33:12.932Z'
-                updated_at: '2021-12-09T04:33:12.935Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/cg0l9r7d07.jpeg
+                created_at: '2021-12-09T04:48:57.118Z'
+                updated_at: '2021-12-09T04:48:57.123Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/khc3be3z6u.jpeg
+              - id: 2
+                title: Worldbuilding
+                description: Eum itaque asperiores. Voluptas odio nobis. Voluptas
+                  repudiandae optio.
+                instructor: Lilia Goyette
+                duration: 8
+                created_at: '2021-12-09T04:48:57.129Z'
+                updated_at: '2021-12-09T04:48:57.132Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ryx799wkei.jpeg
+              - id: 3
+                title: Board games
+                description: Hic voluptatem iure. Aut nesciunt non. Vel illo saepe.
+                instructor: Flora Rippin
+                duration: 5
+                created_at: '2021-12-09T04:48:57.137Z'
+                updated_at: '2021-12-09T04:48:57.139Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/88uainb815.jpeg
+              - id: 4
+                title: Water sports
+                description: Occaecati doloribus blanditiis. Quibusdam totam et. Dolores
+                  perferendis id.
+                instructor: Daryl Collier
+                duration: 8
+                created_at: '2021-12-09T04:48:57.144Z'
+                updated_at: '2021-12-09T04:48:57.146Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p1zs2mblz1.jpeg
+              - id: 5
+                title: Board games
+                description: Aliquid doloribus sequi. Sit quo qui. Deleniti magni
+                  repellat.
+                instructor: Woodrow Mohr
+                duration: 8
+                created_at: '2021-12-09T04:48:57.151Z'
+                updated_at: '2021-12-09T04:48:57.153Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/z5p9nayfjb.jpeg
               schema:
                 type: array
                 items:
@@ -139,6 +139,59 @@ paths:
                   - updated_at
                   - course_image_url
                 required: true
+  "/api/v1/courses/{id}":
+    get:
+      summary: returns details for one course
+      tags:
+      - Courses
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                id: 6
+                title: Ghost hunting
+                description: Facere quas amet. Non ut et. Nihil voluptatem consequatur.
+                instructor: Jan Effertz
+                duration: 3
+                created_at: '2021-12-09T04:48:57.197Z'
+                updated_at: '2021-12-09T04:48:57.206Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/1gqtiikl7w.jpeg
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  title:
+                    type: string
+                  description:
+                    type: string
+                  instructor:
+                    type: string
+                  duration:
+                    type: integer
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                  course_image_url:
+                    type: string
+                required:
+                - id
+                - title
+                - description
+                - instructor
+                - duration
+                - created_at
+                - updated_at
+                - course_image_url
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -156,11 +209,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 3
-                      username: 83dc6oh3wu
-                      name: Silas
-                      created_at: '2021-12-09T04:33:12.976Z'
-                      updated_at: '2021-12-09T04:33:12.976Z'
+                      id: 4
+                      username: xc1648qbmh
+                      name: Helaine
+                      created_at: '2021-12-09T04:48:57.276Z'
+                      updated_at: '2021-12-09T04:48:57.276Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -191,11 +244,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 13
-                      username: q089bj7onj
-                      name: Rickey
-                      created_at: '2021-12-09T04:33:13.030Z'
-                      updated_at: '2021-12-09T04:33:13.030Z'
+                      id: 14
+                      username: 55v7zue6ww
+                      name: Joe
+                      created_at: '2021-12-09T04:48:57.300Z'
+                      updated_at: '2021-12-09T04:48:57.300Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -246,11 +299,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 31
-                      username: 2txku6y1gi
-                      name: Harland
-                      created_at: '2021-12-09T04:33:13.092Z'
-                      updated_at: '2021-12-09T04:33:13.092Z'
+                      id: 32
+                      username: mi8ndpatub
+                      name: Clinton
+                      created_at: '2021-12-09T04:48:57.354Z'
+                      updated_at: '2021-12-09T04:48:57.354Z'
                 when user does not exist:
                   value:
                     status: 401
