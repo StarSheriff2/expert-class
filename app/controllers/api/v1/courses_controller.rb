@@ -28,9 +28,10 @@ class API::V1::CoursesController < ApplicationController
 
   def destroy
     if @course
+      course = @course
       @course.destroy
       render json: {
-        course: @course,
+        course: course,
         message: 'Course successfully deleted',
         status: 200
       }

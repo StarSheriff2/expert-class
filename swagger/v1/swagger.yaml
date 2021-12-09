@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Freetown
-                created_at: '2021-12-09T16:17:00.036Z'
-                updated_at: '2021-12-09T16:17:00.036Z'
+                name: Dublin
+                created_at: '2021-12-09T19:49:22.719Z'
+                updated_at: '2021-12-09T19:49:22.719Z'
               - id: 2
-                name: Nuku'alofa
-                created_at: '2021-12-09T16:17:00.037Z'
-                updated_at: '2021-12-09T16:17:00.037Z'
+                name: Stockholm
+                created_at: '2021-12-09T19:49:22.720Z'
+                updated_at: '2021-12-09T19:49:22.720Z'
               - id: 3
-                name: Skopje
-                created_at: '2021-12-09T16:17:00.038Z'
-                updated_at: '2021-12-09T16:17:00.038Z'
+                name: Honiara
+                created_at: '2021-12-09T19:49:22.720Z'
+                updated_at: '2021-12-09T19:49:22.720Z'
               - id: 4
-                name: Riga
-                created_at: '2021-12-09T16:17:00.038Z'
-                updated_at: '2021-12-09T16:17:00.038Z'
+                name: Zagreb
+                created_at: '2021-12-09T19:49:22.721Z'
+                updated_at: '2021-12-09T19:49:22.721Z'
               - id: 5
-                name: Canberra
-                created_at: '2021-12-09T16:17:00.039Z'
-                updated_at: '2021-12-09T16:17:00.039Z'
+                name: Bujumbura
+                created_at: '2021-12-09T19:49:22.721Z'
+                updated_at: '2021-12-09T19:49:22.721Z'
               schema:
                 type: array
                 items:
@@ -65,48 +65,50 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Genealogy
-                description: Assumenda ad est. Ratione illo consequatur. Ullam aut
-                  ut.
-                instructor: Weston Walker DC
+                title: Photography
+                description: Corrupti illum voluptatem. Aperiam sequi iusto. Dolores
+                  modi sit.
+                instructor: Reginald Turner
                 duration: 9
-                created_at: '2021-12-09T16:17:00.092Z'
-                updated_at: '2021-12-09T16:17:00.097Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/xtxlyh65ei.jpeg
+                created_at: '2021-12-09T19:49:22.769Z'
+                updated_at: '2021-12-09T19:49:22.775Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/dspq9myo2v.jpeg
               - id: 2
-                title: Mycology
-                description: Sequi nihil officiis. Quis consectetur qui. Sequi fugit
-                  commodi.
-                instructor: Gary Kuhic
-                duration: 10
-                created_at: '2021-12-09T16:17:00.104Z'
-                updated_at: '2021-12-09T16:17:00.106Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/2psm6f2v3w.jpeg
+                title: Board games
+                description: Quibusdam rerum qui. Sapiente doloremque nihil. Illum
+                  voluptas voluptas.
+                instructor: Theron Bartoletti
+                duration: 11
+                created_at: '2021-12-09T19:49:22.781Z'
+                updated_at: '2021-12-09T19:49:22.783Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/uhn1m9pbwc.jpeg
               - id: 3
-                title: Crocheting
-                description: Rerum provident earum. Similique deserunt at. Ut placeat
-                  molestiae.
-                instructor: Dannielle McGlynn
-                duration: 8
-                created_at: '2021-12-09T16:17:00.111Z'
-                updated_at: '2021-12-09T16:17:00.113Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/2gqqai88aa.jpeg
-              - id: 4
-                title: Candle making
-                description: Alias dolores eos. Qui aut iure. Alias quam voluptatem.
-                instructor: Joellen Erdman DVM
+                title: Genealogy
+                description: Culpa reiciendis consequuntur. Aut eos facilis. Enim
+                  delectus sunt.
+                instructor: Thomasina Runolfsson
                 duration: 5
-                created_at: '2021-12-09T16:17:00.118Z'
-                updated_at: '2021-12-09T16:17:00.120Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/alsbueup1f.jpeg
+                created_at: '2021-12-09T19:49:22.791Z'
+                updated_at: '2021-12-09T19:49:22.793Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5jp0zwyqhx.jpeg
+              - id: 4
+                title: Knitting
+                description: Commodi atque odit. Possimus magnam quas. Et facilis
+                  aut.
+                instructor: Tarra Shanahan Ret.
+                duration: 2
+                created_at: '2021-12-09T19:49:22.798Z'
+                updated_at: '2021-12-09T19:49:22.800Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ibynj56n68.jpeg
               - id: 5
-                title: Sailing
-                description: Distinctio natus voluptatem. Sint et in. Et enim commodi.
-                instructor: Huey Hyatt
-                duration: 1
-                created_at: '2021-12-09T16:17:00.125Z'
-                updated_at: '2021-12-09T16:17:00.127Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/7pzy1mkd62.jpeg
+                title: Sudoku
+                description: Voluptate expedita id. Aut labore similique. Quo aut
+                  quis.
+                instructor: Earl Spencer
+                duration: 11
+                created_at: '2021-12-09T19:49:22.804Z'
+                updated_at: '2021-12-09T19:49:22.806Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/3nrb66p41b.jpeg
               schema:
                 type: array
                 items:
@@ -157,11 +159,22 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T16:17:00.301Z'
-                  updated_at: '2021-12-09T16:17:00.303Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/65y7vla5yp.jpeg
+                  created_at: '2021-12-09T19:49:22.973Z'
+                  updated_at: '2021-12-09T19:49:22.976Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/39hh6jeb1o.jpeg
               schema:
                 type: object
+                properties:
+                  course:
+                    type: object
+                  message:
+                    type: string
+                  status:
+                    type: string
+                required:
+                - course
+                - message
+                - status
       requestBody:
         content:
           multipart/form-data:
@@ -203,14 +216,14 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Reading
-                description: Voluptate natus aliquam. Facere suscipit blanditiis.
-                  Et praesentium sit.
-                instructor: Ardith Kovacek
-                duration: 6
-                created_at: '2021-12-09T16:17:00.177Z'
-                updated_at: '2021-12-09T16:17:00.200Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/9f3n86ge8o.jpeg
+                title: Ice skating
+                description: Provident sed error. Quidem eligendi omnis. Consequatur
+                  magnam sit.
+                instructor: Troy Schaden
+                duration: 5
+                created_at: '2021-12-09T19:49:22.854Z'
+                updated_at: '2021-12-09T19:49:22.880Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/spedpz56bn.jpeg
               schema:
                 type: object
                 properties:
@@ -255,16 +268,44 @@ paths:
           content:
             application/json:
               example:
-                status: created
-                logged_in: true
-                user:
-                  id: 5
-                  username: nq4fekgfb4
-                  name: Lakesha
-                  created_at: '2021-12-09T16:17:00.343Z'
-                  updated_at: '2021-12-09T16:17:00.343Z'
+                course:
+                  id: 17
+                  title: Knitting
+                  description: Esse eius reprehenderit. Rerum dolorum animi. Ut tempore
+                    fugiat.
+                  instructor: Larhonda Bauch
+                  duration: 2
+                  created_at: '2021-12-09T19:49:22.982Z'
+                  updated_at: '2021-12-09T19:49:22.984Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/43tp0g593i.jpeg
+                message: Course successfully deleted
+                status: 200
               schema:
                 type: object
+                properties:
+                  course:
+                    type: object
+                  message:
+                    type: string
+                  status:
+                    type: integer
+                required:
+                - course
+                - message
+                - status
+        '404':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Couldn't find Course with 'id'=1022
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                required:
+                - message
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -282,11 +323,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 6
-                      username: gjw4wnaxtw
-                      name: Marni
-                      created_at: '2021-12-09T16:17:00.362Z'
-                      updated_at: '2021-12-09T16:17:00.362Z'
+                      id: 7
+                      username: 0skwshs5fb
+                      name: Edythe
+                      created_at: '2021-12-09T19:49:23.082Z'
+                      updated_at: '2021-12-09T19:49:23.082Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -318,11 +359,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 16
-                      username: ibvgkjfcrt
-                      name: Bessie
-                      created_at: '2021-12-09T16:17:00.386Z'
-                      updated_at: '2021-12-09T16:17:00.386Z'
+                      id: 17
+                      username: enxgb8nbkq
+                      name: Rhett
+                      created_at: '2021-12-09T19:49:23.106Z'
+                      updated_at: '2021-12-09T19:49:23.106Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -373,11 +414,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 34
-                      username: hahlpa30n9
-                      name: Salvador
-                      created_at: '2021-12-09T16:17:00.441Z'
-                      updated_at: '2021-12-09T16:17:00.441Z'
+                      id: 35
+                      username: ays27185hl
+                      name: Janelle
+                      created_at: '2021-12-09T19:49:23.161Z'
+                      updated_at: '2021-12-09T19:49:23.161Z'
                 when user does not exist:
                   value:
                     status: 401

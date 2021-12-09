@@ -114,7 +114,14 @@ describe 'Courses API' do
                 required: %w[course]
 
       response '200', 'success' do
-        schema type: :object
+        schema type: :object,
+               properties: {
+                 course: { type: :object },
+                 message: { type: :string },
+                 status: { type: :string }
+               },
+               required: %w[course message status]
+
         let(:course) { valid_attributes }
         run_test!
       end
@@ -128,21 +135,28 @@ describe 'Courses API' do
       parameter name: :id, in: :path, type: :string
 
       response '200', 'success' do
-        schema type: :object
-              #  properties: {
-              #    course: { type: :object },
-              #    message: { type: :string },
-              #    status: { type: :integer }
-              #  },
-              #  required: %w[course message status]
+        schema type: :object,
+               properties: {
+                 course: { type: :object },
+                 message: { type: :string },
+                 status: { type: :integer }
+               },
+               required: %w[course message status]
 
-        let!(:courses) { create_list(:course, 5) }
-        # let(:id) { Course.create(title: 'foo', description: 'bar', instructor: 'baz', duration: 4, image: file).id }
-        let!(:id) { courses.second.id }
-        run_test! do |response|
-          data = response.body
-          puts data
-        end
+        before { allow_any_instance_of(Course).to receive(:destroy) }
+        let!(:id) { course_id }
+        run_test!
+      end
+
+      response '404', 'success' do
+        schema type: :object,
+               properties: {
+                 message: { type: :string }
+               },
+               required: %w[message]
+
+        let!(:id) { course_id + 1000 }
+        run_test!
       end
     end
   end
