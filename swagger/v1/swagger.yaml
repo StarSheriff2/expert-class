@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Belmopan
-                created_at: '2021-12-08T23:37:12.920Z'
-                updated_at: '2021-12-08T23:37:12.920Z'
+                name: Tripoli
+                created_at: '2021-12-09T01:33:07.000Z'
+                updated_at: '2021-12-09T01:33:07.000Z'
               - id: 2
-                name: Brazzaville
-                created_at: '2021-12-08T23:37:12.921Z'
-                updated_at: '2021-12-08T23:37:12.921Z'
+                name: Kingstown
+                created_at: '2021-12-09T01:33:07.001Z'
+                updated_at: '2021-12-09T01:33:07.001Z'
               - id: 3
-                name: Managua
-                created_at: '2021-12-08T23:37:12.921Z'
-                updated_at: '2021-12-08T23:37:12.921Z'
+                name: Juba
+                created_at: '2021-12-09T01:33:07.001Z'
+                updated_at: '2021-12-09T01:33:07.001Z'
               - id: 4
-                name: Astana
-                created_at: '2021-12-08T23:37:12.922Z'
-                updated_at: '2021-12-08T23:37:12.922Z'
+                name: Skopje
+                created_at: '2021-12-09T01:33:07.002Z'
+                updated_at: '2021-12-09T01:33:07.002Z'
               - id: 5
-                name: Ljubljana
-                created_at: '2021-12-08T23:37:12.923Z'
-                updated_at: '2021-12-08T23:37:12.923Z'
+                name: Taipei
+                created_at: '2021-12-09T01:33:07.002Z'
+                updated_at: '2021-12-09T01:33:07.002Z'
               schema:
                 type: array
                 items:
@@ -53,6 +53,96 @@ paths:
                   - name
                   - created_at
                   - updated_at
+  "/api/v1/sign_in":
+    post:
+      summary: creates a new session
+      tags:
+      - Sessions
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user exists:
+                  value:
+                    status: created
+                    logged_in: true
+                    user:
+                      id: 2
+                      username: alcdvz3h9m
+                      name: Leigh
+                      created_at: '2021-12-09T01:33:07.013Z'
+                      updated_at: '2021-12-09T01:33:07.013Z'
+                when user does not exist:
+                  value:
+                    status: 401
+              schema:
+                type: object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+              required:
+              - username
+  "/api/v1/signed_in":
+    get:
+      summary: return login status of user
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              examples:
+                when user is logged in:
+                  value:
+                    logged_in: true
+                    user:
+                      id: 12
+                      username: sskb6nhela
+                      name: Cherrie
+                      created_at: '2021-12-09T01:33:07.047Z'
+                      updated_at: '2021-12-09T01:33:07.047Z'
+                when user is not logged in:
+                  value:
+                    logged_in: false
+              schema:
+                type: object
+                properties:
+                  logged_in:
+                    type: boolean
+                required:
+                - logged_in
+  "/api/v1/sign_out":
+    delete:
+      summary: return logged-out status of user as true
+      tags:
+      - Sessions
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                status: 200
+                logged_out: true
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  logged_out:
+                    type: boolean
+                required:
+                - status
+                - logged_out
   "/api/v1/users":
     post:
       summary: creates a new user
@@ -65,17 +155,17 @@ paths:
           content:
             application/json:
               examples:
-                when user does not exist:
+                when user exists:
                   value:
                     status: created
                     logged_in: true
                     user:
-                      id: 5
-                      username: qf7rw9mnof
-                      name: Leonie
-                      created_at: '2021-12-08T23:37:12.941Z'
-                      updated_at: '2021-12-08T23:37:12.941Z'
-                when user exists:
+                      id: 30
+                      username: ffid0etboi
+                      name: Kip
+                      created_at: '2021-12-09T01:33:07.102Z'
+                      updated_at: '2021-12-09T01:33:07.102Z'
+                when user does not exist:
                   value:
                     status: 401
                     error: This username already exists. Please Choose another one.
