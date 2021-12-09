@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Sofia
-                created_at: '2021-12-09T03:37:00.374Z'
-                updated_at: '2021-12-09T03:37:00.374Z'
+                name: Berlin
+                created_at: '2021-12-09T04:21:59.858Z'
+                updated_at: '2021-12-09T04:21:59.858Z'
               - id: 2
-                name: Mogadishu
-                created_at: '2021-12-09T03:37:00.375Z'
-                updated_at: '2021-12-09T03:37:00.375Z'
+                name: Singapore
+                created_at: '2021-12-09T04:21:59.860Z'
+                updated_at: '2021-12-09T04:21:59.860Z'
               - id: 3
-                name: Taipei
-                created_at: '2021-12-09T03:37:00.376Z'
-                updated_at: '2021-12-09T03:37:00.376Z'
+                name: Guatemala City
+                created_at: '2021-12-09T04:21:59.860Z'
+                updated_at: '2021-12-09T04:21:59.860Z'
               - id: 4
-                name: Praia Bangui
-                created_at: '2021-12-09T03:37:00.377Z'
-                updated_at: '2021-12-09T03:37:00.377Z'
+                name: Gaborone
+                created_at: '2021-12-09T04:21:59.861Z'
+                updated_at: '2021-12-09T04:21:59.861Z'
               - id: 5
-                name: Apia
-                created_at: '2021-12-09T03:37:00.377Z'
-                updated_at: '2021-12-09T03:37:00.377Z'
+                name: Ottawa
+                created_at: '2021-12-09T04:21:59.861Z'
+                updated_at: '2021-12-09T04:21:59.861Z'
               schema:
                 type: array
                 items:
@@ -65,47 +65,48 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Hunting
-                description: Quos eius tenetur. Qui et laboriosam. Animi quam necessitatibus.
-                instructor: Shanita Hartmann
-                duration: 4
-                created_at: '2021-12-09T03:37:00.427Z'
-                updated_at: '2021-12-09T03:37:00.432Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
-              - id: 2
-                title: Motor sports
-                description: Sit veniam pariatur. Aut eveniet sint. Repudiandae aut
-                  labore.
-                instructor: Rafael DuBuque
+                title: Painting
+                description: Itaque quia culpa. Itaque eum aut. Libero cumque enim.
+                instructor: The Hon. Tona Cole
                 duration: 11
-                created_at: '2021-12-09T03:37:00.443Z'
-                updated_at: '2021-12-09T03:37:00.446Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
-              - id: 3
-                title: Book restoration
-                description: Vel ut et. Aut repudiandae impedit. Ipsum iusto quia.
-                instructor: Sammy Wilkinson
+                created_at: '2021-12-09T04:21:59.912Z'
+                updated_at: '2021-12-09T04:21:59.917Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ypc9hp2706.jpeg
+              - id: 2
+                title: Kayaking
+                description: Inventore ut voluptas. Enim at cum. Voluptas labore consectetur.
+                instructor: Cassandra Mann
                 duration: 10
-                created_at: '2021-12-09T03:37:00.451Z'
-                updated_at: '2021-12-09T03:37:00.454Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
-              - id: 4
-                title: Gaming
-                description: Autem quaerat architecto. Repellat cupiditate qui. Doloremque
-                  aut fugiat.
-                instructor: Pablo McCullough
-                duration: 7
-                created_at: '2021-12-09T03:37:00.459Z'
-                updated_at: '2021-12-09T03:37:00.461Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
-              - id: 5
-                title: Drawing
-                description: Modi est harum. Pariatur magnam aut. Aliquam et pariatur.
-                instructor: Wally Conn Jr.
+                created_at: '2021-12-09T04:21:59.924Z'
+                updated_at: '2021-12-09T04:21:59.928Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/mo9rp8y5ff.jpeg
+              - id: 3
+                title: Dance
+                description: Reiciendis asperiores officia. Qui consequuntur qui.
+                  Dolorum sed aut.
+                instructor: Dr. Hosea Murazik
                 duration: 3
-                created_at: '2021-12-09T03:37:00.466Z'
-                updated_at: '2021-12-09T03:37:00.468Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/qzgh1bzulx.jpeg
+                created_at: '2021-12-09T04:21:59.934Z'
+                updated_at: '2021-12-09T04:21:59.936Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/v1icswantk.jpeg
+              - id: 4
+                title: Cabaret
+                description: Animi dolores magnam. Aut aliquam suscipit. Aut tempora
+                  et.
+                instructor: Gov. Zachery Russel
+                duration: 10
+                created_at: '2021-12-09T04:21:59.941Z'
+                updated_at: '2021-12-09T04:21:59.944Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/7hjjtxnk9a.jpeg
+              - id: 5
+                title: Sports
+                description: Suscipit ea voluptatem. Non alias excepturi. Odio corrupti
+                  rem.
+                instructor: Gov. Robbi Fahey
+                duration: 6
+                created_at: '2021-12-09T04:21:59.953Z'
+                updated_at: '2021-12-09T04:21:59.956Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/n43zuh54jw.jpeg
               schema:
                 type: array
   "/api/v1/sign_in":
@@ -126,10 +127,10 @@ paths:
                     logged_in: true
                     user:
                       id: 3
-                      username: dk2p6lqjzb
-                      name: Craig
-                      created_at: '2021-12-09T03:37:00.503Z'
-                      updated_at: '2021-12-09T03:37:00.503Z'
+                      username: 17dm3hyrg9
+                      name: Alissa
+                      created_at: '2021-12-09T04:21:59.999Z'
+                      updated_at: '2021-12-09T04:21:59.999Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -161,10 +162,10 @@ paths:
                     logged_in: true
                     user:
                       id: 13
-                      username: jcq23vpdqw
-                      name: Rafaela
-                      created_at: '2021-12-09T03:37:00.562Z'
-                      updated_at: '2021-12-09T03:37:00.562Z'
+                      username: pqbl79q0kx
+                      name: Forest
+                      created_at: '2021-12-09T04:22:00.055Z'
+                      updated_at: '2021-12-09T04:22:00.055Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -216,10 +217,10 @@ paths:
                     logged_in: true
                     user:
                       id: 31
-                      username: bvvad9f4tj
-                      name: Esta
-                      created_at: '2021-12-09T03:37:00.618Z'
-                      updated_at: '2021-12-09T03:37:00.618Z'
+                      username: urg0xid98g
+                      name: Cleveland
+                      created_at: '2021-12-09T04:22:00.112Z'
+                      updated_at: '2021-12-09T04:22:00.112Z'
                 when user does not exist:
                   value:
                     status: 401
