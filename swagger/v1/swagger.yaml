@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Dublin
-                created_at: '2021-12-09T19:49:22.719Z'
-                updated_at: '2021-12-09T19:49:22.719Z'
+                name: Tegucigalpa
+                created_at: '2021-12-09T20:10:04.567Z'
+                updated_at: '2021-12-09T20:10:04.567Z'
               - id: 2
-                name: Stockholm
-                created_at: '2021-12-09T19:49:22.720Z'
-                updated_at: '2021-12-09T19:49:22.720Z'
+                name: Warsaw
+                created_at: '2021-12-09T20:10:04.568Z'
+                updated_at: '2021-12-09T20:10:04.568Z'
               - id: 3
-                name: Honiara
-                created_at: '2021-12-09T19:49:22.720Z'
-                updated_at: '2021-12-09T19:49:22.720Z'
+                name: Yaounde
+                created_at: '2021-12-09T20:10:04.568Z'
+                updated_at: '2021-12-09T20:10:04.568Z'
               - id: 4
-                name: Zagreb
-                created_at: '2021-12-09T19:49:22.721Z'
-                updated_at: '2021-12-09T19:49:22.721Z'
+                name: Port Louis
+                created_at: '2021-12-09T20:10:04.569Z'
+                updated_at: '2021-12-09T20:10:04.569Z'
               - id: 5
-                name: Bujumbura
-                created_at: '2021-12-09T19:49:22.721Z'
-                updated_at: '2021-12-09T19:49:22.721Z'
+                name: Vilnius
+                created_at: '2021-12-09T20:10:04.569Z'
+                updated_at: '2021-12-09T20:10:04.569Z'
               schema:
                 type: array
                 items:
@@ -65,50 +65,49 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Photography
-                description: Corrupti illum voluptatem. Aperiam sequi iusto. Dolores
-                  modi sit.
-                instructor: Reginald Turner
-                duration: 9
-                created_at: '2021-12-09T19:49:22.769Z'
-                updated_at: '2021-12-09T19:49:22.775Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/dspq9myo2v.jpeg
+                title: Pottery
+                description: Earum eum ipsum. Reprehenderit aut alias. Non molestiae
+                  fuga.
+                instructor: Kennith Keeling I
+                duration: 3
+                created_at: '2021-12-09T20:10:04.618Z'
+                updated_at: '2021-12-09T20:10:04.624Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/w0mar3oy2c.jpeg
               - id: 2
-                title: Board games
-                description: Quibusdam rerum qui. Sapiente doloremque nihil. Illum
-                  voluptas voluptas.
-                instructor: Theron Bartoletti
-                duration: 11
-                created_at: '2021-12-09T19:49:22.781Z'
-                updated_at: '2021-12-09T19:49:22.783Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/uhn1m9pbwc.jpeg
+                title: Candle making
+                description: Vitae et maiores. Mollitia consequatur et. Rem nesciunt
+                  eveniet.
+                instructor: Kathern Ward Ret.
+                duration: 8
+                created_at: '2021-12-09T20:10:04.629Z'
+                updated_at: '2021-12-09T20:10:04.632Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/27gmrdhg6v.jpeg
               - id: 3
-                title: Genealogy
-                description: Culpa reiciendis consequuntur. Aut eos facilis. Enim
-                  delectus sunt.
-                instructor: Thomasina Runolfsson
-                duration: 5
-                created_at: '2021-12-09T19:49:22.791Z'
-                updated_at: '2021-12-09T19:49:22.793Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5jp0zwyqhx.jpeg
+                title: Geocaching
+                description: Dignissimos aut molestiae. Vel et et. Voluptatum non
+                  officia.
+                instructor: Alba Wisozk
+                duration: 10
+                created_at: '2021-12-09T20:10:04.636Z'
+                updated_at: '2021-12-09T20:10:04.638Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/3xw4svg4h1.jpeg
               - id: 4
-                title: Knitting
-                description: Commodi atque odit. Possimus magnam quas. Et facilis
-                  aut.
-                instructor: Tarra Shanahan Ret.
-                duration: 2
-                created_at: '2021-12-09T19:49:22.798Z'
-                updated_at: '2021-12-09T19:49:22.800Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ibynj56n68.jpeg
+                title: Digital arts
+                description: Minus ea quia. Modi rerum temporibus. Et sit est.
+                instructor: Jeane Conn IV
+                duration: 1
+                created_at: '2021-12-09T20:10:04.643Z'
+                updated_at: '2021-12-09T20:10:04.645Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/rwzr1t6oz6.jpeg
               - id: 5
-                title: Sudoku
-                description: Voluptate expedita id. Aut labore similique. Quo aut
-                  quis.
-                instructor: Earl Spencer
-                duration: 11
-                created_at: '2021-12-09T19:49:22.804Z'
-                updated_at: '2021-12-09T19:49:22.806Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/3nrb66p41b.jpeg
+                title: Mycology
+                description: Repellat doloribus blanditiis. Non nisi sequi. Culpa
+                  asperiores eos.
+                instructor: The Hon. Elaine Boyer
+                duration: 0
+                created_at: '2021-12-09T20:10:04.650Z'
+                updated_at: '2021-12-09T20:10:04.652Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5y2b9hlm6y.jpeg
               schema:
                 type: array
                 items:
@@ -159,9 +158,9 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T19:49:22.973Z'
-                  updated_at: '2021-12-09T19:49:22.976Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/39hh6jeb1o.jpeg
+                  created_at: '2021-12-09T20:10:04.819Z'
+                  updated_at: '2021-12-09T20:10:04.821Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/11vsvb2fqs.jpeg
               schema:
                 type: object
                 properties:
@@ -216,14 +215,13 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Ice skating
-                description: Provident sed error. Quidem eligendi omnis. Consequatur
-                  magnam sit.
-                instructor: Troy Schaden
-                duration: 5
-                created_at: '2021-12-09T19:49:22.854Z'
-                updated_at: '2021-12-09T19:49:22.880Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/spedpz56bn.jpeg
+                title: Rappelling
+                description: Non hic delectus. Quidem vero quia. Alias qui voluptatem.
+                instructor: Victor Padberg
+                duration: 3
+                created_at: '2021-12-09T20:10:04.721Z'
+                updated_at: '2021-12-09T20:10:04.723Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/63qnhjxtov.jpeg
               schema:
                 type: object
                 properties:
@@ -270,14 +268,14 @@ paths:
               example:
                 course:
                   id: 17
-                  title: Knitting
-                  description: Esse eius reprehenderit. Rerum dolorum animi. Ut tempore
-                    fugiat.
-                  instructor: Larhonda Bauch
-                  duration: 2
-                  created_at: '2021-12-09T19:49:22.982Z'
-                  updated_at: '2021-12-09T19:49:22.984Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/43tp0g593i.jpeg
+                  title: Juggling
+                  description: Nobis modi nulla. Fugit cupiditate qui. Sit consequuntur
+                    rem.
+                  instructor: Lon Hane
+                  duration: 10
+                  created_at: '2021-12-09T20:10:04.832Z'
+                  updated_at: '2021-12-09T20:10:04.834Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tpuax4xznu.jpeg
                 message: Course successfully deleted
                 status: 200
               schema:
@@ -306,6 +304,80 @@ paths:
                     type: string
                 required:
                 - message
+  "/api/v1/reservations":
+    get:
+      summary: returns list with all reservations
+      tags:
+      - Reservations
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - user: Ione
+                course: Skydiving
+                city: Georgetown
+                date: '2022-03-22'
+                id: 1
+                created_at: '2021-12-09T20:10:04.949Z'
+                updated_at: '2021-12-09T20:10:04.949Z'
+              - user: Ione
+                course: Inline skating
+                city: Tallinn
+                date: '2022-04-28'
+                id: 2
+                created_at: '2021-12-09T20:10:04.960Z'
+                updated_at: '2021-12-09T20:10:04.960Z'
+              - user: Ione
+                course: Electronics
+                city: Islamabad
+                date: '2022-10-27'
+                id: 3
+                created_at: '2021-12-09T20:10:04.968Z'
+                updated_at: '2021-12-09T20:10:04.968Z'
+              - user: Ione
+                course: Cabaret
+                city: Vatican City
+                date: '2022-10-03'
+                id: 4
+                created_at: '2021-12-09T20:10:04.977Z'
+                updated_at: '2021-12-09T20:10:04.977Z'
+              - user: Ione
+                course: Acting
+                city: Moroni
+                date: '2022-05-25'
+                id: 5
+                created_at: '2021-12-09T20:10:04.985Z'
+                updated_at: '2021-12-09T20:10:04.985Z'
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    user:
+                      type: string
+                    course:
+                      type: string
+                    city:
+                      type: string
+                    date:
+                      type: string
+                    id:
+                      type: integer
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                  required:
+                  - user
+                  - course
+                  - city
+                  - date
+                  - id
+                  - created_at
+                  - updated_at
+                required: true
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -323,11 +395,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 7
-                      username: 0skwshs5fb
-                      name: Edythe
-                      created_at: '2021-12-09T19:49:23.082Z'
-                      updated_at: '2021-12-09T19:49:23.082Z'
+                      id: 12
+                      username: 3id9pb3f52
+                      name: Ellsworth
+                      created_at: '2021-12-09T20:10:05.073Z'
+                      updated_at: '2021-12-09T20:10:05.073Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -359,11 +431,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 17
-                      username: enxgb8nbkq
-                      name: Rhett
-                      created_at: '2021-12-09T19:49:23.106Z'
-                      updated_at: '2021-12-09T19:49:23.106Z'
+                      id: 22
+                      username: txmtj9vdl7
+                      name: Mike
+                      created_at: '2021-12-09T20:10:05.096Z'
+                      updated_at: '2021-12-09T20:10:05.096Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -414,11 +486,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 35
-                      username: ays27185hl
-                      name: Janelle
-                      created_at: '2021-12-09T19:49:23.161Z'
-                      updated_at: '2021-12-09T19:49:23.161Z'
+                      id: 40
+                      username: 1uupfv0tcg
+                      name: Debbie
+                      created_at: '2021-12-09T20:10:05.149Z'
+                      updated_at: '2021-12-09T20:10:05.149Z'
                 when user does not exist:
                   value:
                     status: 401
