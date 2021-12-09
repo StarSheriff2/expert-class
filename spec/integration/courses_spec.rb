@@ -120,4 +120,30 @@ describe 'Courses API' do
       end
     end
   end
+
+  path '/api/v1/courses/{id}' do
+    delete 'deletes a course' do
+      tags TAGS_COURSE
+      produces 'application/json'
+      parameter name: :id, in: :path, type: :string
+
+      response '200', 'success' do
+        schema type: :object
+              #  properties: {
+              #    course: { type: :object },
+              #    message: { type: :string },
+              #    status: { type: :integer }
+              #  },
+              #  required: %w[course message status]
+
+        let!(:courses) { create_list(:course, 5) }
+        # let(:id) { Course.create(title: 'foo', description: 'bar', instructor: 'baz', duration: 4, image: file).id }
+        let!(:id) { courses.second.id }
+        run_test! do |response|
+          data = response.body
+          puts data
+        end
+      end
+    end
+  end
 end

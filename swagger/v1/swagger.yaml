@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Phnom Penh
-                created_at: '2021-12-09T06:09:47.567Z'
-                updated_at: '2021-12-09T06:09:47.567Z'
+                name: Freetown
+                created_at: '2021-12-09T16:17:00.036Z'
+                updated_at: '2021-12-09T16:17:00.036Z'
               - id: 2
-                name: Bandar Seri Begawan
-                created_at: '2021-12-09T06:09:47.569Z'
-                updated_at: '2021-12-09T06:09:47.569Z'
+                name: Nuku'alofa
+                created_at: '2021-12-09T16:17:00.037Z'
+                updated_at: '2021-12-09T16:17:00.037Z'
               - id: 3
-                name: Bandar Seri Begawan
-                created_at: '2021-12-09T06:09:47.569Z'
-                updated_at: '2021-12-09T06:09:47.569Z'
+                name: Skopje
+                created_at: '2021-12-09T16:17:00.038Z'
+                updated_at: '2021-12-09T16:17:00.038Z'
               - id: 4
-                name: Quito
-                created_at: '2021-12-09T06:09:47.570Z'
-                updated_at: '2021-12-09T06:09:47.570Z'
+                name: Riga
+                created_at: '2021-12-09T16:17:00.038Z'
+                updated_at: '2021-12-09T16:17:00.038Z'
               - id: 5
-                name: Maseru
-                created_at: '2021-12-09T06:09:47.570Z'
-                updated_at: '2021-12-09T06:09:47.570Z'
+                name: Canberra
+                created_at: '2021-12-09T16:17:00.039Z'
+                updated_at: '2021-12-09T16:17:00.039Z'
               schema:
                 type: array
                 items:
@@ -66,46 +66,47 @@ paths:
               example:
               - id: 1
                 title: Genealogy
-                description: Temporibus ducimus illo. Voluptatem et sit. Sed quo ea.
-                instructor: Meridith Block
-                duration: 6
-                created_at: '2021-12-09T06:09:47.617Z'
-                updated_at: '2021-12-09T06:09:47.623Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/wyuwnz4fzr.jpeg
+                description: Assumenda ad est. Ratione illo consequatur. Ullam aut
+                  ut.
+                instructor: Weston Walker DC
+                duration: 9
+                created_at: '2021-12-09T16:17:00.092Z'
+                updated_at: '2021-12-09T16:17:00.097Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/xtxlyh65ei.jpeg
               - id: 2
-                title: Board games
-                description: A repellat natus. Voluptas laborum omnis. Mollitia sed
-                  enim.
-                instructor: Booker Daniel V
-                duration: 4
-                created_at: '2021-12-09T06:09:47.629Z'
-                updated_at: '2021-12-09T06:09:47.631Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5mf3wpfrjy.jpeg
+                title: Mycology
+                description: Sequi nihil officiis. Quis consectetur qui. Sequi fugit
+                  commodi.
+                instructor: Gary Kuhic
+                duration: 10
+                created_at: '2021-12-09T16:17:00.104Z'
+                updated_at: '2021-12-09T16:17:00.106Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/2psm6f2v3w.jpeg
               - id: 3
-                title: Swimming
-                description: Ut qui quia. Laborum facilis quod. Eius dolores quia.
-                instructor: Ed Kuhic
-                duration: 4
-                created_at: '2021-12-09T06:09:47.636Z'
-                updated_at: '2021-12-09T06:09:47.639Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/i75evrk3av.jpeg
+                title: Crocheting
+                description: Rerum provident earum. Similique deserunt at. Ut placeat
+                  molestiae.
+                instructor: Dannielle McGlynn
+                duration: 8
+                created_at: '2021-12-09T16:17:00.111Z'
+                updated_at: '2021-12-09T16:17:00.113Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/2gqqai88aa.jpeg
               - id: 4
-                title: Painting
-                description: Cumque quis vitae. Labore sit deleniti. Aliquam tenetur
-                  voluptatem.
-                instructor: Houston Flatley
+                title: Candle making
+                description: Alias dolores eos. Qui aut iure. Alias quam voluptatem.
+                instructor: Joellen Erdman DVM
                 duration: 5
-                created_at: '2021-12-09T06:09:47.643Z'
-                updated_at: '2021-12-09T06:09:47.645Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/armdnzhbwm.jpeg
+                created_at: '2021-12-09T16:17:00.118Z'
+                updated_at: '2021-12-09T16:17:00.120Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/alsbueup1f.jpeg
               - id: 5
-                title: Flag Football
-                description: Incidunt aut quo. Quia commodi odit. Possimus sed deleniti.
-                instructor: Robin Schumm
-                duration: 0
-                created_at: '2021-12-09T06:09:47.650Z'
-                updated_at: '2021-12-09T06:09:47.652Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/n7nah90e21.jpeg
+                title: Sailing
+                description: Distinctio natus voluptatem. Sint et in. Et enim commodi.
+                instructor: Huey Hyatt
+                duration: 1
+                created_at: '2021-12-09T16:17:00.125Z'
+                updated_at: '2021-12-09T16:17:00.127Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/7pzy1mkd62.jpeg
               schema:
                 type: array
                 items:
@@ -156,9 +157,9 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T06:09:47.821Z'
-                  updated_at: '2021-12-09T06:09:47.823Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/clhj00gfsq.jpeg
+                  created_at: '2021-12-09T16:17:00.301Z'
+                  updated_at: '2021-12-09T16:17:00.303Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/65y7vla5yp.jpeg
               schema:
                 type: object
       requestBody:
@@ -202,14 +203,14 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Gaming
-                description: Possimus incidunt molestiae. Ex quas dolor. Aspernatur
-                  aut enim.
-                instructor: Fr. Elba West
-                duration: 1
-                created_at: '2021-12-09T06:09:47.696Z'
-                updated_at: '2021-12-09T06:09:47.723Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tq6bh5zbv0.jpeg
+                title: Reading
+                description: Voluptate natus aliquam. Facere suscipit blanditiis.
+                  Et praesentium sit.
+                instructor: Ardith Kovacek
+                duration: 6
+                created_at: '2021-12-09T16:17:00.177Z'
+                updated_at: '2021-12-09T16:17:00.200Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/9f3n86ge8o.jpeg
               schema:
                 type: object
                 properties:
@@ -238,6 +239,32 @@ paths:
                 - created_at
                 - updated_at
                 - course_image_url
+    delete:
+      summary: deletes a course
+      tags:
+      - Courses
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                status: created
+                logged_in: true
+                user:
+                  id: 5
+                  username: nq4fekgfb4
+                  name: Lakesha
+                  created_at: '2021-12-09T16:17:00.343Z'
+                  updated_at: '2021-12-09T16:17:00.343Z'
+              schema:
+                type: object
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -255,11 +282,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 5
-                      username: vly4akl8jd
-                      name: Lorraine
-                      created_at: '2021-12-09T06:09:47.829Z'
-                      updated_at: '2021-12-09T06:09:47.829Z'
+                      id: 6
+                      username: gjw4wnaxtw
+                      name: Marni
+                      created_at: '2021-12-09T16:17:00.362Z'
+                      updated_at: '2021-12-09T16:17:00.362Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -291,11 +318,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 15
-                      username: gwncm8oy55
-                      name: Eduardo
-                      created_at: '2021-12-09T06:09:47.852Z'
-                      updated_at: '2021-12-09T06:09:47.852Z'
+                      id: 16
+                      username: ibvgkjfcrt
+                      name: Bessie
+                      created_at: '2021-12-09T16:17:00.386Z'
+                      updated_at: '2021-12-09T16:17:00.386Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -346,11 +373,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 33
-                      username: 9u16awtv77
-                      name: Zachery
-                      created_at: '2021-12-09T06:09:47.904Z'
-                      updated_at: '2021-12-09T06:09:47.904Z'
+                      id: 34
+                      username: hahlpa30n9
+                      name: Salvador
+                      created_at: '2021-12-09T16:17:00.441Z'
+                      updated_at: '2021-12-09T16:17:00.441Z'
                 when user does not exist:
                   value:
                     status: 401
