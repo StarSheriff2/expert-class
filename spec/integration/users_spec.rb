@@ -53,7 +53,8 @@ describe 'Users API' do
           username: { type: :string }
         },
         required: %w[name username]
-      }
+      },
+                required: true
 
       response '200', 'success' do
         context 'when user exists' do
