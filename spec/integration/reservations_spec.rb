@@ -58,44 +58,64 @@ describe 'Reservations API' do
     end
   end
 
-  # path '/api/v1/courses' do
-  #   post 'creates a new course' do
-  #     tags TAGS_COURSE
-  #     produces 'application/json'
-  #     consumes 'multipart/form-data'
-  #     parameter name: 'course',
-  #               in: :formData,
-  #               schema: {
-  #                 type: :object,
-  #                 properties: {
-  #                   title: { type: :string },
-  #                   description: { type: :string },
-  #                   instructor: { type: :string },
-  #                   duration: { type: :integer },
-  #                   image: { type: :binary }
-  #                 },
-  #                 required: %w[title description instructor duration image]
-  #               },
-  #               required: %w[course]
+  path '/api/v1/reservations' do
+    post 'creates a new course' do
+      tags TAGS_RESERVATION
+      produces 'application/json'
+      consumes 'application/json'
+      parameter name: :reservation, in: :body, schema: {
+        type: :object,
+        properties: {
+          date: { type: :string },
+          user_id: { type: :integer },
+          course_id: { type: :integer },
+          city_id: { type: :integer }
+        },
+        required: %w[date user_id course_id city_id]
+      },
+                required: true
 
-  #     response '200', 'success' do
-  #       schema type: :object,
-  #              properties: {
-  #                course: { type: :object },
-  #                message: { type: :string },
-  #                status: { type: :string }
-  #              },
-  #              required: %w[course message status]
+      response '200', 'success' do
+        schema type: :object,
+               properties: {
+                 reservation: {
+                   type: :object,
+                   properties: {
+                    user: { type: :string},
+                    course: { type: :string },
+                    city: { type: :string },
+                    date: { type: :string },
+                    id: { type: :integer },
+                    created_at: { type: :string },
+                    updated_at: { type: :string }
+                  },
+                  required: %w[user course city date id created_at updated_at]
+                },
+                message: { type: :string },
+                status: { type: :integer }
+               },
+               required: %w[reservation message status]
 
-  #       let(:course) { valid_attributes }
-  #       run_test!
-  #     end
-  #   end
-  # end
+        let(:valid_attributes) do
+          {
+            reservation: {
+              date: Date.tomorrow,
+              user_id: users.first.id,
+              course_id: courses.second.id,
+              city_id: cities.third.id
+            }
+          }
+        end
 
-  # path '/api/v1/courses/{id}' do
+        let(:reservation) { valid_attributes }
+        run_test!
+      end
+    end
+  end
+
+  # path '/api/v1/reservations/{id}' do
   #   delete 'deletes a course' do
-  #     tags TAGS_COURSE
+  #     tags TAGS_RESERVATION
   #     produces 'application/json'
   #     parameter name: :id, in: :path, type: :string
 
