@@ -32,6 +32,8 @@ gem 'rack-cors'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Use rspec
+gem 'factory_bot_rails'
+gem 'faker'
 gem 'rspec-rails'
 gem 'rswag'
 
@@ -48,8 +50,6 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'factory_bot_rails'
-  gem 'faker'
   gem 'shoulda-matchers'
 end
 
