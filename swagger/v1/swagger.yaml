@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Berlin
-                created_at: '2021-12-09T04:50:21.272Z'
-                updated_at: '2021-12-09T04:50:21.272Z'
+                name: Phnom Penh
+                created_at: '2021-12-09T06:09:47.567Z'
+                updated_at: '2021-12-09T06:09:47.567Z'
               - id: 2
-                name: Beirut
-                created_at: '2021-12-09T04:50:21.274Z'
-                updated_at: '2021-12-09T04:50:21.274Z'
+                name: Bandar Seri Begawan
+                created_at: '2021-12-09T06:09:47.569Z'
+                updated_at: '2021-12-09T06:09:47.569Z'
               - id: 3
-                name: Kingstown
-                created_at: '2021-12-09T04:50:21.275Z'
-                updated_at: '2021-12-09T04:50:21.275Z'
+                name: Bandar Seri Begawan
+                created_at: '2021-12-09T06:09:47.569Z'
+                updated_at: '2021-12-09T06:09:47.569Z'
               - id: 4
-                name: Monaco
-                created_at: '2021-12-09T04:50:21.275Z'
-                updated_at: '2021-12-09T04:50:21.275Z'
+                name: Quito
+                created_at: '2021-12-09T06:09:47.570Z'
+                updated_at: '2021-12-09T06:09:47.570Z'
               - id: 5
-                name: Hanoi
-                created_at: '2021-12-09T04:50:21.276Z'
-                updated_at: '2021-12-09T04:50:21.276Z'
+                name: Maseru
+                created_at: '2021-12-09T06:09:47.570Z'
+                updated_at: '2021-12-09T06:09:47.570Z'
               schema:
                 type: array
                 items:
@@ -65,48 +65,47 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Video gaming
-                description: Laboriosam explicabo esse. Nesciunt quia magni. Et sit
-                  et.
-                instructor: Tania Hyatt V
-                duration: 8
-                created_at: '2021-12-09T04:50:21.346Z'
-                updated_at: '2021-12-09T04:50:21.354Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/kgrhtpnmiv.jpeg
+                title: Genealogy
+                description: Temporibus ducimus illo. Voluptatem et sit. Sed quo ea.
+                instructor: Meridith Block
+                duration: 6
+                created_at: '2021-12-09T06:09:47.617Z'
+                updated_at: '2021-12-09T06:09:47.623Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/wyuwnz4fzr.jpeg
               - id: 2
-                title: Surfing
-                description: Dolorem in amet. Illo eos et. Voluptatem tempora doloribus.
-                instructor: Johnnie Pfannerstill
+                title: Board games
+                description: A repellat natus. Voluptas laborum omnis. Mollitia sed
+                  enim.
+                instructor: Booker Daniel V
                 duration: 4
-                created_at: '2021-12-09T04:50:21.373Z'
-                updated_at: '2021-12-09T04:50:21.376Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/y31rkdqmxv.jpeg
+                created_at: '2021-12-09T06:09:47.629Z'
+                updated_at: '2021-12-09T06:09:47.631Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5mf3wpfrjy.jpeg
               - id: 3
-                title: Nordic skating
-                description: Architecto non labore. Dignissimos omnis itaque. Excepturi
-                  dolores ut.
-                instructor: Donna Marquardt
-                duration: 10
-                created_at: '2021-12-09T04:50:21.386Z'
-                updated_at: '2021-12-09T04:50:21.389Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/yiewcea2cv.jpeg
+                title: Swimming
+                description: Ut qui quia. Laborum facilis quod. Eius dolores quia.
+                instructor: Ed Kuhic
+                duration: 4
+                created_at: '2021-12-09T06:09:47.636Z'
+                updated_at: '2021-12-09T06:09:47.639Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/i75evrk3av.jpeg
               - id: 4
-                title: Bodybuilding
-                description: Aut occaecati et. Est aperiam mollitia. Ut nulla excepturi.
-                instructor: Sen. Angelo Stehr
-                duration: 3
-                created_at: '2021-12-09T04:50:21.395Z'
-                updated_at: '2021-12-09T04:50:21.398Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/oiunqzzbdn.jpeg
+                title: Painting
+                description: Cumque quis vitae. Labore sit deleniti. Aliquam tenetur
+                  voluptatem.
+                instructor: Houston Flatley
+                duration: 5
+                created_at: '2021-12-09T06:09:47.643Z'
+                updated_at: '2021-12-09T06:09:47.645Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/armdnzhbwm.jpeg
               - id: 5
-                title: tabletop games
-                description: Rem perspiciatis dolor. Laboriosam nulla cumque. Dolor
-                  doloremque voluptatem.
-                instructor: Maximina Jerde
-                duration: 1
-                created_at: '2021-12-09T04:50:21.404Z'
-                updated_at: '2021-12-09T04:50:21.407Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/og1nadl09c.jpeg
+                title: Flag Football
+                description: Incidunt aut quo. Quia commodi odit. Possimus sed deleniti.
+                instructor: Robin Schumm
+                duration: 0
+                created_at: '2021-12-09T06:09:47.650Z'
+                updated_at: '2021-12-09T06:09:47.652Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/n7nah90e21.jpeg
               schema:
                 type: array
                 items:
@@ -138,6 +137,53 @@ paths:
                   - updated_at
                   - course_image_url
                 required: true
+    post:
+      summary: creates a new course
+      tags:
+      - Courses
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Course successfully created
+                status: created
+                course:
+                  id: 16
+                  title: Web Development
+                  description: Learn to build websites.
+                  instructor: Mike Milano
+                  duration: 12
+                  created_at: '2021-12-09T06:09:47.821Z'
+                  updated_at: '2021-12-09T06:09:47.823Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/clhj00gfsq.jpeg
+              schema:
+                type: object
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                instructor:
+                  type: string
+                duration:
+                  type: integer
+                image:
+                  type: binary
+              required:
+              - title
+              - description
+              - instructor
+              - duration
+              - image
+        required: true
   "/api/v1/courses/{id}":
     get:
       summary: returns details for one course
@@ -156,14 +202,14 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Watching movies
-                description: Omnis repudiandae delectus. Omnis architecto laudantium.
-                  Cum alias quas.
-                instructor: Eun Funk
-                duration: 7
-                created_at: '2021-12-09T04:50:21.457Z'
-                updated_at: '2021-12-09T04:50:21.468Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/nzj882tcc9.jpeg
+                title: Gaming
+                description: Possimus incidunt molestiae. Ex quas dolor. Aspernatur
+                  aut enim.
+                instructor: Fr. Elba West
+                duration: 1
+                created_at: '2021-12-09T06:09:47.696Z'
+                updated_at: '2021-12-09T06:09:47.723Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tq6bh5zbv0.jpeg
               schema:
                 type: object
                 properties:
@@ -209,11 +255,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 4
-                      username: ik4a0bkaew
-                      name: Colby
-                      created_at: '2021-12-09T04:50:21.546Z'
-                      updated_at: '2021-12-09T04:50:21.546Z'
+                      id: 5
+                      username: vly4akl8jd
+                      name: Lorraine
+                      created_at: '2021-12-09T06:09:47.829Z'
+                      updated_at: '2021-12-09T06:09:47.829Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -229,6 +275,7 @@ paths:
                   type: string
               required:
               - username
+        required: true
   "/api/v1/signed_in":
     get:
       summary: return login status of user
@@ -244,11 +291,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 14
-                      username: k8ubplecox
-                      name: Kitty
-                      created_at: '2021-12-09T04:50:21.574Z'
-                      updated_at: '2021-12-09T04:50:21.574Z'
+                      id: 15
+                      username: gwncm8oy55
+                      name: Eduardo
+                      created_at: '2021-12-09T06:09:47.852Z'
+                      updated_at: '2021-12-09T06:09:47.852Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -299,11 +346,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 32
-                      username: p2ijqdzzxi
-                      name: Ryan
-                      created_at: '2021-12-09T04:50:21.636Z'
-                      updated_at: '2021-12-09T04:50:21.636Z'
+                      id: 33
+                      username: 9u16awtv77
+                      name: Zachery
+                      created_at: '2021-12-09T06:09:47.904Z'
+                      updated_at: '2021-12-09T06:09:47.904Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -323,6 +370,7 @@ paths:
               required:
               - name
               - username
+        required: true
 servers:
 - url: https://{defaultHost}
   variables:

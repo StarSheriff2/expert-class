@@ -8,6 +8,16 @@ describe 'Courses API' do
   let!(:deleted_course) { courses.first }
   let!(:user) { create(:user) }
   let!(:existing_username) { { user: { username: user.username } } }
+  let(:file) { Rack::Test::UploadedFile.new('spec/test_images/instructor1.jpeg', 'image/jpeg') }
+  let(:valid_attributes) do
+    {
+      title: 'Web Development',
+      description: 'Learn to build websites.',
+      instructor: 'Mike Milano',
+      duration: 12,
+      image: file
+    }
+  end
 
   # Stub cloudinary related methods
   image_url = ->(k) { "https://res.cloudinary.com/starsheriff/image/upload/#{k}.jpeg" }
@@ -78,6 +88,34 @@ describe 'Courses API' do
                required: %w[id title description instructor duration created_at updated_at course_image_url]
 
         let(:id) { course_id }
+        run_test!
+      end
+    end
+  end
+
+  path '/api/v1/courses' do
+    post 'creates a new course' do
+      tags TAGS_COURSE
+      produces 'application/json'
+      consumes 'multipart/form-data'
+      parameter name: 'course',
+                in: :formData,
+                schema: {
+                  type: :object,
+                  properties: {
+                    title: { type: :string },
+                    description: { type: :string },
+                    instructor: { type: :string },
+                    duration: { type: :integer },
+                    image: { type: :binary }
+                  },
+                  required: %w[title description instructor duration image]
+                },
+                required: %w[course]
+
+      response '200', 'success' do
+        schema type: :object
+        let(:course) { valid_attributes }
         run_test!
       end
     end

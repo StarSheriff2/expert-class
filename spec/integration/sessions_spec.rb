@@ -30,7 +30,8 @@ describe 'Sessions API' do
           username: { type: :string }
         },
         required: %w[username]
-      }
+      },
+                required: %w[user]
 
       response '200', 'success' do
         context 'when user exists' do
