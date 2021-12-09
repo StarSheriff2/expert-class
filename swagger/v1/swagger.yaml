@@ -16,25 +16,25 @@ paths:
             application/json:
               example:
               - id: 1
-                name: Dublin
-                created_at: '2021-12-09T19:49:22.719Z'
-                updated_at: '2021-12-09T19:49:22.719Z'
+                name: Windhoek
+                created_at: '2021-12-09T21:50:34.255Z'
+                updated_at: '2021-12-09T21:50:34.255Z'
               - id: 2
-                name: Stockholm
-                created_at: '2021-12-09T19:49:22.720Z'
-                updated_at: '2021-12-09T19:49:22.720Z'
+                name: Phnom Penh
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
               - id: 3
-                name: Honiara
-                created_at: '2021-12-09T19:49:22.720Z'
-                updated_at: '2021-12-09T19:49:22.720Z'
+                name: Pyongyang
+                created_at: '2021-12-09T21:50:34.256Z'
+                updated_at: '2021-12-09T21:50:34.256Z'
               - id: 4
-                name: Zagreb
-                created_at: '2021-12-09T19:49:22.721Z'
-                updated_at: '2021-12-09T19:49:22.721Z'
+                name: Berlin
+                created_at: '2021-12-09T21:50:34.257Z'
+                updated_at: '2021-12-09T21:50:34.257Z'
               - id: 5
-                name: Bujumbura
-                created_at: '2021-12-09T19:49:22.721Z'
-                updated_at: '2021-12-09T19:49:22.721Z'
+                name: Vatican City
+                created_at: '2021-12-09T21:50:34.258Z'
+                updated_at: '2021-12-09T21:50:34.258Z'
               schema:
                 type: array
                 items:
@@ -65,50 +65,48 @@ paths:
             application/json:
               example:
               - id: 1
-                title: Photography
-                description: Corrupti illum voluptatem. Aperiam sequi iusto. Dolores
-                  modi sit.
-                instructor: Reginald Turner
-                duration: 9
-                created_at: '2021-12-09T19:49:22.769Z'
-                updated_at: '2021-12-09T19:49:22.775Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/dspq9myo2v.jpeg
-              - id: 2
-                title: Board games
-                description: Quibusdam rerum qui. Sapiente doloremque nihil. Illum
-                  voluptas voluptas.
-                instructor: Theron Bartoletti
-                duration: 11
-                created_at: '2021-12-09T19:49:22.781Z'
-                updated_at: '2021-12-09T19:49:22.783Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/uhn1m9pbwc.jpeg
-              - id: 3
-                title: Genealogy
-                description: Culpa reiciendis consequuntur. Aut eos facilis. Enim
-                  delectus sunt.
-                instructor: Thomasina Runolfsson
+                title: Sketching
+                description: Omnis voluptatum nesciunt. Perspiciatis quia soluta.
+                  Nam et consequuntur.
+                instructor: Louie Hermiston
                 duration: 5
-                created_at: '2021-12-09T19:49:22.791Z'
-                updated_at: '2021-12-09T19:49:22.793Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5jp0zwyqhx.jpeg
+                created_at: '2021-12-09T21:50:34.312Z'
+                updated_at: '2021-12-09T21:50:34.319Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/p8z6deh4fo.jpeg
+              - id: 2
+                title: Gunsmithing
+                description: Quia modi error. Porro nostrum dignissimos. Voluptate
+                  numquam vero.
+                instructor: Francesco Ryan
+                duration: 8
+                created_at: '2021-12-09T21:50:34.325Z'
+                updated_at: '2021-12-09T21:50:34.327Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/l3ugzdzf7e.jpeg
+              - id: 3
+                title: Shopping
+                description: Quia deserunt non. Dolorem a architecto. Est vero nisi.
+                instructor: Darwin Willms
+                duration: 5
+                created_at: '2021-12-09T21:50:34.332Z'
+                updated_at: '2021-12-09T21:50:34.334Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/nsy6ripxij.jpeg
               - id: 4
-                title: Knitting
-                description: Commodi atque odit. Possimus magnam quas. Et facilis
-                  aut.
-                instructor: Tarra Shanahan Ret.
-                duration: 2
-                created_at: '2021-12-09T19:49:22.798Z'
-                updated_at: '2021-12-09T19:49:22.800Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/ibynj56n68.jpeg
+                title: Flying
+                description: Ea velit rem. Assumenda aut qui. Deleniti libero eaque.
+                instructor: Stevie Stokes
+                duration: 9
+                created_at: '2021-12-09T21:50:34.338Z'
+                updated_at: '2021-12-09T21:50:34.341Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/5kdtpdj76q.jpeg
               - id: 5
-                title: Sudoku
-                description: Voluptate expedita id. Aut labore similique. Quo aut
-                  quis.
-                instructor: Earl Spencer
-                duration: 11
-                created_at: '2021-12-09T19:49:22.804Z'
-                updated_at: '2021-12-09T19:49:22.806Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/3nrb66p41b.jpeg
+                title: Skimboarding
+                description: Omnis officia molestiae. Ea tempora possimus. In esse
+                  tempore.
+                instructor: Rashad Rogahn
+                duration: 0
+                created_at: '2021-12-09T21:50:34.345Z'
+                updated_at: '2021-12-09T21:50:34.347Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/6psblidqop.jpeg
               schema:
                 type: array
                 items:
@@ -159,9 +157,9 @@ paths:
                   description: Learn to build websites.
                   instructor: Mike Milano
                   duration: 12
-                  created_at: '2021-12-09T19:49:22.973Z'
-                  updated_at: '2021-12-09T19:49:22.976Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/39hh6jeb1o.jpeg
+                  created_at: '2021-12-09T21:50:34.519Z'
+                  updated_at: '2021-12-09T21:50:34.521Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/lys82crxg0.jpeg
               schema:
                 type: object
                 properties:
@@ -216,14 +214,13 @@ paths:
             application/json:
               example:
                 id: 6
-                title: Ice skating
-                description: Provident sed error. Quidem eligendi omnis. Consequatur
-                  magnam sit.
-                instructor: Troy Schaden
-                duration: 5
-                created_at: '2021-12-09T19:49:22.854Z'
-                updated_at: '2021-12-09T19:49:22.880Z'
-                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/spedpz56bn.jpeg
+                title: Woodworking
+                description: Quia enim quo. Odit ut et. Explicabo beatae libero.
+                instructor: Blake Satterfield
+                duration: 11
+                created_at: '2021-12-09T21:50:34.418Z'
+                updated_at: '2021-12-09T21:50:34.420Z'
+                course_image_url: https://res.cloudinary.com/starsheriff/image/upload/tw1n3cxkxn.jpeg
               schema:
                 type: object
                 properties:
@@ -269,15 +266,15 @@ paths:
             application/json:
               example:
                 course:
-                  id: 17
-                  title: Knitting
-                  description: Esse eius reprehenderit. Rerum dolorum animi. Ut tempore
-                    fugiat.
-                  instructor: Larhonda Bauch
-                  duration: 2
-                  created_at: '2021-12-09T19:49:22.982Z'
-                  updated_at: '2021-12-09T19:49:22.984Z'
-                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/43tp0g593i.jpeg
+                  id: 21
+                  title: Skydiving
+                  description: Autem rem laboriosam. Dolorum dolor architecto. Aut
+                    similique dolore.
+                  instructor: Fr. Heriberto Graham
+                  duration: 8
+                  created_at: '2021-12-09T21:50:34.556Z'
+                  updated_at: '2021-12-09T21:50:34.558Z'
+                  course_image_url: https://res.cloudinary.com/starsheriff/image/upload/zuha4ry2b0.jpeg
                 message: Course successfully deleted
                 status: 200
               schema:
@@ -306,6 +303,229 @@ paths:
                     type: string
                 required:
                 - message
+  "/api/v1/reservations":
+    get:
+      summary: returns list with all reservations
+      tags:
+      - Reservations
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+              - user: Jacinto
+                course: Couponing
+                city: Moroni
+                date: '2022-02-10'
+                id: 1
+                created_at: '2021-12-09T21:50:34.650Z'
+                updated_at: '2021-12-09T21:50:34.650Z'
+              - user: Jacinto
+                course: Candle making
+                city: Tegucigalpa
+                date: '2022-04-16'
+                id: 2
+                created_at: '2021-12-09T21:50:34.661Z'
+                updated_at: '2021-12-09T21:50:34.661Z'
+              - user: Jacinto
+                course: Amateur radio
+                city: Addis Ababa
+                date: '2022-11-12'
+                id: 3
+                created_at: '2021-12-09T21:50:34.670Z'
+                updated_at: '2021-12-09T21:50:34.670Z'
+              - user: Jacinto
+                course: Graffiti
+                city: Ottawa
+                date: '2022-10-17'
+                id: 4
+                created_at: '2021-12-09T21:50:34.678Z'
+                updated_at: '2021-12-09T21:50:34.678Z'
+              - user: Jacinto
+                course: Shopping
+                city: Lima
+                date: '2022-06-22'
+                id: 5
+                created_at: '2021-12-09T21:50:34.692Z'
+                updated_at: '2021-12-09T21:50:34.692Z'
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    user:
+                      type: string
+                    course:
+                      type: string
+                    city:
+                      type: string
+                    date:
+                      type: string
+                    id:
+                      type: integer
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                  required:
+                  - user
+                  - course
+                  - city
+                  - date
+                  - id
+                  - created_at
+                  - updated_at
+                required: true
+    post:
+      summary: creates a new course
+      tags:
+      - Reservations
+      parameters: []
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                reservation:
+                  user: Hugh
+                  course: Taxidermy
+                  city: New Delhi
+                  date: '2021-12-10'
+                  id: 11
+                  created_at: '2021-12-09T21:50:34.922Z'
+                  updated_at: '2021-12-09T21:50:34.922Z'
+                message: Reservation created successfully
+                status: 200
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    type: object
+                    properties:
+                      user:
+                        type: string
+                      course:
+                        type: string
+                      city:
+                        type: string
+                      date:
+                        type: string
+                      id:
+                        type: integer
+                      created_at:
+                        type: string
+                      updated_at:
+                        type: string
+                    required:
+                    - user
+                    - course
+                    - city
+                    - date
+                    - id
+                    - created_at
+                    - updated_at
+                  message:
+                    type: string
+                  status:
+                    type: integer
+                required:
+                - reservation
+                - message
+                - status
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                user_id:
+                  type: integer
+                course_id:
+                  type: integer
+                city_id:
+                  type: integer
+              required:
+              - date
+              - user_id
+              - course_id
+              - city_id
+        required: true
+  "/api/v1/reservations/{id}":
+    delete:
+      summary: deletes a reservation
+      tags:
+      - Reservations
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              example:
+                reservation:
+                  id: 16
+                  date: '2022-03-29'
+                  user_id: 17
+                  course_id: 61
+                  created_at: '2021-12-09T21:50:34.980Z'
+                  updated_at: '2021-12-09T21:50:34.980Z'
+                  city_id: 30
+                message: Reservation deleted successfully
+              schema:
+                type: object
+                properties:
+                  reservation:
+                    type: object
+                    properties:
+                      user_id:
+                        type: integer
+                      course_id:
+                        type: integer
+                      city_id:
+                        type: integer
+                      date:
+                        type: string
+                      id:
+                        type: integer
+                      created_at:
+                        type: string
+                      updated_at:
+                        type: string
+                    required:
+                    - user_id
+                    - course_id
+                    - city_id
+                    - date
+                    - id
+                    - created_at
+                    - updated_at
+                  message:
+                    type: string
+                required:
+                - reservation
+                - message
+        '404':
+          description: success
+          content:
+            application/json:
+              example:
+                message: Couldn't find Reservation with 'id'=1021
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                required:
+                - message
   "/api/v1/sign_in":
     post:
       summary: creates a new session
@@ -323,11 +543,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 7
-                      username: 0skwshs5fb
-                      name: Edythe
-                      created_at: '2021-12-09T19:49:23.082Z'
-                      updated_at: '2021-12-09T19:49:23.082Z'
+                      id: 27
+                      username: kii7yi2iwv
+                      name: Shelia
+                      created_at: '2021-12-09T21:50:35.209Z'
+                      updated_at: '2021-12-09T21:50:35.209Z'
                 when user does not exist:
                   value:
                     status: 401
@@ -359,11 +579,11 @@ paths:
                   value:
                     logged_in: true
                     user:
-                      id: 17
-                      username: enxgb8nbkq
-                      name: Rhett
-                      created_at: '2021-12-09T19:49:23.106Z'
-                      updated_at: '2021-12-09T19:49:23.106Z'
+                      id: 37
+                      username: jo42v7bfkq
+                      name: Ute
+                      created_at: '2021-12-09T21:50:35.236Z'
+                      updated_at: '2021-12-09T21:50:35.236Z'
                 when user is not logged in:
                   value:
                     logged_in: false
@@ -414,11 +634,11 @@ paths:
                     status: created
                     logged_in: true
                     user:
-                      id: 35
-                      username: ays27185hl
-                      name: Janelle
-                      created_at: '2021-12-09T19:49:23.161Z'
-                      updated_at: '2021-12-09T19:49:23.161Z'
+                      id: 55
+                      username: 1ztx7hbxrk
+                      name: Jasmine
+                      created_at: '2021-12-09T21:50:35.300Z'
+                      updated_at: '2021-12-09T21:50:35.300Z'
                 when user does not exist:
                   value:
                     status: 401

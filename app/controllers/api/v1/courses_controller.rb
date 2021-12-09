@@ -30,16 +30,16 @@ class API::V1::CoursesController < ApplicationController
     if @course
       course = @course
       @course.destroy
-      render json: {
-        course: course,
-        message: 'Course successfully deleted',
-        status: 200
-      }
+      json_response({
+                      course: course,
+                      message: 'Course successfully deleted',
+                      status: 200
+                    })
     else
-      render json: {
-        message: 'Unable to delete course',
-        status: 400
-      }
+      json_response({
+                      message: 'Unable to delete course',
+                      status: 400
+                    })
     end
   end
 end
