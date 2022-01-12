@@ -111,7 +111,7 @@ Once you have your new Cloudinary account set up, follow these steps:
 1. Login with your new account
 2. Go to your Cloudinary dashboard
 3. Look for the YML file and click on it to download it
-![cloudinary_yml_file](./other/README_images/cloudinary_setup_img.png)
+![cloudinary_yml_file](.github/images/cloudinary_setup_img.png)
 4. Copy this file into your config folder
 
 ### Database Setup
