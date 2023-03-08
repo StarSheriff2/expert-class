@@ -55,7 +55,11 @@ Deployed to Heroku: [Live Demo](https://expert-class-backend.herokuapp.com/)
 
 ### Video Presentation
 
-...coming soon
+Watch a quick demo and walk-through of this project:
+<a href="https://www.loom.com/share/bf3cfe3590a9404da7badb3012248a57" target="_blank" rel="noopener noreferrer">
+  <p>Expert Class - 13 January 2022 - Watch Video</p>
+  <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bf3cfe3590a9404da7badb3012248a57-with-play.gif">
+</a>
 
 ### Built With
 - Ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) \[arm64-darwin20\]
