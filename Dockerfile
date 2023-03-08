@@ -15,8 +15,8 @@ RUN bundle config set --local without 'development test' \
   && bundle install \
   && bundle exec rails db:prepare
 COPY . .
-COPY production.entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bin/production.entrypoint.sh
-ENTRYPOINT ["production.entrypoint.sh"]
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3001
 CMD ["rails", "server", "-b", "0.0.0.0"]
