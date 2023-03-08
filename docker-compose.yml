@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:14
+    container_name: postgres
+    restart: always
+    volumes:
+      - api-psql-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: Weather_App_Calendar_api
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+
+  app:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rake db:setup && bundle exec rails s -p 3001 -b '0.0.0.0'"
+    restart: always
+    environment:
+            - DATABASE_USER=postgres
+            - DATABASE_PASSWORD=secret
+            - RAILS_ENV=development
+            - DATABASE_HOSTNAME=postgres
+    ports:
+      - 3001:3001
+    volumes:
+      - ./:/app
+    depends_on:
+      - postgres
+
+volumes:
+  api-psql-data:
