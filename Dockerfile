@@ -2,16 +2,21 @@
 
 FROM ruby:3.0.2
 RUN apt-get update -qq && apt-get install -y postgresql-client
-ENV RAILS_LOG_TO_STDOUT true
+ENV PORT=3001 \
+  RAILS_ENV=production \
+  RAILS_LOG_TO_STDOUT=true
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 WORKDIR /app
 COPY Gemfile Gemfile.lock ./
-RUN gem install bundler
-RUN bundle install
-COPY entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bin/entrypoint.sh
+RUN gem update --system \
+  && gem install bundler
+RUN bundle config set --local without 'development test' \
+  && bundle install \
+  && bundle exec rails db:prepare
 COPY . .
-ENTRYPOINT ["entrypoint.sh"]
+COPY production.entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/production.entrypoint.sh
+ENTRYPOINT ["production.entrypoint.sh"]
 EXPOSE 3001
 CMD ["rails", "server", "-b", "0.0.0.0"]
