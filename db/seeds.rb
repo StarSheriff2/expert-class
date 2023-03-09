@@ -1,11 +1,3 @@
-require 'cloudinary'
-
-if Cloudinary.config.api_key.blank?
-  require './config/cloudinary'
-end
-
-puts 'My cloud name is:' + Cloudinary.config.cloud_name
-
 User.destroy_all
 City.destroy_all
 Course.destroy_all
