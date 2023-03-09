@@ -11,9 +11,8 @@ WORKDIR /app
 COPY Gemfile Gemfile.lock ./
 RUN gem update --system \
   && gem install bundler
-RUN bundle config set --local without 'development test' \
-  && bundle install \
-  && bundle exec rails db:prepare
+RUN bundle config set --local without 'development test'
+RUN bundle install
 COPY . .
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
