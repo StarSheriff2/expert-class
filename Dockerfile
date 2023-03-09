@@ -13,7 +13,6 @@ RUN gem update --system \
   && gem install bundler
 RUN bundle config set --local without 'development test'
 RUN bundle install
-COPY config/cloudinary.yml ./config/
 COPY . .
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
