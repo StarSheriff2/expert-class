@@ -1,3 +1,11 @@
+require 'cloudinary'
+
+if Cloudinary.config.api_key.blank?
+  require './config/cloudinary'
+end
+
+puts 'My cloud name is:' + Cloudinary.config.cloud_name
+
 User.destroy_all
 City.destroy_all
 Course.destroy_all
@@ -26,7 +34,7 @@ courses = Course.create!([
                              description: 'Learn to take photos of urban landscapes.',
                              duration: 4,
                              instructor: 'Maria Segovia',
-                             course_image_url: 'https://res.cloudinary.com/starsheriff/image/upload/v1636682345/e9lohjn28q0e63dqos5fa2ijtwut.jpg',
+                             course_image_url: Cloudinary::Utils.cloudinary_url("e9lohjn28q0e63dqos5fa2ijtwut.jpg"),
                              image: image
                            },
                            {
@@ -37,7 +45,7 @@ courses = Course.create!([
                              process step-by-step.',
                              duration: 8,
                              instructor: 'Mohammed Masso',
-                             course_image_url: 'https://res.cloudinary.com/starsheriff/image/upload/v1635197363/ts01hqjp6rxtij8u7y4lhac0yqmx.jpg',
+                             course_image_url: Cloudinary::Utils.cloudinary_url("ts01hqjp6rxtij8u7y4lhac0yqmx.jpg"),
                              image: image
                            },
                            {
@@ -47,7 +55,7 @@ courses = Course.create!([
                    Get all the main notions and techniques to begin!',
                              duration: 12,
                              instructor: 'Yin Chang',
-                             course_image_url: 'https://res.cloudinary.com/starsheriff/image/upload/v1639090917/piano-teacher_dtri8d.jpg',
+                             course_image_url: Cloudinary::Utils.cloudinary_url("piano-teacher_dtri8d.jpg"),
                              image: image
                            },
                            {
@@ -57,7 +65,7 @@ courses = Course.create!([
                    delicious dishes.',
                              duration: 3,
                              instructor: 'Paola Seinfeld',
-                             course_image_url: 'https://res.cloudinary.com/starsheriff/image/upload/v1636561006/02d849x8aaywxs4584zt80he83w1.jpg',
+                             course_image_url: Cloudinary::Utils.cloudinary_url("02d849x8aaywxs4584zt80he83w1.jpg"),
                              image: image
                            }
                          ])

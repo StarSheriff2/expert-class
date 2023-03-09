@@ -22,6 +22,7 @@ services:
             - DATABASE_PASSWORD=secret
             - RAILS_ENV=development
             - DATABASE_HOSTNAME=postgres
+            - CLOUDINARY_URL=${CLOUDINARY_URL}
     ports:
       - 3001:3001
     volumes:
