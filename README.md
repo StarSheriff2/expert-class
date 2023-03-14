@@ -1,22 +1,23 @@
 <div align="center">
-<h1><a href="https://expert-class-backend.herokuapp.com/" target="_blank">Expert Class API</a></h1>
+<h1><a href="https://expert-class-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Expert Class API</a></h1>
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/Microverse-blueviolet">
-    <img src="https://img.shields.io/badge/Academic-blue">
-    <img src="https://img.shields.io/badge/Ruby_on_Rails-darkred">
-    <img src="https://img.shields.io/badge/PostgreSQL-skyblue">
-    <img src="https://img.shields.io/badge/Rspec-yellow">
-    <img src="https://img.shields.io/badge/Rswag-green">
-    <img src="https://img.shields.io/badge/Factory_Bot-red">
+    <img src="https://img.shields.io/badge/Ruby_on_Rails-darkred?logo=rubyonrails">
+    <img src="https://img.shields.io/badge/-PostGreSQL%2015.1-4169E1?logo=postgresql&logoColor=white">
+    <img src="https://img.shields.io/badge/-Swagger-85EA2D?logo=swagger&logoColor=black">
+    <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white">
     <img src="https://img.shields.io/badge/Cloudinary-purple">
-    <img src="https://img.shields.io/badge/Heroku-violet">
+    <img src="https://img.shields.io/badge/Rspec-yellow">
+    <img src="https://img.shields.io/badge/Factory_Bot-red">
+    <img src="https://img.shields.io/badge/-Ruby%20Gems-E9573F?logo=RubyGems&logoColor=white">
+    <img src="https://img.shields.io/badge/-Rubocop-000000?logo=Rubocop">
+    <img src="https://img.shields.io/badge/-Railway-0B0D0E?logo=Railway">
 </div>
 
 <br>
 
-<p align="center">This RESTFUL API works as the backend for a React web app. We host the API in Heroku. All images are hosted in Cloudinary.</p>
+<p align="center">This <strong>RESTFUL</strong> API works as the backend for a React web app. The <strong><i>dockerized</i></strong> container of the app is currently hosted on <strong>Railway</strong>. All images are hosted in Cloudinary.</p>
 
 <br>
 
@@ -34,7 +35,7 @@ Expert Class API is the backend for a ***fully responsive*** web app that I buil
 
 ### API Documentation
 We used Rswag to generate all the API documentation directly from our tests. You will find all the endpoints necessary to use our API here:
-[Documentation](https://expert-class-backend.herokuapp.com/api-docs)
+[Documentation](https://expert-class-production.up.railway.app/api-docs)
 
 ### Features:
 - authenticate user
@@ -51,7 +52,7 @@ We used Rswag to generate all the API documentation directly from our tests. You
 
 ### Live Demo
 
-Deployed to Heroku: [Live Demo](https://expert-class-backend.herokuapp.com/)
+Deployed to **Railway**: [Live Demo](https://expert-class-production.up.railway.app/api/v1/healthcheck) <svg role="img" width=30 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Railway</title><path d="M.113 10.27A13.026 13.026 0 000 11.48h18.23c-.064-.125-.15-.237-.235-.347-3.117-4.027-4.793-3.677-7.19-3.78-.8-.034-1.34-.048-4.524-.048-1.704 0-3.555.005-5.358.01-.234.63-.459 1.24-.567 1.737h9.342v1.216H.113v.002zm18.26 2.426H.009c.02.326.05.645.094.961h16.955c.754 0 1.179-.429 1.315-.96zm-17.318 4.28s2.81 6.902 10.93 7.024c4.855 0 9.027-2.883 10.92-7.024H1.056zM11.988 0C7.5 0 3.593 2.466 1.531 6.108l4.75-.005v-.002c3.71 0 3.849.016 4.573.047l.448.016c1.563.052 3.485.22 4.996 1.364.82.621 2.007 1.99 2.712 2.965.654.902.842 1.94.396 2.934-.408.914-1.289 1.458-2.353 1.458H.391s.099.42.249.886h22.748A12.026 12.026 0 0024 12.005C24 5.377 18.621 0 11.988 0z"/></svg>
 
 ### Video Presentation
 
@@ -69,7 +70,8 @@ Watch a quick demo and walk-through of this project:
 - Rspec (testing)
 - Faker gem
 - Factory bot
-- Heroku
+- Docker 20.10.22
+- Docker compose v2.15.1
 
 ### Project Management
 
@@ -82,52 +84,96 @@ We used GitHub's built-in Kanban board:
 
 To get a local copy up and running, follow these simple example steps.
 
-### Prerequisites
-- Ruby 3.0.2p107
-- Rails 6.1.4.1
-- PostgreSQL 14
-- Cloudinary account
-
-### Get files
+#### Get files
 1. Open your terminal or command prompt.
 2. If you do not have git installed in your system, skip this step and go to step 3; otherwise, go to the directory where you want to copy the project files and clone it by copying this text into your command prompt/terminal:
 ```
   git clone git@github.com:StarSheriff2/expert-class.git
 ```
-<br>Now go to the ***"Install Dependencies"*** section.
+  <br>
+
+  *Now go to either the ***"Docker Deploy"*** or the ***"Local Deployt"*** section, depending on how you wish to deploy the API in your system.*
+
+  <br>
 
 3. Download the program files by clicking on the green button that says “**Code**” on the upper right side of the project frame.
 4. You will see a dropdown menu. Click on “**Download ZIP**.”
 5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want in your system.
 
-### Install Dependencies
+### Cloudinary Setup
+> You will need a Cloudinary account to be able to deploy this app locally or through Docker. If you already have one, look for the **API Environment variable**, which you will find in your cloudinary dashboard:
+> - for a Docker deployment, copy the **API Environment variable** into your .env file:
+
+```bash
+CLOUDINARY_URL=<your_unique_cloudinary_url>
+```
+> - for a local deployment, copy the **API Environment variable** into your *config/cloudinary.rb* file, by replacing the text "<cloudinary_url_here>" with the respective value of your **API Environment variable**
+
+> ; otherwise, create a new account by going to Cloudinary and sign up for a free account: [https://cloudinary.com/](https://cloudinary.com/).
+
+Once you have your new Cloudinary account set up, follow these steps:
+1. Login with your new account
+2. Go to your Cloudinary dashboard
+3. Look for the **API Environment variable**
+   ![cloudinary_yml_file](.github/images/cloudinary_setup_img.png)
+4. Do the following:
+   - for a local deployment, copy it into your *.env file*, like exaplained above
+   - for a Docker deployment, copy it into your *config/cloudinary.rb* file like explained above
+
+
+### Docker Deploy
+
+#### Prerequisites
+
+- Docker 20.10.22 or latest
+- Docker Compose v2.15.1
+
+#### Run
+
+```bash
+  docker compose up -d
+```
+
+### Local deploy
+
+#### Prerequisites
+- Ruby 3.0.2p107
+- Rails 6.1.4.1
+- PostgreSQL 14
+- Cloudinary account and cloudinary_url
+
+#### Install Dependencies
 1. If you are not in your system terminal/command prompt already, please open it and go to the directory where you cloned the remote repository or extracted the project files.
 2. While in the project root directory, type
     ```
     bundle install
     ```
-This command will install all the necessary gems in your system.
-
-#### Cloudinary Setup
-> You will need a Cloudinary account to be able to deploy this app locally. If you already have one, copy your YML file into the config folder; otherwise, create a new account by going to Cloudinary and sign up for a free account: [https://cloudinary.com/](https://cloudinary.com/).
-
-Once you have your new Cloudinary account set up, follow these steps:
-1. Login with your new account
-2. Go to your Cloudinary dashboard
-3. Look for the YML file and click on it to download it
-![cloudinary_yml_file](.github/images/cloudinary_setup_img.png)
-4. Copy this file into your config folder
+    This command will install all the necessary gems in your system.
 
 ### Database Setup
 
-1. Edit the `"database.yml"` file in your `"config"` folder:
-    - Change the `username` and `password` under ***`default: &default`*** to your PostgreSQL local credentials or just delete lines 23 and 24 altogether
-1. Now, in your terminal, type <code>bin/rails db:setup</code> to create your local databases, load the schema, and initialize with the seed data.
+Run
+
+```bash
+  bin/rails db:setup
+```
+This will create your local databases, load the schema, and initialize with the seed data.
+
+**Note:** If you get an error after running this command, it might be because you don't have a database called ***"postgres"***. The development environment runs on the default postgresql db called ***"postgres"***. You can easily create one by running this command:
+```bash
+createdb postgres
+```
+Now try running the db:setup command again!
 
 You are all set now!
 ## Usage
 
-1. In your terminal, run <code>bin/rails server</code> while inside the root directory of the repository files
+1. In your terminal, run
+```bash
+bin/rails server
+```
+while inside the root directory of the repository files
+
 2. The app allows API calls using curl or your favorite API client, such as Postman, HTTPPie or VS Code's Thunder Client. Here's a link to [HTTPIE](https://httpie.io).
 
 **Note:<br>_These command will not stop on its own. To exit, hit "ctrl + c"_**

@@ -18,10 +18,7 @@ services:
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rake db:setup && bundle exec rails s -p 3001 -b '0.0.0.0'"
     restart: always
     environment:
-            - DATABASE_USER=postgres
-            - DATABASE_PASSWORD=secret
             - RAILS_ENV=development
-            - DATABASE_HOSTNAME=postgres
             - CLOUDINARY_URL=${CLOUDINARY_URL}
     ports:
       - 3001:3001

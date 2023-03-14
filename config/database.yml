@@ -20,18 +20,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV['DATABASE_HOSTNAME'] %>
-  username: postgres
-  password: secret
-  port: 5432
 
 development:
   <<: *default
   database: expert_class_backend_development
-  # username: <%= ENV['DATABASE_USER'] %>
-  # password: <%= ENV['DATABASE_PASSWORD'] %>
-  # host: <%= ENV['DATABASE_HOSTNAME'] %>
-
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -89,6 +81,3 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  # database: expert_class_backend
-  # username: Weather_App_Calendar_api
-  # password: <%= ENV['WEATHER_APP_CALENDAR_API_DATABASE_PASSWORD'] %>

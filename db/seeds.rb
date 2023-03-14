@@ -1,3 +1,9 @@
+require 'cloudinary'
+
+if Cloudinary.config.api_key.blank?
+  require './config/cloudinary'
+end
+
 User.destroy_all
 City.destroy_all
 Course.destroy_all
