@@ -222,8 +222,8 @@ We created all types of tests for this project:
 - API request tests
 
 To run all tests, type this into command line:
-```
- rspec
+```bash
+bundle exec rspec
 ```
 
 ### Linters

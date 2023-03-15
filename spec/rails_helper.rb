@@ -1,3 +1,7 @@
+# if ENV['RAILS_ENV'] == 'test'
+#   require 'simplecov'
+#   SimpleCov.start 'rails'
+# # end
 # require database cleaner at the top level
 require 'database_cleaner'
 # This file is copied to spec/ when you run 'rails generate rspec:install'
@@ -40,6 +44,7 @@ rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
