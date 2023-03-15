@@ -7,7 +7,7 @@ services:
     volumes:
       - api-psql-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: Weather_App_Calendar_api
+      POSTGRES_DB: expert_class_backend
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret
 

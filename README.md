@@ -159,10 +159,16 @@ Run
 ```
 This will create your local databases, load the schema, and initialize with the seed data.
 
-**Note:** If you get an error after running this command, it might be because you don't have a database called ***"postgres"***. The development environment runs on the default postgresql db called ***"postgres"***. You can easily create one by running this command:
+**Note:** If you get an error after running this command, it might be because you don't have a database called ***"postgres"***. This happens because when you create a new Rails application, Rails uses this "postgres" database to create and manage the databases for your application. You can easily create one by running this command:
 ```bash
 createdb postgres
 ```
+
+If Rails still complains about not finding the "postgres" role, you can create one with super-user priviledges:
+```bash
+createuser -s postgres
+```
+
 Now try running the db:setup command again!
 
 You are all set now!
