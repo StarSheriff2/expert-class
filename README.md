@@ -34,7 +34,7 @@
 ## Table of Contents
 - [About](#about)
   - [API Documentation](#api-documentation)
-  - [Features:](#features)
+  - [Features](#features)
   - [Front-end React app](#front-end-react-app)
   - [Live Demo](#live-demo)
   - [Video Presentation](#video-presentation)
@@ -68,7 +68,7 @@ Expert Class API is the backend for a ***fully responsive*** web app that I buil
 We used Rswag to generate all the API documentation directly from our tests. You will find all the endpoints necessary to use our API here:
 [Documentation](https://expert-class-production.up.railway.app/api-docs)
 
-### Features:
+### Features
 - authenticate user
 - create new user
 - create and delete a class
