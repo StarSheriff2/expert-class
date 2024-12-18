@@ -10,8 +10,7 @@ ENV PORT=3001 \
 RUN bundle config --global frozen 1
 WORKDIR /app
 COPY Gemfile Gemfile.lock ./
-RUN gem update --system \
-  && gem install bundler
+RUN gem install bundler
 RUN bundle config set --local without 'development test'
 RUN bundle install
 COPY . .
